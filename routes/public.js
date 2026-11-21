@@ -26,6 +26,9 @@ router.use((req, res, next) => {
 });
 
 const pub = (extra = '') => `published=1 ${extra}`;
+// Bài hẹn giờ: chỉ hiện khi publish_at (UTC, ISO) đã tới; để trống = hiện ngay
+const POST_LIVE = "published=1 AND (publish_at='' OR publish_at IS NULL OR publish_at<=strftime('%Y-%m-%dT%H:%M:%SZ','now'))";
+const POST_ORDER = "CASE WHEN publish_at='' OR publish_at IS NULL THEN published_at||'T00:00:00Z' ELSE publish_at END DESC, id DESC";
 const distinct = (table, col, where = '1=1', ...a) =>
   all(`SELECT DISTINCT ${col} v FROM ${table} WHERE published=1 AND ${where} AND ${col}<>'' ORDER BY ${col}`, ...a).map((r) => r.v);
 const pageOf = (req) => Math.max(1, parseInt(req.query.page, 10) || 1);
@@ -36,7 +39,7 @@ router.get('/', (req, res) => {
   const featuredLabor = all(`SELECT * FROM jobs WHERE ${pub("AND category='labor'")} ORDER BY featured DESC, id DESC LIMIT 3`);
   const featuredEng = all(`SELECT * FROM jobs WHERE ${pub("AND category='engineer'")} ORDER BY featured DESC, id DESC LIMIT 3`);
   const stories = all(`SELECT * FROM stories WHERE ${pub()} ORDER BY sort, id DESC LIMIT 3`);
-  const posts = all(`SELECT * FROM posts WHERE ${pub()} ORDER BY published_at DESC, id DESC LIMIT 3`);
+  const posts = all(`SELECT * FROM posts WHERE ${POST_LIVE} ORDER BY ${POST_ORDER} LIMIT 3`);
   const counts = {
     schools: get('SELECT COUNT(*) c FROM schools WHERE published=1').c,
     labor: get("SELECT COUNT(*) c FROM jobs WHERE published=1 AND category='labor'").c,
@@ -126,17 +129,17 @@ for (const [cat, p] of Object.entries(JOB_PATH)) {
 // ---------------- Tin tức ----------------
 router.get('/tin-tuc', (req, res) => {
   const cat = ['news', 'guide', 'story'].includes(req.query.cat) ? req.query.cat : '';
-  const where = cat ? 'published=1 AND category=?' : 'published=1';
+  const where = cat ? `${POST_LIVE} AND category=?` : POST_LIVE;
   const args = cat ? [cat] : [];
   const total = get(`SELECT COUNT(*) c FROM posts WHERE ${where}`, ...args).c;
   const page = Math.min(pageOf(req), Math.max(1, Math.ceil(total / PAGE)));
-  const items = all(`SELECT * FROM posts WHERE ${where} ORDER BY published_at DESC, id DESC LIMIT ${PAGE} OFFSET ${(page - 1) * PAGE}`, ...args);
+  const items = all(`SELECT * FROM posts WHERE ${where} ORDER BY ${POST_ORDER} LIMIT ${PAGE} OFFSET ${(page - 1) * PAGE}`, ...args);
   res.render('news', { page: 'news', items, cat, total, pg: page, pages: Math.ceil(total / PAGE), pageTitle: res.locals.t('news.title'), pageDesc: res.locals.t('news.sub') });
 });
 router.get('/tin-tuc/:slug', (req, res, next) => {
-  const item = get('SELECT * FROM posts WHERE slug=? AND published=1', req.params.slug);
+  const item = get(`SELECT * FROM posts WHERE slug=? AND ${POST_LIVE}`, req.params.slug);
   if (!item) return next('route');
-  const related = all('SELECT * FROM posts WHERE published=1 AND id<>? ORDER BY published_at DESC LIMIT 3', item.id);
+  const related = all(`SELECT * FROM posts WHERE ${POST_LIVE} AND id<>? ORDER BY ${POST_ORDER} LIMIT 3`, item.id);
   const title = H.L(item, 'title', req.params.lang);
   res.render('post', {
     page: 'news', item, related, pageTitle: title, pageDesc: H.L(item, 'excerpt', req.params.lang), pageImage: item.image,

@@ -13,7 +13,7 @@ router.get('/', (req, res) => {
     ...all("SELECT slug, category, updated_at FROM jobs WHERE published=1").map((r) => [
       `/${r.category === 'engineer' ? 'ky-su-dai-loan' : 'xuat-khau-lao-dong'}/${r.slug}`, r.updated_at,
     ]),
-    ...all('SELECT slug, updated_at FROM posts WHERE published=1').map((r) => [`/tin-tuc/${r.slug}`, r.updated_at]),
+    ...all("SELECT slug, updated_at FROM posts WHERE published=1 AND (publish_at='' OR publish_at IS NULL OR publish_at<=strftime('%Y-%m-%dT%H:%M:%SZ','now'))").map((r) => [`/tin-tuc/${r.slug}`, r.updated_at]),
   ];
   const urls = [...pages.map((p) => [p, null]), ...dyn];
   const alt = (p) =>

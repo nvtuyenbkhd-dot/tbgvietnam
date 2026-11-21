@@ -104,3 +104,20 @@ test('sitemap và robots', async () => {
   assert.ok(sm.includes('/vi/du-hoc/s1') && sm.includes('hreflang="zh-Hant"') && !sm.includes('hidden'));
   assert.ok((await (await get('/robots.txt')).text()).includes('Disallow: /admin'));
 });
+
+test('bài hẹn giờ: chưa tới giờ thì ẩn (cả trang chi tiết, danh sách, sitemap), tới giờ thì hiện', async () => {
+  const past = new Date(Date.now() - 60e3).toISOString().slice(0, 19) + 'Z';
+  const future = new Date(Date.now() + 3600e3).toISOString().slice(0, 19) + 'Z';
+  run("INSERT INTO posts(slug,category,title_vi,excerpt_vi,body_vi,published_at,publish_at) VALUES('bai-da-toi-gio','news','Bài đã tới giờ','m','b','2026-01-01',?)", past);
+  run("INSERT INTO posts(slug,category,title_vi,excerpt_vi,body_vi,published_at,publish_at) VALUES('bai-chua-toi-gio','news','Bài chưa tới giờ','m','b','2026-01-01',?)", future);
+  assert.equal((await get('/vi/tin-tuc/bai-da-toi-gio')).status, 200);
+  assert.equal((await get('/vi/tin-tuc/bai-chua-toi-gio')).status, 404);
+  const list = await (await get('/vi/tin-tuc')).text();
+  assert.match(list, /Bài đã tới giờ/);
+  assert.doesNotMatch(list, /Bài chưa tới giờ/);
+  const sm = await (await get('/sitemap.xml')).text();
+  assert.match(sm, /bai-da-toi-gio/);
+  assert.doesNotMatch(sm, /bai-chua-toi-gio/);
+  const home = await (await get('/vi/')).text();
+  assert.doesNotMatch(home, /Bài chưa tới giờ/);
+});
