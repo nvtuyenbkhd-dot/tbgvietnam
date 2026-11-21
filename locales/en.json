@@ -99,7 +99,7 @@
     "err_rate": "Too many requests. Please try again in a few minutes.",
     "ok_title": "We received your details", "ok_text": "Thank you. A TB GROUP advisor will contact you shortly. If urgent, please call the hotline.", "ok_again": "Send another request"
   },
-  "news": { "title": "News & guides", "sub": "Policy updates, application tips and real stories.", "related": "Related articles", "cat_news": "News", "cat_guide": "Guide", "cat_story": "Story" },
+  "news": { "sources": "References", "title": "News & guides", "sub": "Policy updates, application tips and real stories.", "related": "Related articles", "cat_news": "News", "cat_guide": "Guide", "cat_story": "Story" },
   "about": {
     "title": "About TB GROUP", "sub": "TB Vietnam Group JSC (越南TB集團股份公司)",
     "story_title": "Who we are",

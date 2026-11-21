@@ -9,8 +9,12 @@
 </section>
 <section class="section section--tight">
   <div class="container container--narrow">
-    <% if (item.image) { %><img class="detail__img" src="<%= item.image %>" alt="" width="960" height="540"><% } %>
+    <% let srcs = []; try { srcs = JSON.parse(item.sources || '[]'); } catch (e) {} %>
+    <% if (item.image) { %><figure class="post-fig"><img class="detail__img" src="<%= item.image %>" alt="<%= item.image_alt || title %>" width="960" height="540" fetchpriority="high"><% if (item.image_credit) { %><figcaption><%= item.image_credit %></figcaption><% } %></figure><% } %>
     <div class="prose prose--lg"><%- richText(L(item, 'body')) %></div>
+    <% if (srcs.length) { %><section class="post-sources" aria-labelledby="src-h"><h2 id="src-h"><%= t('news.sources') %></h2><ol>
+      <% srcs.forEach(function (s) { %><li><a href="<%= s.url %>" target="_blank" rel="noopener nofollow"><%= s.title %></a><% if (s.publisher) { %> — <%= s.publisher %><% } %><% if (s.accessed) { %> (<%= s.accessed %>)<% } %></li><% }) %>
+    </ol></section><% } %>
     <aside class="inline-cta">
       <h2><%= t('home.cta_title') %></h2>
       <a class="btn btn--primary" href="<%= u('/lien-he') %>#dang-ky"><%= t('nav.register') %><svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a>

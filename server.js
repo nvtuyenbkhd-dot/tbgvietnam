@@ -8,6 +8,7 @@ const helmet = require('helmet');
 const cookieSession = require('cookie-session');
 const { getSettings } = require('./lib/db');
 const { LANGS, DEFAULT_LANG } = require('./lib/helpers');
+try { console.log(`[content] đã nạp ${require('./lib/content').importPosts()} bài từ content/posts`); } catch (e) { console.error('[content]', e.message); }
 
 const isProd = process.env.NODE_ENV === 'production';
 if (isProd && !process.env.SESSION_SECRET) {

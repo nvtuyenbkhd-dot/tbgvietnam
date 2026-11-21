@@ -99,7 +99,7 @@
     "err_rate": "Bạn gửi quá nhanh. Vui lòng thử lại sau ít phút.",
     "ok_title": "Đã nhận thông tin của bạn", "ok_text": "Cảm ơn bạn. Tư vấn viên TB GROUP sẽ liên hệ lại trong thời gian sớm nhất. Cần gấp, hãy gọi hotline.", "ok_again": "Gửi thêm một đăng ký"
   },
-  "news": { "title": "Tin tức & cẩm nang", "sub": "Thông tin chính sách, kinh nghiệm hồ sơ và câu chuyện thực tế.", "related": "Bài viết liên quan", "cat_news": "Tin tức", "cat_guide": "Cẩm nang", "cat_story": "Câu chuyện" },
+  "news": { "sources": "Nguồn tham khảo", "title": "Tin tức & cẩm nang", "sub": "Thông tin chính sách, kinh nghiệm hồ sơ và câu chuyện thực tế.", "related": "Bài viết liên quan", "cat_news": "Tin tức", "cat_guide": "Cẩm nang", "cat_story": "Câu chuyện" },
   "about": {
     "title": "Về TB GROUP", "sub": "CTCP Tập đoàn TB Việt Nam (越南TB集團股份公司)",
     "story_title": "Chúng tôi là ai",

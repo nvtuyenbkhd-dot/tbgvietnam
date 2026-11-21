@@ -140,7 +140,14 @@ router.get('/tin-tuc/:slug', (req, res, next) => {
   const title = H.L(item, 'title', req.params.lang);
   res.render('post', {
     page: 'news', item, related, pageTitle: title, pageDesc: H.L(item, 'excerpt', req.params.lang), pageImage: item.image,
-    jsonLd: { '@context': 'https://schema.org', '@type': 'Article', headline: title, datePublished: item.published_at, image: item.image || undefined },
+    jsonLd: {
+      '@context': 'https://schema.org', '@type': 'Article', headline: title, description: H.L(item, 'excerpt', req.params.lang),
+      datePublished: item.published_at, dateModified: (item.updated_at || item.published_at).slice(0, 10),
+      image: item.image ? res.locals.siteUrl + item.image : undefined, inLanguage: req.params.lang,
+      author: { '@type': 'Organization', name: 'TB GROUP' },
+      publisher: { '@type': 'Organization', name: 'TB GROUP' },
+      mainEntityOfPage: `${res.locals.siteUrl}/${req.params.lang}/tin-tuc/${item.slug}`,
+    },
   });
 });
 

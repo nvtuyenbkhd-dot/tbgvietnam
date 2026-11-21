@@ -99,7 +99,7 @@
     "err_rate": "送出過於頻繁，請稍後再試。",
     "ok_title": "已收到您的資料", "ok_text": "謝謝您。TB GROUP 顧問將儘快與您聯絡。如有急事，請直接撥打熱線。", "ok_again": "再送出一筆"
   },
-  "news": { "title": "最新消息與指南", "sub": "政策資訊、申辦經驗與真實故事。", "related": "相關文章", "cat_news": "消息", "cat_guide": "指南", "cat_story": "故事" },
+  "news": { "sources": "參考來源", "title": "最新消息與指南", "sub": "政策資訊、申辦經驗與真實故事。", "related": "相關文章", "cat_news": "消息", "cat_guide": "指南", "cat_story": "故事" },
   "about": {
     "title": "關於 TB GROUP", "sub": "越南TB集團股份公司（CTCP Tập đoàn TB Việt Nam）",
     "story_title": "我們是誰",
