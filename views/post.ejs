@@ -1,0 +1,26 @@
+<%- include('partials/head') %>
+<% const title = L(item, 'title'); %>
+<section class="page-head">
+  <div class="container container--narrow">
+    <p class="crumbs"><a href="<%= u('/') %>"><%= t('nav.home') %></a> / <a href="<%= u('/tin-tuc') %>"><%= t('nav.news') %></a></p>
+    <p class="page-head__meta"><span class="tag tag--soft"><%= t('news.cat_' + item.category) %></span> <time datetime="<%= item.published_at %>"><%= fmtDate(item.published_at) %></time></p>
+    <h1><%= title %></h1>
+  </div>
+</section>
+<section class="section section--tight">
+  <div class="container container--narrow">
+    <% if (item.image) { %><img class="detail__img" src="<%= item.image %>" alt="" width="960" height="540"><% } %>
+    <div class="prose prose--lg"><%- richText(L(item, 'body')) %></div>
+    <aside class="inline-cta">
+      <h2><%= t('home.cta_title') %></h2>
+      <a class="btn btn--primary" href="<%= u('/lien-he') %>#dang-ky"><%= t('nav.register') %><svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+    </aside>
+  </div>
+</section>
+<% if (related.length) { %>
+<section class="section section--alt"><div class="container">
+  <header class="sec-head"><div><h2><%= t('news.related') %></h2></div></header>
+  <div class="grid grid--3"><% related.forEach(function (p) { %><%- include('partials/post-card', { p }) %><% }) %></div>
+</div></section>
+<% } %>
+<%- include('partials/foot') %>

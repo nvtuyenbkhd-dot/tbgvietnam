@@ -1,0 +1,9 @@
+<%- include('_head') %>
+<h1>Thông tin công ty</h1>
+<p class="muted">Hiển thị ở đầu trang, chân trang và trang Liên hệ.</p>
+<form class="edit" method="post" action="/admin/settings">
+  <input type="hidden" name="_csrf" value="<%= csrf %>">
+  <% fields.forEach(function (f) { %><label><%= f[1] %><input name="<%= f[0] %>" value="<%= S[f[0]] || '' %>"></label><% }) %>
+  <div class="row"><button class="btn btn--primary" type="submit">Lưu</button></div>
+</form>
+<%- include('_foot') %>

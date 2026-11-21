@@ -1,0 +1,35 @@
+<%- include('_head') %>
+<div class="row"><h1><%= isNew ? 'Thêm mới' : 'Sửa' %>: <%= R.label %></h1><a class="btn btn--sm" href="/admin/c/<%= resKey %>">← Danh sách</a></div>
+<form class="edit" method="post" enctype="multipart/form-data" action="/admin/c/<%= resKey %>/<%= isNew ? 'new' : item.id %>?_csrf=<%= csrf %>">
+  <input type="hidden" name="_csrf" value="<%= csrf %>">
+  <% if (R.hasSlug && !isNew) { %>
+    <label>Đường dẫn (slug)<input name="slug" value="<%= item.slug %>"><small>Để nguyên nếu không cần đổi. Đổi slug sẽ làm đường dẫn cũ không còn hoạt động.</small></label>
+  <% } %>
+  <% R.fields.forEach(function (f) { const val = (c) => (item[c] === undefined || item[c] === null ? '' : item[c]); %>
+    <% if (f.ml) { %>
+      <fieldset class="ml">
+        <legend><%= f.label %><% if (f.req) { %> <span class="req">*</span><% } %></legend>
+        <div class="tabs" role="tablist"><% LANG_TABS.forEach(function (lt, i) { %><button type="button" role="tab" data-tab="<%= f.n %>-<%= lt[0] %>" aria-selected="<%= i === 0 %>"><%= lt[1] %></button><% }) %></div>
+        <% LANG_TABS.forEach(function (lt, i) { %>
+          <div class="ml__pane" data-pane="<%= f.n %>-<%= lt[0] %>"<%- i ? ' hidden' : '' %>>
+            <% if (f.type === 'textarea') { %><textarea name="<%= f.n %>_<%= lt[0] %>" rows="<%= f.tall ? 14 : 5 %>"><%= val(f.n + '_' + lt[0]) %></textarea>
+            <% } else { %><input name="<%= f.n %>_<%= lt[0] %>" value="<%= val(f.n + '_' + lt[0]) %>"<%- f.req && i === 0 ? ' required' : '' %>><% } %>
+            <% if (i) { %><small>Để trống để dùng nội dung tiếng Việt.</small><% } %>
+          </div>
+        <% }) %>
+      </fieldset>
+    <% } else if (f.type === 'check') { %>
+      <label class="check"><input type="checkbox" name="<%= f.n %>" value="1"<%- val(f.n) ? ' checked' : '' %>> <%= f.label %></label>
+    <% } else if (f.type === 'select') { %>
+      <label><%= f.label %><select name="<%= f.n %>"><% f.opts.forEach(function (o) { %><option value="<%= o[0] %>"<%- val(f.n) === o[0] ? ' selected' : '' %>><%= o[1] %></option><% }) %></select></label>
+    <% } else if (f.type === 'image') { %>
+      <label>Ảnh<% if (val(f.n)) { %><img class="thumb" src="<%= val(f.n) %>" alt=""><% } %><input type="file" name="image_file" accept="image/jpeg,image/png,image/webp,image/gif"><small><%= f.label %> · JPG, PNG, WebP, GIF · tối đa 4 MB<% if (val(f.n)) { %> · chọn ảnh mới để thay thế<% } %></small></label>
+    <% } else if (f.type === 'textarea') { %>
+      <label><%= f.label %><textarea name="<%= f.n %>" rows="5"><%= val(f.n) %></textarea></label>
+    <% } else { %>
+      <label><%= f.label %><% if (f.req) { %> <span class="req">*</span><% } %><input name="<%= f.n %>" type="<%= f.type === 'number' ? 'number' : f.type === 'date' ? 'date' : f.type === 'url' ? 'url' : 'text' %>" value="<%= val(f.n) %>"<%- f.req ? ' required' : '' %>><% if (f.help) { %><small><%= f.help %></small><% } %></label>
+    <% } %>
+  <% }) %>
+  <div class="row"><button class="btn btn--primary" type="submit">Lưu</button><a class="btn" href="/admin/c/<%= resKey %>">Huỷ</a></div>
+</form>
+<%- include('_foot') %>

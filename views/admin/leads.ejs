@@ -1,0 +1,31 @@
+<%- include('_head') %>
+<% const qs = new URLSearchParams(Object.fromEntries(Object.entries(f).filter(([k, v]) => v && k !== 'page'))).toString(); %>
+<div class="row"><h1>Khách đăng ký <small>(<%= total %>)</small></h1><a class="btn btn--sm" href="/admin/leads/export.csv?<%= qs %>">Xuất Excel (CSV)</a></div>
+<form class="filters" method="get">
+  <input name="q" value="<%= f.q || '' %>" placeholder="Tìm tên, SĐT, email...">
+  <select name="status"><option value="">Mọi trạng thái</option><% STATUS.forEach(function (s) { %><option value="<%= s[0] %>"<%- f.status === s[0] ? ' selected' : '' %>><%= s[1] %></option><% }) %></select>
+  <select name="program"><option value="">Mọi chương trình</option><% PROG_OPTS.forEach(function (s) { %><option value="<%= s[0] %>"<%- f.program === s[0] ? ' selected' : '' %>><%= s[1] %></option><% }) %></select>
+  <button class="btn" type="submit">Lọc</button>
+</form>
+<% items.forEach(function (l) { %>
+<article class="lead">
+  <header>
+    <div><strong><%= l.name %></strong> · <a href="tel:<%= l.phone %>"><%= l.phone %></a><% if (l.email) { %> · <a href="mailto:<%= l.email %>"><%= l.email %></a><% } %></div>
+    <span class="muted"><%= l.created_at %> UTC · <%= l.lang.toUpperCase() %></span>
+  </header>
+  <p><span class="badge"><%= PROGRAM_LABEL[l.program] || l.program %></span> <% if (l.ref_title) { %>Quan tâm: <strong><%= l.ref_title %></strong><% } %></p>
+  <% if (l.message) { %><p class="lead__msg"><%= l.message %></p><% } %>
+  <form class="lead__edit" method="post" action="/admin/leads/<%= l.id %>">
+    <input type="hidden" name="_csrf" value="<%= csrf %>"><input type="hidden" name="back" value="/admin/leads?<%= qs %>">
+    <select name="status" aria-label="Trạng thái"><% STATUS.forEach(function (s) { %><option value="<%= s[0] %>"<%- l.status === s[0] ? ' selected' : '' %>><%= s[1] %></option><% }) %></select>
+    <input name="note" value="<%= l.note %>" placeholder="Ghi chú nội bộ" aria-label="Ghi chú">
+    <button class="btn btn--sm" type="submit">Lưu</button>
+  </form>
+  <form method="post" action="/admin/leads/<%= l.id %>/delete" data-confirm="Xoá đăng ký này? Không thể hoàn tác.">
+    <input type="hidden" name="_csrf" value="<%= csrf %>"><button class="linkbtn danger" type="submit">Xoá</button>
+  </form>
+</article>
+<% }) %>
+<% if (!items.length) { %><p class="muted">Không có đăng ký phù hợp.</p><% } %>
+<% if (pages > 1) { %><nav class="pager"><% for (let n = 1; n <= pages; n++) { %><a href="?<%= new URLSearchParams(Object.assign(Object.fromEntries(Object.entries(f).filter(([k, v]) => v && k !== 'page')), { page: n })).toString() %>"<%- n === page ? ' aria-current="page"' : '' %>><%= n %></a><% } %></nav><% } %>
+<%- include('_foot') %>

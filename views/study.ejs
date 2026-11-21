@@ -1,0 +1,38 @@
+<%- include('partials/head') %>
+<section class="page-head prog-study">
+  <div class="container">
+    <p class="crumbs"><a href="<%= u('/') %>"><%= t('nav.home') %></a> / <span><%= t('nav.study') %></span></p>
+    <h1><%= t('study.title') %></h1>
+    <p><%= t('study.sub') %></p>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="container">
+    <form class="filters" method="get" action="<%= u('/du-hoc') %>" role="search">
+      <div class="field"><label for="q"><%= t('common.search') %></label><input id="q" name="q" type="search" value="<%= filters.q %>" placeholder="<%= t('common.search_ph') %>"></div>
+      <div class="field"><label for="city"><%= t('study.city') %></label>
+        <select id="city" name="city"><option value=""><%= t('common.all') %></option><% cities.forEach(function (c) { %><option<%- filters.city === c ? ' selected' : '' %>><%= c %></option><% }) %></select></div>
+      <div class="field"><label for="type"><%= t('study.type') %></label>
+        <select id="type" name="type"><option value=""><%= t('common.all') %></option>
+          <% ['university', 'college', 'language'].forEach(function (k) { %><option value="<%= k %>"<%- filters.type === k ? ' selected' : '' %>><%= t('study.type_' + k) %></option><% }) %></select></div>
+      <button class="btn btn--primary" type="submit"><svg class="i" aria-hidden="true"><use href="#i-search"/></svg><%= t('common.search') %></button>
+    </form>
+    <p class="count"><strong><%= total %></strong> <%= t('common.results') %></p>
+
+    <% if (items.length) { %>
+      <div class="grid grid--3"><% items.forEach(function (s) { %><%- include('partials/school-card', { s }) %><% }) %></div>
+      <%- include('partials/pager') %>
+    <% } else { %>
+      <div class="empty"><h2><%= t('study.empty_title') %></h2><p><%= t('common.no_results') %></p></div>
+    <% } %>
+  </div>
+</section>
+
+<section class="cta cta--slim" id="dang-ky">
+  <div class="container cta__in">
+    <div class="cta__copy"><h2><%= t('home.cta_title') %></h2><p><%= t('home.cta_sub') %></p></div>
+    <div class="cta__form"><%- include('partials/lead-form', { id: 'study', program: 'study' }) %></div>
+  </div>
+</section>
+<%- include('partials/foot') %>

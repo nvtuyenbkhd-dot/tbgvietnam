@@ -1,0 +1,175 @@
+<%- include('partials/head') %>
+
+<section class="hero">
+  <div class="container hero__in">
+    <div class="hero__copy">
+      <p class="eyebrow"><%= t('home.hero_eyebrow') %></p>
+      <h1><%= t('home.hero_title') %></h1>
+      <p class="hero__sub"><%= t('home.hero_sub') %></p>
+      <div class="hero__cta">
+        <a class="btn btn--primary btn--lg" href="#dang-ky"><%= t('home.cta_primary') %><svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <a class="btn btn--ghost btn--lg" href="#chuong-trinh"><%= t('home.cta_secondary') %></a>
+      </div>
+      <ul class="hero__trust">
+        <li><svg class="i" aria-hidden="true"><use href="#i-shield"/></svg><%= t('home.why')[0].t %></li>
+        <li><svg class="i" aria-hidden="true"><use href="#i-building"/></svg><%= t('home.why')[1].t %></li>
+        <li><svg class="i" aria-hidden="true"><use href="#i-users"/></svg><%= t('home.why')[3].t %></li>
+      </ul>
+    </div>
+    <div class="hero__art" aria-hidden="true">
+      <svg viewBox="0 0 320 380" class="tw">
+        <defs>
+          <linearGradient id="twg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2d63f0"/><stop offset="1" stop-color="#0e9f7e"/></linearGradient>
+        </defs>
+        <path class="tw__arc" d="M8 300 C 60 230, 120 190, 168 150"/>
+        <path class="tw__land" d="M178 18 C192 24 206 40 212 62 C218 84 220 106 216 130 C212 160 206 190 194 224 C184 250 172 272 160 292 C152 302 144 296 142 282 C138 260 130 232 120 200 C110 168 102 136 104 106 C106 78 116 54 132 38 C146 24 162 16 178 18Z" fill="url(#twg)"/>
+        <g class="tw__pins">
+          <circle cx="190" cy="48" r="5"/><circle cx="152" cy="110" r="5"/><circle cx="130" cy="225" r="5"/><circle cx="134" cy="262" r="5"/>
+          <circle cx="8" cy="300" r="6" class="tw__vn"/>
+        </g>
+        <g class="tw__lbl">
+          <text x="204" y="44">台北</text><text x="166" y="116">台中</text><text x="144" y="230">台南</text><text x="148" y="268">高雄</text><text x="16" y="322">VIỆT NAM</text>
+        </g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="chuong-trinh">
+  <div class="container">
+    <header class="sec-head sec-head--center">
+      <h2><%= t('home.pillars_title') %></h2>
+      <p><%= t('home.pillars_sub') %></p>
+    </header>
+    <div class="pillars">
+      <% [
+        ['study', 'cap', '/du-hoc', counts.schools, 'common.schools_count'],
+        ['labor', 'briefcase', '/xuat-khau-lao-dong', counts.labor, 'common.open_positions'],
+        ['engineer', 'cog', '/ky-su-dai-loan', counts.engineer, 'common.open_positions']
+      ].forEach(function (p) { %>
+        <a class="pillar prog-<%= p[0] %>" href="<%= u(p[2]) %>">
+          <span class="pillar__icon"><svg class="i i--lg" aria-hidden="true"><use href="#i-<%= p[1] %>"/></svg></span>
+          <h3><%= t('nav.' + p[0]) %></h3>
+          <p><%= t('home.' + p[0] + '_desc') %></p>
+          <span class="pillar__foot">
+            <% if (p[3] > 0) { %><span class="pillar__count"><strong><%= p[3] %></strong> <%= t(p[4]) %></span><% } else { %><span></span><% } %>
+            <span class="pillar__go"><%= t('home.explore') %><svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></span>
+          </span>
+        </a>
+      <% }) %>
+    </div>
+  </div>
+</section>
+
+<% if (S.show_stats === '1') { %>
+<section class="stats" aria-label="TB GROUP">
+  <div class="container stats__in">
+    <% t('home.stats').forEach(function (s) { %>
+      <div class="stat"><strong><%= S['stat_' + s.k] %></strong><span><%= s.label %></span></div>
+    <% }) %>
+  </div>
+</section>
+<% } %>
+
+<% if (featuredEng.length) { %>
+<section class="section section--alt">
+  <div class="container">
+    <header class="sec-head">
+      <div><h2><%= t('home.featured_engineer') %></h2><p><%= t('engineer.sub') %></p></div>
+      <a class="link" href="<%= u('/ky-su-dai-loan') %>"><%= t('common.view_all') %><svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+    </header>
+    <div class="grid grid--3"><% featuredEng.forEach(function (j) { %><%- include('partials/job-card', { j }) %><% }) %></div>
+  </div>
+</section>
+<% } %>
+
+<% if (featuredSchools.length) { %>
+<section class="section">
+  <div class="container">
+    <header class="sec-head">
+      <div><h2><%= t('home.featured_schools') %></h2><p><%= t('study.sub') %></p></div>
+      <a class="link" href="<%= u('/du-hoc') %>"><%= t('common.view_all') %><svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+    </header>
+    <div class="grid grid--4"><% featuredSchools.forEach(function (s) { %><%- include('partials/school-card', { s }) %><% }) %></div>
+  </div>
+</section>
+<% } %>
+
+<% if (featuredLabor.length) { %>
+<section class="section section--alt">
+  <div class="container">
+    <header class="sec-head">
+      <div><h2><%= t('home.featured_jobs') %></h2><p><%= t('labor.sub') %></p></div>
+      <a class="link" href="<%= u('/xuat-khau-lao-dong') %>"><%= t('common.view_all') %><svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+    </header>
+    <div class="grid grid--3"><% featuredLabor.forEach(function (j) { %><%- include('partials/job-card', { j }) %><% }) %></div>
+  </div>
+</section>
+<% } %>
+
+<section class="section">
+  <div class="container">
+    <header class="sec-head sec-head--center"><h2><%= t('home.why_title') %></h2><p><%= t('home.why_sub') %></p></header>
+    <div class="why">
+      <% const whyIcons = ['coin', 'building', 'check', 'home']; t('home.why').forEach(function (w, i) { %>
+        <div class="why__item">
+          <span class="why__icon"><svg class="i i--lg" aria-hidden="true"><use href="#i-<%= whyIcons[i] %>"/></svg></span>
+          <h3><%= w.t %></h3><p><%= w.d %></p>
+        </div>
+      <% }) %>
+    </div>
+  </div>
+</section>
+
+<section class="section section--navy">
+  <div class="container">
+    <header class="sec-head sec-head--center"><h2><%= t('home.process_title') %></h2><p><%= t('home.process_sub') %></p></header>
+    <ol class="steps">
+      <% t('home.steps').forEach(function (s, i) { %>
+        <li><span class="steps__n"><%= i + 1 %></span><h3><%= s.t %></h3><p><%= s.d %></p></li>
+      <% }) %>
+    </ol>
+  </div>
+</section>
+
+<% if (stories.length) { %>
+<section class="section">
+  <div class="container">
+    <header class="sec-head sec-head--center"><h2><%= t('home.stories_title') %></h2><p><%= t('home.stories_sub') %></p></header>
+    <div class="grid grid--3">
+      <% stories.forEach(function (s) { %>
+        <figure class="story prog-<%= s.program %>">
+          <% if (s.image) { %><img src="<%= s.image %>" alt="" loading="lazy" width="96" height="96"><% } %>
+          <blockquote><p><%= L(s, 'quote') %></p></blockquote>
+          <figcaption><strong><%= s.name %></strong><% if (s.detail) { %><span><%= s.detail %></span><% } %></figcaption>
+        </figure>
+      <% }) %>
+    </div>
+  </div>
+</section>
+<% } %>
+
+<% if (posts.length) { %>
+<section class="section section--alt">
+  <div class="container">
+    <header class="sec-head">
+      <div><h2><%= t('home.news_title') %></h2></div>
+      <a class="link" href="<%= u('/tin-tuc') %>"><%= t('common.view_all') %><svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+    </header>
+    <div class="grid grid--3"><% posts.forEach(function (p) { %><%- include('partials/post-card', { p }) %><% }) %></div>
+  </div>
+</section>
+<% } %>
+
+<section class="cta" id="dang-ky">
+  <div class="container cta__in">
+    <div class="cta__copy">
+      <h2><%= t('home.cta_title') %></h2>
+      <p><%= t('home.cta_sub') %></p>
+      <% if (S.hotline) { %><a class="cta__tel" href="tel:<%= (S.hotline_tel || '').replace(/\D/g, '') %>"><svg class="i i--lg" aria-hidden="true"><use href="#i-phone"/></svg><%= S.hotline %></a><% } %>
+    </div>
+    <div class="cta__form"><%- include('partials/lead-form', { id: 'home', program: 'other', onDark: false }) %></div>
+  </div>
+</section>
+
+<%- include('partials/foot') %>

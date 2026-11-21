@@ -1,0 +1,23 @@
+<%- include('_head') %>
+<h1>Tổng quan</h1>
+<div class="cards">
+  <a class="stat" href="/admin/leads?status=new"><strong><%= byStatus.new || 0 %></strong><span>Đăng ký mới chờ xử lý</span></a>
+  <a class="stat" href="/admin/leads"><strong><%= week %></strong><span>Đăng ký trong 7 ngày</span></a>
+  <% Object.entries(RES).forEach(function (e) { %><a class="stat" href="/admin/c/<%= e[0] %>"><strong><%= counts[e[0]] %></strong><span><%= e[1].label %></span></a><% }) %>
+</div>
+<div class="row">
+  <h2>Đăng ký mới nhất</h2><a class="btn btn--sm" href="/admin/leads">Xem tất cả</a>
+</div>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>Thời gian</th><th>Họ tên</th><th>Điện thoại</th><th>Chương trình</th><th>Trạng thái</th></tr></thead>
+  <tbody>
+    <% latest.forEach(function (l) { %>
+      <tr><td><%= l.created_at %></td><td><%= l.name %></td><td><a href="tel:<%= l.phone %>"><%= l.phone %></a></td><td><%= PROGRAM_LABEL[l.program] || l.program %></td><td><span class="badge badge--<%= l.status %>"><%= ({ new: 'Mới', contacted: 'Đã liên hệ', done: 'Hoàn tất', spam: 'Rác' })[l.status] %></span></td></tr>
+    <% }) %>
+    <% if (!latest.length) { %><tr><td colspan="5" class="muted">Chưa có đăng ký nào.</td></tr><% } %>
+  </tbody>
+</table>
+</div>
+<p class="muted">Thời gian hiển thị theo giờ UTC (giờ Việt Nam = UTC + 7).</p>
+<%- include('_foot') %>

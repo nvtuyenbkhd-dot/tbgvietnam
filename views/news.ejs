@@ -1,0 +1,21 @@
+<%- include('partials/head') %>
+<section class="page-head">
+  <div class="container">
+    <p class="crumbs"><a href="<%= u('/') %>"><%= t('nav.home') %></a> / <span><%= t('nav.news') %></span></p>
+    <h1><%= t('news.title') %></h1>
+    <p><%= t('news.sub') %></p>
+  </div>
+</section>
+<section class="section section--tight">
+  <div class="container">
+    <nav class="tabs" aria-label="<%= t('news.title') %>">
+      <a href="<%= u('/tin-tuc') %>"<%- !cat ? ' aria-current="page"' : '' %>><%= t('common.all') %></a>
+      <% ['news', 'guide', 'story'].forEach(function (c) { %><a href="<%= u('/tin-tuc') %>?cat=<%= c %>"<%- cat === c ? ' aria-current="page"' : '' %>><%= t('news.cat_' + c) %></a><% }) %>
+    </nav>
+    <% if (items.length) { %>
+      <div class="grid grid--3"><% items.forEach(function (p) { %><%- include('partials/post-card', { p }) %><% }) %></div>
+      <%- include('partials/pager') %>
+    <% } else { %><div class="empty"><p><%= t('common.no_results') %></p></div><% } %>
+  </div>
+</section>
+<%- include('partials/foot') %>

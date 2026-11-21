@@ -1,0 +1,27 @@
+<%- include('partials/head') %>
+<% const tel = (S.hotline_tel || '').replace(/\D/g, ''); const zalo = (S.zalo || '').replace(/\D/g, ''); %>
+<section class="page-head">
+  <div class="container">
+    <p class="crumbs"><a href="<%= u('/') %>"><%= t('nav.home') %></a> / <span><%= t('nav.contact') %></span></p>
+    <h1><%= t('contact.title') %></h1>
+    <p><%= t('contact.sub') %></p>
+  </div>
+</section>
+<section class="section section--tight">
+  <div class="container detail">
+    <div class="detail__main">
+      <ul class="contact-list">
+        <% if (S.hotline) { %><li><svg class="i i--lg" aria-hidden="true"><use href="#i-phone"/></svg><div><h2><%= t('contact.hotline') %></h2><p><a href="tel:<%= tel %>"><%= S.hotline %></a><% if (zalo) { %> · <a href="https://zalo.me/<%= zalo %>" target="_blank" rel="noopener">Zalo</a><% } %></p></div></li><% } %>
+        <% if (S.email) { %><li><svg class="i i--lg" aria-hidden="true"><use href="#i-mail"/></svg><div><h2><%= t('contact.email') %></h2><p><a href="mailto:<%= S.email %>"><%= S.email %></a></p></div></li><% } %>
+        <% [['hq', 'addr_hq'], ['hcm', 'addr_hcm'], ['taiwan', 'addr_tw'], ['japan', 'addr_jp']].forEach(function (o) { if (S[o[1]]) { %>
+          <li><svg class="i i--lg" aria-hidden="true"><use href="#i-pin"/></svg><div><h2><%= t('footer.' + o[0]) %></h2><p><%= S[o[1]] %></p></div></li>
+        <% } }) %>
+        <li><svg class="i i--lg" aria-hidden="true"><use href="#i-clock"/></svg><div><h2><%= t('contact.hours').split(':')[0] %></h2><p><%= t('contact.hours').split(':').slice(1).join(':').trim() %></p></div></li>
+      </ul>
+    </div>
+    <aside class="detail__side" id="dang-ky">
+      <div class="panel"><h2><%= t('form.title') %></h2><%- include('partials/lead-form', { id: 'contact', program: 'other' }) %></div>
+    </aside>
+  </div>
+</section>
+<%- include('partials/foot') %>

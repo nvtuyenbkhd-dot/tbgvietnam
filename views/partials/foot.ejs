@@ -1,0 +1,54 @@
+</main>
+<%
+  const tel = (S.hotline_tel || '').replace(/\D/g, '');
+  const zalo = (S.zalo || '').replace(/\D/g, '');
+%>
+<footer class="footer">
+  <div class="container footer__grid">
+    <div class="footer__about">
+      <a class="brand brand--light" href="<%= u('/') %>">
+        <img src="/img/logo.svg" width="40" height="40" alt="">
+        <span class="brand__txt"><strong>TB GROUP</strong><small><%= t('meta.company') %></small></span>
+      </a>
+      <p><%= t('footer.about') %></p>
+      <% if (S.hotline) { %><p class="footer__hot"><svg class="i" aria-hidden="true"><use href="#i-phone"/></svg><a href="tel:<%= tel %>"><%= S.hotline %></a></p><% } %>
+      <% if (S.email) { %><p class="footer__hot"><svg class="i" aria-hidden="true"><use href="#i-mail"/></svg><a href="mailto:<%= S.email %>"><%= S.email %></a></p><% } %>
+    </div>
+    <div>
+      <h2 class="footer__h"><%= t('footer.programs') %></h2>
+      <ul class="footer__list">
+        <li><a href="<%= u('/du-hoc') %>"><%= t('nav.study') %></a></li>
+        <li><a href="<%= u('/xuat-khau-lao-dong') %>"><%= t('nav.labor') %></a></li>
+        <li><a href="<%= u('/ky-su-dai-loan') %>"><%= t('nav.engineer') %></a></li>
+      </ul>
+      <h2 class="footer__h footer__h--gap"><%= t('footer.company') %></h2>
+      <ul class="footer__list">
+        <li><a href="<%= u('/ve-chung-toi') %>"><%= t('nav.about') %></a></li>
+        <li><a href="<%= u('/tin-tuc') %>"><%= t('nav.news') %></a></li>
+        <li><a href="<%= u('/lien-he') %>"><%= t('nav.contact') %></a></li>
+      </ul>
+    </div>
+    <div class="footer__offices">
+      <h2 class="footer__h"><%= t('footer.offices') %></h2>
+      <ul class="footer__list">
+        <% [['hq', 'addr_hq'], ['hcm', 'addr_hcm'], ['taiwan', 'addr_tw'], ['japan', 'addr_jp']].forEach(function (o) { if (S[o[1]]) { %>
+          <li><strong><%= t('footer.' + o[0]) %></strong><br><span><%= S[o[1]] %></span></li>
+        <% } }) %>
+      </ul>
+    </div>
+  </div>
+  <div class="footer__bar">
+    <div class="container">
+      <span>&copy; <%= new Date().getFullYear() %> <%= t('meta.company') %> (TB GROUP). <%= t('footer.rights') %></span>
+    </div>
+  </div>
+</footer>
+
+<div class="dock" role="group" aria-label="<%= t('nav.contact') %>">
+  <% if (tel) { %><a class="dock__a dock__call" href="tel:<%= tel %>"><svg class="i" aria-hidden="true"><use href="#i-phone"/></svg><span><%= t('common.call_now') %></span></a><% } %>
+  <% if (zalo) { %><a class="dock__a dock__zalo" href="https://zalo.me/<%= zalo %>" target="_blank" rel="noopener"><svg class="i" aria-hidden="true"><use href="#i-chat"/></svg><span>Zalo</span></a><% } %>
+  <a class="dock__a dock__reg" href="<%= u('/lien-he') %>#dang-ky"><svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg><span><%= t('nav.register') %></span></a>
+</div>
+<script src="/js/site.js?v=1" defer></script>
+</body>
+</html>

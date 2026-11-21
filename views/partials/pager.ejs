@@ -1,0 +1,7 @@
+<% if (pages > 1) {
+  const qs = Object.assign({}, query); delete qs.page;
+  const link = (n) => '?' + new URLSearchParams(Object.assign({}, qs, { page: n })).toString(); %>
+<nav class="pager" aria-label="Pagination">
+  <% for (let n = 1; n <= pages; n++) { %><a href="<%= link(n) %>"<%- n === pg ? ' aria-current="page"' : '' %>><%= n %></a><% } %>
+</nav>
+<% } %>

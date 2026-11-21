@@ -1,0 +1,41 @@
+<%- include('partials/head') %>
+<% const name = L(item, 'name'); %>
+<section class="page-head prog-study">
+  <div class="container">
+    <p class="crumbs"><a href="<%= u('/') %>"><%= t('nav.home') %></a> / <a href="<%= u('/du-hoc') %>"><%= t('nav.study') %></a> / <span><%= name %></span></p>
+    <h1><%= name %></h1>
+    <p class="page-head__meta"><svg class="i" aria-hidden="true"><use href="#i-pin"/></svg><%= item.city %> · <%= t('study.type_' + item.type) %></p>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="container detail">
+    <article class="detail__main">
+      <% if (item.image) { %><img class="detail__img" src="<%= item.image %>" alt="<%= name %>" width="960" height="540"><% } %>
+      <dl class="spec">
+        <% [['tuition', item.tuition], ['intake', item.intake], ['apply_by', item.deadline]].forEach(function (r) { if (r[1]) { %>
+          <div><dt><%= r[0] === 'apply_by' ? t('common.apply_by') : t('study.' + r[0]) %></dt><dd><%= r[1] %></dd></div>
+        <% } }) %>
+      </dl>
+      <% if (L(item, 'summary')) { %><h2><%= t('study.about') %></h2><div class="prose"><%- richText(L(item, 'summary')) %></div><% } %>
+      <% if (L(item, 'majors')) { %><h2><%= t('study.majors') %></h2><ul class="chips chips--lg"><% splitList(L(item, 'majors')).forEach(function (m) { %><li><%= m %></li><% }) %></ul><% } %>
+      <% if (L(item, 'requirements')) { %><h2><%= t('study.requirements') %></h2><div class="prose"><%- richText(L(item, 'requirements')) %></div><% } %>
+      <% if (L(item, 'scholarship')) { %><h2><%= t('study.scholarship') %></h2><div class="prose"><%- richText(L(item, 'scholarship')) %></div><% } %>
+      <% if (item.website) { %><p><a class="link" href="<%= item.website %>" target="_blank" rel="noopener nofollow"><%= t('study.website') %><svg class="i" aria-hidden="true"><use href="#i-ext"/></svg></a></p><% } %>
+    </article>
+    <aside class="detail__side" id="dang-ky">
+      <div class="panel">
+        <h2><%= t('common.apply_school') %></h2>
+        <%- include('partials/lead-form', { id: 'school', program: 'study', refTitle: name }) %>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<% if (others.length) { %>
+<section class="section section--alt"><div class="container">
+  <header class="sec-head"><div><h2><%= t('home.featured_schools') %></h2></div><a class="link" href="<%= u('/du-hoc') %>"><%= t('common.view_all') %><svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a></header>
+  <div class="grid grid--3"><% others.forEach(function (s) { %><%- include('partials/school-card', { s }) %><% }) %></div>
+</div></section>
+<% } %>
+<%- include('partials/foot') %>

@@ -1,0 +1,52 @@
+<%
+  const fid = typeof id !== 'undefined' ? id : 'lead';
+  const prefProg = typeof program !== 'undefined' ? program : 'other';
+  const ref = typeof refTitle !== 'undefined' ? refTitle : '';
+  const dark = typeof onDark !== 'undefined' && onDark;
+%>
+<form class="form<%= dark ? ' form--dark' : '' %>" method="post" action="/<%= lang %>/dang-ky" data-lead-form novalidate
+      data-sending="<%= t('form.sending') %>" data-submit="<%= t('form.submit') %>" data-err="<%= t('form.err_generic') %>">
+  <input type="hidden" name="ref_title" value="<%= ref %>">
+  <input type="hidden" name="source" value="" data-source>
+  <div class="hp" aria-hidden="true"><label>Website <input type="text" name="company_site" tabindex="-1" autocomplete="off"></label></div>
+
+  <div class="field">
+    <label for="<%= fid %>-name"><%= t('form.name') %> <span class="req" aria-hidden="true">*</span></label>
+    <input id="<%= fid %>-name" name="name" type="text" autocomplete="name" required maxlength="100" aria-describedby="<%= fid %>-name-e">
+    <p class="err" id="<%= fid %>-name-e" data-err-for="name"></p>
+  </div>
+  <div class="field">
+    <label for="<%= fid %>-phone"><%= t('form.phone') %> <span class="req" aria-hidden="true">*</span></label>
+    <input id="<%= fid %>-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required maxlength="30" aria-describedby="<%= fid %>-phone-e">
+    <p class="err" id="<%= fid %>-phone-e" data-err-for="phone"></p>
+  </div>
+  <div class="field">
+    <label for="<%= fid %>-prog"><%= t('form.program') %></label>
+    <select id="<%= fid %>-prog" name="program">
+      <% [['study', 'opt_study'], ['labor', 'opt_labor'], ['engineer', 'opt_engineer'], ['other', 'opt_other']].forEach(function (o) { %>
+        <option value="<%= o[0] %>"<%- prefProg === o[0] ? ' selected' : '' %>><%= t('form.' + o[1]) %></option>
+      <% }) %>
+    </select>
+  </div>
+  <div class="field">
+    <label for="<%= fid %>-email"><%= t('form.email') %></label>
+    <input id="<%= fid %>-email" name="email" type="email" autocomplete="email" maxlength="120" aria-describedby="<%= fid %>-email-e">
+    <p class="err" id="<%= fid %>-email-e" data-err-for="email"></p>
+  </div>
+  <div class="field field--wide">
+    <label for="<%= fid %>-msg"><%= t('form.message') %></label>
+    <textarea id="<%= fid %>-msg" name="message" rows="3" maxlength="1500" placeholder="<%= t('form.message_ph') %>"></textarea>
+  </div>
+  <% if (ref) { %><p class="form__ref field--wide"><%= t('form.interested_in') %>: <strong><%= ref %></strong></p><% } %>
+  <div class="field--wide">
+    <button class="btn btn--primary btn--block" type="submit"><%= t('form.submit') %></button>
+    <p class="form__status" role="status" aria-live="polite" data-status></p>
+    <p class="form__consent"><%= t('form.consent') %></p>
+  </div>
+  <div class="form__ok" data-ok hidden tabindex="-1">
+    <svg class="i i--xl" aria-hidden="true"><use href="#i-check"/></svg>
+    <h3><%= t('form.ok_title') %></h3>
+    <p><%= t('form.ok_text') %></p>
+    <button class="btn btn--outline btn--sm" type="button" data-again><%= t('form.ok_again') %></button>
+  </div>
+</form>

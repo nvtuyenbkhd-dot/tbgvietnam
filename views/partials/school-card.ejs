@@ -1,0 +1,18 @@
+<%
+  const majors = splitList(L(s, 'majors')).slice(0, 3);
+%>
+<article class="card card--school prog-study">
+  <a class="card__media" href="<%= u('/du-hoc/' + s.slug) %>" tabindex="-1" aria-hidden="true">
+    <% if (s.image) { %><img src="<%= s.image %>" alt="" loading="lazy" width="640" height="360"><% } else { %><span class="card__ph"><svg class="i i--xl"><use href="#i-cap"/></svg></span><% } %>
+  </a>
+  <div class="card__body">
+    <p class="card__meta"><svg class="i" aria-hidden="true"><use href="#i-pin"/></svg><%= s.city %><% if (s.featured) { %><span class="tag"><%= t('common.featured') %></span><% } %></p>
+    <h3 class="card__title"><a href="<%= u('/du-hoc/' + s.slug) %>"><%= L(s, 'name') %></a></h3>
+    <% if (majors.length) { %><ul class="chips"><% majors.forEach(function (m) { %><li><%= m %></li><% }) %></ul><% } %>
+    <dl class="facts">
+      <% if (s.tuition) { %><div><dt><%= t('study.tuition') %></dt><dd><%= s.tuition %></dd></div><% } %>
+      <% if (s.intake) { %><div><dt><%= t('study.intake') %></dt><dd><%= s.intake %></dd></div><% } %>
+    </dl>
+    <a class="link" href="<%= u('/du-hoc/' + s.slug) %>"><%= t('common.read_more') %><svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+  </div>
+</article>

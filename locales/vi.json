@@ -1,0 +1,122 @@
+{
+  "lang_name": "Tiếng Việt",
+  "meta": {
+    "site": "TB GROUP",
+    "company": "CTCP Tập đoàn TB Việt Nam",
+    "tagline": "Du học · Xuất khẩu lao động · Kỹ sư Đài Loan",
+    "description": "CTCP Tập đoàn TB Việt Nam (TB GROUP) - đồng hành cùng bạn trong du học Đài Loan, xuất khẩu lao động và chương trình kỹ sư Đài Loan thu nhập cao, minh bạch, an toàn."
+  },
+  "nav": { "home": "Trang chủ", "study": "Du học", "labor": "Xuất khẩu lao động", "engineer": "Kỹ sư Đài Loan", "news": "Tin tức", "about": "Về chúng tôi", "contact": "Liên hệ", "register": "Đăng ký tư vấn", "menu": "Mở menu", "skip": "Bỏ qua điều hướng" },
+  "common": {
+    "read_more": "Xem chi tiết", "view_all": "Xem tất cả", "apply": "Đăng ký ứng tuyển", "apply_school": "Đăng ký tư vấn trường này",
+    "call_now": "Gọi ngay", "search": "Tìm kiếm", "search_ph": "Nhập từ khoá...", "filter": "Bộ lọc", "all": "Tất cả",
+    "no_results": "Chưa có kết quả phù hợp. Hãy thử bỏ bớt bộ lọc hoặc để lại thông tin, chúng tôi sẽ tư vấn riêng cho bạn.",
+    "back": "Quay lại", "featured": "Nổi bật", "updated": "Cập nhật", "free": "Miễn phí", "contact_us": "Liên hệ", "sample_note": "",
+    "results": "kết quả", "apply_by": "Hạn nộp hồ sơ", "share": "Chia sẻ", "page_not_found": "Không tìm thấy trang", "go_home": "Về trang chủ",
+    "server_error": "Đã có lỗi xảy ra. Vui lòng thử lại sau.", "open_positions": "đơn hàng đang tuyển", "schools_count": "trường đối tác"
+  },
+  "home": {
+    "hero_eyebrow": "Đồng hành cùng bạn đến Đài Loan",
+    "hero_title": "Ba con đường. Một đích đến: tương lai vững vàng của bạn.",
+    "hero_sub": "TB GROUP tư vấn du học, xuất khẩu lao động và chương trình kỹ sư Đài Loan: chi phí rõ ràng, hồ sơ minh bạch, đồng hành từ ngày đầu đến khi bạn ổn định cuộc sống.",
+    "cta_primary": "Đăng ký tư vấn miễn phí", "cta_secondary": "Khám phá chương trình",
+    "pillars_title": "Chọn lĩnh vực phù hợp với bạn", "pillars_sub": "Mỗi chương trình có điều kiện, chi phí và lộ trình riêng. Chúng tôi giúp bạn chọn đúng ngay từ đầu.",
+    "study_desc": "Tuyển sinh các trường đại học, cao đẳng và học viện tại Đài Loan: học bổng, ngành học, chi phí và lộ trình ngôn ngữ.",
+    "labor_desc": "Đơn hàng tuyển dụng lao động phổ thông, rõ ngành nghề, mức lương và quyền lợi, đúng quy định của pháp luật.",
+    "engineer_desc": "Dành cho người có bằng trung cấp trở lên: thu nhập 4-7 vạn Đài tệ/tháng, cơ hội định cư và bảo lãnh người thân.",
+    "explore": "Tìm hiểu",
+    "stats": [
+      { "k": "years", "label": "Năm kinh nghiệm" },
+      { "k": "students", "label": "Học viên đã xuất cảnh" },
+      { "k": "partners", "label": "Đối tác Đài Loan" },
+      { "k": "offices", "label": "Văn phòng tại 4 địa điểm" }
+    ],
+    "why_title": "Vì sao chọn TB GROUP", "why_sub": "Chúng tôi làm việc theo bốn nguyên tắc, áp dụng cho mọi hồ sơ.",
+    "why": [
+      { "t": "Chi phí minh bạch", "d": "Báo giá bằng văn bản trước khi ký hợp đồng. Không phát sinh khoản thu ngoài thoả thuận." },
+      { "t": "Có văn phòng tại nơi đến", "d": "Đội ngũ tại Đài Loan (Đài Trung) và Nhật Bản hỗ trợ trực tiếp khi bạn đã sang." },
+      { "t": "Tư vấn đúng diện", "d": "Đánh giá bằng cấp và kinh nghiệm để chọn chương trình phù hợp, thay vì chỉ chọn chương trình dễ bán." },
+      { "t": "Đồng hành sau xuất cảnh", "d": "Hỗ trợ ổn định nơi ở, công việc và giải quyết vấn đề phát sinh trong suốt thời gian làm việc, học tập." }
+    ],
+    "process_title": "Quy trình 4 bước", "process_sub": "Từ buổi tư vấn đầu tiên đến ngày bạn lên máy bay.",
+    "steps": [
+      { "t": "Tư vấn & đánh giá", "d": "Trao đổi nhu cầu, kiểm tra điều kiện bằng cấp, sức khoẻ, tài chính." },
+      { "t": "Chuẩn bị hồ sơ", "d": "Hoàn thiện giấy tờ, dịch thuật, công chứng, đào tạo ngôn ngữ." },
+      { "t": "Phỏng vấn & duyệt", "d": "Kết nối nhà trường hoặc doanh nghiệp Đài Loan, theo dõi tiến độ duyệt." },
+      { "t": "Xuất cảnh & hỗ trợ", "d": "Làm thủ tục bay, đón tiếp và đồng hành sau khi đến Đài Loan." }
+    ],
+    "featured_schools": "Trường đang tuyển sinh", "featured_jobs": "Đơn hàng nổi bật", "featured_engineer": "Vị trí kỹ sư mới",
+    "stories_title": "Chia sẻ từ học viên", "stories_sub": "Những người đã đi trước kể lại trải nghiệm thực tế.",
+    "news_title": "Tin tức & cẩm nang", "cta_title": "Sẵn sàng bắt đầu? Để lại thông tin, chúng tôi gọi lại trong ngày.",
+    "cta_sub": "Tư vấn miễn phí, không ràng buộc. Thông tin của bạn chỉ dùng để liên hệ tư vấn."
+  },
+  "study": {
+    "title": "Du học Đài Loan", "sub": "Danh sách trường đang tuyển sinh. Thông tin được cập nhật thường xuyên bởi đội ngũ tư vấn.",
+    "city": "Thành phố", "type": "Loại hình", "type_university": "Đại học", "type_college": "Cao đẳng / Học viện", "type_language": "Trung tâm ngôn ngữ",
+    "majors": "Ngành đào tạo", "tuition": "Học phí", "intake": "Kỳ nhập học", "scholarship": "Học bổng", "requirements": "Điều kiện nhập học", "website": "Website trường", "about": "Giới thiệu",
+    "empty_title": "Danh sách trường đang được cập nhật"
+  },
+  "labor": {
+    "title": "Xuất khẩu lao động Đài Loan", "sub": "Đơn hàng tuyển dụng đang mở: ngành nghề, địa điểm, mức lương và quyền lợi được công khai ngay từ đầu.",
+    "intro": "Chương trình lao động phổ thông phù hợp với người muốn đi làm sớm. Thời gian xuất cảnh thường nhanh hơn, mức thu nhập thấp hơn diện kỹ sư."
+  },
+  "engineer": {
+    "title": "Kỹ sư Đài Loan", "sub": "Chương trình dành cho người có bằng trung cấp trở lên: thu nhập cao, định cư lâu dài, bảo lãnh người thân.",
+    "benefits_title": "Quyền lợi kỹ sư Đài Loan",
+    "benefits": [
+      { "t": "Thu nhập cao", "d": "Lương cơ bản 4,8 vạn Đài tệ/tháng. Thu nhập thực lĩnh cả tăng ca 4-7 vạn/tháng." },
+      { "t": "Quyền lợi định cư", "d": "Được làm việc và định cư lâu dài tại Đài Loan, không bị hạn chế như xuất khẩu lao động phổ thông." },
+      { "t": "Bảo lãnh người thân", "d": "Có thể bảo lãnh vợ/chồng, con sang ở cùng; vợ/chồng đi làm, con đi học như người bản địa." }
+    ],
+    "compare_title": "So sánh kỹ sư và lao động phổ thông Đài Loan",
+    "compare_cols": ["Tiêu chí", "Kỹ sư Đài Loan", "Lao động phổ thông"],
+    "compare_rows": [
+      ["Chi phí", "Thấp", "Cao"],
+      ["Lương cơ bản", "48.000 Đài tệ/tháng", "29.500 Đài tệ/tháng"],
+      ["Thu nhập thực lĩnh TB", "4-7 vạn Đài tệ/tháng", "2-4 vạn Đài tệ/tháng"],
+      ["Thời gian xuất cảnh", "3-6 tháng", "1-2 tháng"]
+    ],
+    "compare_note": "Số liệu tham khảo, có thể thay đổi theo thời điểm và đơn hàng cụ thể. Liên hệ để được tư vấn chính xác.",
+    "who_title": "Chương trình phù hợp với ai?",
+    "who": [
+      "Đã tốt nghiệp đại học từ 2 năm, hoặc tốt nghiệp cao đẳng/trung cấp từ 5 năm trở lên (không tính thời gian làm việc tại Đài Loan đối với lao động đã từng đi Đài Loan).",
+      "Có đóng bảo hiểm xã hội tại Việt Nam."
+    ],
+    "who_note": "Nhiều người có bằng cấp chưa biết Đài Loan có diện kỹ sư và vẫn được tư vấn đi lao động phổ thông với thu nhập thấp hơn, chi phí cao hơn. Hãy kiểm tra điều kiện của bạn.",
+    "check_cta": "Kiểm tra điều kiện của tôi"
+  },
+  "job": {
+    "salary": "Mức lương", "location": "Địa điểm", "headcount": "Số lượng", "gender": "Giới tính", "age": "Độ tuổi", "industry": "Ngành nghề",
+    "deadline": "Hạn nộp", "description": "Mô tả công việc", "requirements": "Yêu cầu", "benefits": "Quyền lợi", "negotiable": "Thoả thuận",
+    "filter_industry": "Ngành nghề", "filter_location": "Địa điểm", "sort_new": "Mới nhất"
+  },
+  "form": {
+    "title": "Đăng ký tư vấn", "name": "Họ và tên", "phone": "Số điện thoại / Zalo", "email": "Email (không bắt buộc)", "program": "Bạn quan tâm", "message": "Lời nhắn (không bắt buộc)",
+    "message_ph": "Ví dụ: trình độ học vấn, thời điểm muốn đi, câu hỏi của bạn...", "submit": "Gửi đăng ký", "sending": "Đang gửi...",
+    "consent": "Bằng việc gửi, bạn đồng ý để TB GROUP liên hệ tư vấn qua điện thoại/Zalo/email. Thông tin được bảo mật.",
+    "interested_in": "Bạn đang quan tâm", "opt_study": "Du học Đài Loan", "opt_labor": "Xuất khẩu lao động", "opt_engineer": "Kỹ sư Đài Loan", "opt_other": "Chưa rõ, cần tư vấn",
+    "err_name": "Vui lòng nhập họ tên.", "err_phone": "Số điện thoại chưa hợp lệ.", "err_email": "Email chưa hợp lệ.", "err_generic": "Không gửi được. Vui lòng thử lại hoặc gọi hotline.",
+    "err_rate": "Bạn gửi quá nhanh. Vui lòng thử lại sau ít phút.",
+    "ok_title": "Đã nhận thông tin của bạn", "ok_text": "Cảm ơn bạn. Tư vấn viên TB GROUP sẽ liên hệ lại trong thời gian sớm nhất. Cần gấp, hãy gọi hotline.", "ok_again": "Gửi thêm một đăng ký"
+  },
+  "news": { "title": "Tin tức & cẩm nang", "sub": "Thông tin chính sách, kinh nghiệm hồ sơ và câu chuyện thực tế.", "related": "Bài viết liên quan", "cat_news": "Tin tức", "cat_guide": "Cẩm nang", "cat_story": "Câu chuyện" },
+  "about": {
+    "title": "Về TB GROUP", "sub": "CTCP Tập đoàn TB Việt Nam (越南TB集團股份公司)",
+    "story_title": "Chúng tôi là ai",
+    "story": ["TB GROUP là doanh nghiệp hoạt động trong lĩnh vực tư vấn du học, xuất khẩu lao động và chương trình kỹ sư Đài Loan, với văn phòng tại Hà Nội, TP. Hồ Chí Minh, Đài Trung (Đài Loan) và Tokyo (Nhật Bản).", "Chúng tôi tin rằng một quyết định đi nước ngoài thay đổi cả cuộc đời và gia đình. Vì vậy, mỗi hồ sơ được tư vấn thẳng thắn về điều kiện, chi phí và rủi ro trước khi bạn quyết định."],
+    "values_title": "Giá trị cốt lõi",
+    "values": [
+      { "t": "Trung thực", "d": "Nói rõ điều kiện, chi phí, thời gian. Không hứa điều không làm được." },
+      { "t": "Trách nhiệm", "d": "Theo sát hồ sơ đến khi hoàn tất và cả sau khi bạn xuất cảnh." },
+      { "t": "Tôn trọng", "d": "Mỗi người có hoàn cảnh riêng; chúng tôi tư vấn theo hoàn cảnh đó." }
+    ],
+    "offices_title": "Hệ thống văn phòng"
+  },
+  "contact": { "title": "Liên hệ", "sub": "Gọi hotline, nhắn Zalo hoặc để lại thông tin. Chúng tôi phản hồi trong giờ làm việc.", "hours": "Giờ làm việc: Thứ 2 - Thứ 7, 8:00 - 17:30", "hotline": "Hotline / Zalo", "email": "Email", "address": "Địa chỉ" },
+  "footer": {
+    "about": "Tư vấn du học, xuất khẩu lao động và kỹ sư Đài Loan. Minh bạch, trách nhiệm, đồng hành lâu dài.",
+    "programs": "Chương trình", "company": "Công ty", "offices": "Văn phòng", "rights": "Bảo lưu mọi quyền.",
+    "hq": "Trụ sở chính", "hcm": "Văn phòng TP. HCM", "taiwan": "Văn phòng Đài Loan", "japan": "Văn phòng Nhật Bản"
+  },
+  "lang_switch": "Ngôn ngữ"
+}

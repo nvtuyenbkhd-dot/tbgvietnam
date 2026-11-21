@@ -1,0 +1,122 @@
+{
+  "lang_name": "繁體中文",
+  "meta": {
+    "site": "TB GROUP",
+    "company": "越南TB集團股份公司",
+    "tagline": "留學 · 勞務輸出 · 台灣工程師",
+    "description": "越南TB集團股份公司（TB GROUP）提供台灣留學、勞務輸出與台灣工程師專案諮詢，費用透明、流程安全可靠。"
+  },
+  "nav": { "home": "首頁", "study": "留學", "labor": "勞務輸出", "engineer": "台灣工程師", "news": "最新消息", "about": "關於我們", "contact": "聯絡我們", "register": "免費諮詢", "menu": "開啟選單", "skip": "跳至主要內容" },
+  "common": {
+    "read_more": "查看詳情", "view_all": "查看全部", "apply": "立即報名", "apply_school": "諮詢此學校",
+    "call_now": "立即來電", "search": "搜尋", "search_ph": "輸入關鍵字…", "filter": "篩選", "all": "全部",
+    "no_results": "目前沒有符合的結果。請調整篩選條件，或留下資料，我們將為您個別諮詢。",
+    "back": "返回", "featured": "精選", "updated": "更新", "free": "免費", "contact_us": "聯絡我們", "sample_note": "",
+    "results": "筆結果", "apply_by": "報名截止", "share": "分享", "page_not_found": "找不到頁面", "go_home": "回首頁",
+    "server_error": "發生錯誤，請稍後再試。", "open_positions": "個職缺", "schools_count": "所合作學校"
+  },
+  "home": {
+    "hero_eyebrow": "陪伴您前往台灣",
+    "hero_title": "三條道路，一個目標：您穩健的未來。",
+    "hero_sub": "TB GROUP 提供留學、勞務輸出與台灣工程師專案諮詢：費用清楚、文件透明，從第一天陪伴您直到安頓生活。",
+    "cta_primary": "免費諮詢", "cta_secondary": "瀏覽專案",
+    "pillars_title": "選擇適合您的方向", "pillars_sub": "每個專案的條件、費用與時程各不相同，我們協助您一開始就選對。",
+    "study_desc": "台灣大學、專科與學院招生：獎學金、科系、費用與語言進修規劃。",
+    "labor_desc": "一般勞務職缺，行業、薪資與福利清楚公開，符合法規。",
+    "engineer_desc": "適合中專以上學歷：月薪新台幣4至7萬元，可長期居留並申請眷屬同行。",
+    "explore": "了解更多",
+    "stats": [
+      { "k": "years", "label": "年經驗" },
+      { "k": "students", "label": "已出境學員" },
+      { "k": "partners", "label": "台灣合作夥伴" },
+      { "k": "offices", "label": "四地辦事處" }
+    ],
+    "why_title": "為什麼選擇 TB GROUP", "why_sub": "每一件案子都遵守的四項原則。",
+    "why": [
+      { "t": "費用透明", "d": "簽約前提供書面報價，約定以外不另收費用。" },
+      { "t": "目的地設有辦事處", "d": "台灣（台中）與日本團隊在您抵達後提供現場協助。" },
+      { "t": "找對適合的專案", "d": "評估學歷與經驗，推薦真正適合您的專案，而非只推容易成交的。" },
+      { "t": "出境後持續協助", "d": "協助住宿、工作及工作或求學期間發生的各種問題。" }
+    ],
+    "process_title": "四步驟流程", "process_sub": "從第一次諮詢到登機當天。",
+    "steps": [
+      { "t": "諮詢與評估", "d": "了解需求，檢視學歷、健康與財務條件。" },
+      { "t": "準備文件", "d": "完成文件、翻譯、公證與語言訓練。" },
+      { "t": "面試與核准", "d": "媒合台灣學校或企業，追蹤核准進度。" },
+      { "t": "出境與支援", "d": "辦理出境手續、接機並於台灣持續協助。" }
+    ],
+    "featured_schools": "招生中的學校", "featured_jobs": "精選職缺", "featured_engineer": "最新工程師職缺",
+    "stories_title": "學員分享", "stories_sub": "走在前面的人，分享真實經驗。",
+    "news_title": "最新消息與指南", "cta_title": "準備好了嗎？留下資料，我們當天回電。",
+    "cta_sub": "免費諮詢，無任何義務。您的資料僅用於聯絡諮詢。"
+  },
+  "study": {
+    "title": "台灣留學", "sub": "目前招生中的學校列表，由諮詢團隊定期更新。",
+    "city": "城市", "type": "類型", "type_university": "大學", "type_college": "專科／學院", "type_language": "語言中心",
+    "majors": "科系", "tuition": "學費", "intake": "入學時間", "scholarship": "獎學金", "requirements": "入學條件", "website": "學校網站", "about": "學校簡介",
+    "empty_title": "學校名單更新中"
+  },
+  "labor": {
+    "title": "台灣勞務輸出", "sub": "開放中的職缺，行業、地點、薪資與福利一開始就公開。",
+    "intro": "一般勞務適合想盡早就業的人。出境時間通常較快，收入低於工程師專案。"
+  },
+  "engineer": {
+    "title": "台灣工程師", "sub": "適合中專以上學歷：高收入、長期居留、可申請眷屬同行。",
+    "benefits_title": "台灣工程師專案福利",
+    "benefits": [
+      { "t": "高收入", "d": "基本薪資每月新台幣4.8萬元，含加班實領約4至7萬元。" },
+      { "t": "居留權益", "d": "可長期在台工作與居留，不受一般勞務的限制。" },
+      { "t": "眷屬同行", "d": "可申請配偶與子女同住；配偶可工作，子女可如本地學生就學。" }
+    ],
+    "compare_title": "台灣工程師與一般勞工比較",
+    "compare_cols": ["項目", "台灣工程師", "一般勞工"],
+    "compare_rows": [
+      ["費用", "低", "高"],
+      ["基本薪資", "新台幣48,000元／月", "新台幣29,500元／月"],
+      ["平均實領", "新台幣4至7萬元／月", "新台幣2至4萬元／月"],
+      ["出境時間", "3至6個月", "1至2個月"]
+    ],
+    "compare_note": "數據僅供參考，可能因時期與職缺而異。請聯絡我們取得準確建議。",
+    "who_title": "適合哪些人？",
+    "who": [
+      "大學畢業滿2年，或專科／中專畢業滿5年以上（曾赴台工作者不計在台工作時間）。",
+      "在越南有繳納社會保險。"
+    ],
+    "who_note": "許多具備學歷的人不知道有工程師專案，仍被建議去做收入較低、費用較高的一般勞務。請確認您的資格。",
+    "check_cta": "檢查我的資格"
+  },
+  "job": {
+    "salary": "薪資", "location": "地點", "headcount": "名額", "gender": "性別", "age": "年齡", "industry": "行業",
+    "deadline": "截止日期", "description": "工作內容", "requirements": "條件要求", "benefits": "福利", "negotiable": "面議",
+    "filter_industry": "行業", "filter_location": "地點", "sort_new": "最新"
+  },
+  "form": {
+    "title": "預約諮詢", "name": "姓名", "phone": "電話／Zalo", "email": "電子郵件（選填）", "program": "我有興趣", "message": "留言（選填）",
+    "message_ph": "例如：學歷、預計出發時間、想詢問的問題…", "submit": "送出", "sending": "送出中…",
+    "consent": "送出即表示您同意 TB GROUP 以電話／Zalo／電子郵件與您聯絡諮詢，資料將予以保密。",
+    "interested_in": "有興趣", "opt_study": "台灣留學", "opt_labor": "勞務輸出", "opt_engineer": "台灣工程師", "opt_other": "尚未確定",
+    "err_name": "請輸入姓名。", "err_phone": "電話號碼格式不正確。", "err_email": "電子郵件格式不正確。", "err_generic": "無法送出，請重試或撥打熱線。",
+    "err_rate": "送出過於頻繁，請稍後再試。",
+    "ok_title": "已收到您的資料", "ok_text": "謝謝您。TB GROUP 顧問將儘快與您聯絡。如有急事，請直接撥打熱線。", "ok_again": "再送出一筆"
+  },
+  "news": { "title": "最新消息與指南", "sub": "政策資訊、申辦經驗與真實故事。", "related": "相關文章", "cat_news": "消息", "cat_guide": "指南", "cat_story": "故事" },
+  "about": {
+    "title": "關於 TB GROUP", "sub": "越南TB集團股份公司（CTCP Tập đoàn TB Việt Nam）",
+    "story_title": "我們是誰",
+    "story": ["TB GROUP 從事留學諮詢、勞務輸出與台灣工程師專案，在河內、胡志明市、台中（台灣）與東京（日本）設有辦事處。", "我們相信出國是改變一個人與一個家庭的決定，因此每件案子都會在您決定之前，坦率說明條件、費用與風險。"],
+    "values_title": "核心價值",
+    "values": [
+      { "t": "誠實", "d": "條件、費用、時程說清楚，不承諾做不到的事。" },
+      { "t": "負責", "d": "從文件到完成，甚至出境後都持續追蹤。" },
+      { "t": "尊重", "d": "每個人的情況不同，我們依您的情況提供建議。" }
+    ],
+    "offices_title": "辦事處據點"
+  },
+  "contact": { "title": "聯絡我們", "sub": "歡迎來電、傳 Zalo 訊息或留下資料，我們會在上班時間回覆。", "hours": "服務時間：週一至週六 8:00 - 17:30（越南時間）", "hotline": "熱線／Zalo", "email": "電子郵件", "address": "地址" },
+  "footer": {
+    "about": "留學、勞務輸出與台灣工程師諮詢。透明、負責、長期陪伴。",
+    "programs": "專案", "company": "公司", "offices": "辦事處", "rights": "版權所有。",
+    "hq": "總部", "hcm": "胡志明市辦事處", "taiwan": "台灣辦事處", "japan": "日本辦事處"
+  },
+  "lang_switch": "語言"
+}

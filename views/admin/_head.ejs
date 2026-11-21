@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Quản trị | TB GROUP</title>
+<link rel="icon" type="image/svg+xml" href="/img/logo.svg">
+<link rel="stylesheet" href="/css/admin.css?v=1">
+</head>
+<body>
+<% if (typeof adminUser !== 'undefined' && adminUser) { %>
+<div class="shell">
+  <aside class="side">
+    <a class="side__brand" href="/admin"><img src="/img/logo.svg" width="34" height="34" alt=""><span>TB GROUP<small>Quản trị</small></span></a>
+    <nav aria-label="Quản trị">
+      <a href="/admin"<%- nav === 'dash' ? ' aria-current="page"' : '' %>>Tổng quan</a>
+      <a href="/admin/leads"<%- nav === 'leads' ? ' aria-current="page"' : '' %>>Khách đăng ký</a>
+      <p class="side__h">Nội dung</p>
+      <a href="/admin/c/schools"<%- nav === 'schools' ? ' aria-current="page"' : '' %>>Trường du học</a>
+      <a href="/admin/c/jobs"<%- nav === 'jobs' ? ' aria-current="page"' : '' %>>Đơn hàng &amp; Kỹ sư</a>
+      <a href="/admin/c/posts"<%- nav === 'posts' ? ' aria-current="page"' : '' %>>Tin tức</a>
+      <a href="/admin/c/stories"<%- nav === 'stories' ? ' aria-current="page"' : '' %>>Chia sẻ học viên</a>
+      <p class="side__h">Hệ thống</p>
+      <a href="/admin/settings"<%- nav === 'settings' ? ' aria-current="page"' : '' %>>Thông tin công ty</a>
+      <a href="/admin/password"<%- nav === 'password' ? ' aria-current="page"' : '' %>>Đổi mật khẩu</a>
+      <a href="/vi/" target="_blank" rel="noopener">Xem website ↗</a>
+    </nav>
+    <form method="post" action="/admin/logout"><input type="hidden" name="_csrf" value="<%= csrf %>"><button class="side__out" type="submit">Đăng xuất (<%= adminUser %>)</button></form>
+  </aside>
+  <main class="main">
+    <% if (flash) { %><div class="flash flash--<%= flash.type %>" role="status"><%= flash.text %></div><% } %>
+<% } else { %>
+<main class="auth">
+<% } %>

@@ -1,0 +1,25 @@
+<%- include('_head') %>
+<div class="row"><div><h1><%= R.label %></h1><p class="muted"><%= R.hint %></p></div>
+  <% if (resKey === 'jobs') { %>
+    <div class="btns"><a class="btn btn--primary" href="/admin/c/jobs/new?category=engineer">+ Vị trí kỹ sư</a><a class="btn btn--primary" href="/admin/c/jobs/new?category=labor">+ Đơn hàng XKLĐ</a></div>
+  <% } else { %><a class="btn btn--primary" href="/admin/c/<%= resKey %>/new">+ Thêm mới</a><% } %>
+</div>
+<div class="table-wrap">
+<table>
+  <thead><tr><% R.cols.forEach(function (c) { %><th><%= c[1] %></th><% }) %><th></th></tr></thead>
+  <tbody>
+    <% items.forEach(function (it) { %>
+      <tr>
+        <% R.cols.forEach(function (c, i) { const v = it[c[0]]; %>
+          <td><% if (c[2] === 'bool') { %><%= v ? '✓' : '—' %><% } else if (c[2] === 'cat') { %><%= PROGRAM_LABEL[v] || v %><% } else if (i === 0) { %><a href="/admin/c/<%= resKey %>/<%= it.id %>"><strong><%= v %></strong></a><% } else { %><%= v %><% } %></td>
+        <% }) %>
+        <td class="nowrap"><a href="/admin/c/<%= resKey %>/<%= it.id %>">Sửa</a>
+          <form class="inline" method="post" action="/admin/c/<%= resKey %>/<%= it.id %>/delete" data-confirm="Xoá mục này? Không thể hoàn tác.">
+            <input type="hidden" name="_csrf" value="<%= csrf %>"><button class="linkbtn danger" type="submit">Xoá</button></form></td>
+      </tr>
+    <% }) %>
+    <% if (!items.length) { %><tr><td colspan="<%= R.cols.length + 1 %>" class="muted">Chưa có dữ liệu. Bấm "Thêm mới" để bắt đầu.</td></tr><% } %>
+  </tbody>
+</table>
+</div>
+<%- include('_foot') %>

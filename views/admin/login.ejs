@@ -1,0 +1,11 @@
+<%- include('_head', { nav: '' }) %>
+<form class="login" method="post" action="/admin/login">
+  <img src="/img/logo.svg" width="48" height="48" alt="">
+  <h1>Đăng nhập quản trị</h1>
+  <% if (error) { %><p class="flash flash--error" role="alert"><%= error %></p><% } %>
+  <input type="hidden" name="_csrf" value="<%= csrf %>">
+  <label>Tên đăng nhập<input name="username" autocomplete="username" required autofocus></label>
+  <label>Mật khẩu<input name="password" type="password" autocomplete="current-password" required></label>
+  <button class="btn btn--primary" type="submit">Đăng nhập</button>
+</form>
+<%- include('_foot') %>

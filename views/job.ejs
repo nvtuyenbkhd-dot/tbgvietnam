@@ -1,0 +1,40 @@
+<%- include('partials/head') %>
+<% const title = L(item, 'title'); const base = u('/' + JOB_PATH[category]); %>
+<section class="page-head prog-<%= category %>">
+  <div class="container">
+    <p class="crumbs"><a href="<%= u('/') %>"><%= t('nav.home') %></a> / <a href="<%= base %>"><%= t('nav.' + category) %></a> / <span><%= title %></span></p>
+    <h1><%= title %></h1>
+    <p class="page-head__meta"><svg class="i" aria-hidden="true"><use href="#i-pin"/></svg><%= item.location %><% if (item.industry) { %> · <%= item.industry %><% } %></p>
+  </div>
+</section>
+
+<section class="section section--tight">
+  <div class="container detail">
+    <article class="detail__main">
+      <dl class="spec">
+        <div><dt><%= t('job.salary') %></dt><dd class="spec__big"><%= item.salary || t('job.negotiable') %></dd></div>
+        <% [['headcount', item.headcount], ['gender', item.gender], ['age', item.age], ['deadline', item.deadline]].forEach(function (r) { if (r[1]) { %>
+          <div><dt><%= t('job.' + r[0]) %></dt><dd><%= r[0] === 'deadline' ? fmtDate(r[1]) : r[1] %></dd></div>
+        <% } }) %>
+      </dl>
+      <% if (item.image) { %><img class="detail__img" src="<%= item.image %>" alt="" width="960" height="540"><% } %>
+      <% if (L(item, 'description')) { %><h2><%= t('job.description') %></h2><div class="prose"><%- richText(L(item, 'description')) %></div><% } %>
+      <% if (L(item, 'requirements')) { %><h2><%= t('job.requirements') %></h2><div class="prose"><%- richText(L(item, 'requirements')) %></div><% } %>
+      <% if (L(item, 'benefits')) { %><h2><%= t('job.benefits') %></h2><div class="prose"><%- richText(L(item, 'benefits')) %></div><% } %>
+    </article>
+    <aside class="detail__side" id="dang-ky">
+      <div class="panel">
+        <h2><%= t('common.apply') %></h2>
+        <%- include('partials/lead-form', { id: 'job', program: category, refTitle: title }) %>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<% if (others.length) { %>
+<section class="section section--alt"><div class="container">
+  <header class="sec-head"><div><h2><%= t('home.featured_jobs') %></h2></div><a class="link" href="<%= base %>"><%= t('common.view_all') %><svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a></header>
+  <div class="grid grid--3"><% others.forEach(function (j) { %><%- include('partials/job-card', { j }) %><% }) %></div>
+</div></section>
+<% } %>
+<%- include('partials/foot') %>

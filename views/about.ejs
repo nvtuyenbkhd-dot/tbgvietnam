@@ -1,0 +1,35 @@
+<%- include('partials/head') %>
+<section class="page-head">
+  <div class="container">
+    <p class="crumbs"><a href="<%= u('/') %>"><%= t('nav.home') %></a> / <span><%= t('nav.about') %></span></p>
+    <h1><%= t('about.title') %></h1>
+    <p><%= t('about.sub') %></p>
+  </div>
+</section>
+<section class="section">
+  <div class="container container--narrow">
+    <h2><%= t('about.story_title') %></h2>
+    <div class="prose prose--lg"><% t('about.story').forEach(function (p) { %><p><%= p %></p><% }) %></div>
+  </div>
+</section>
+<section class="section section--alt">
+  <div class="container">
+    <header class="sec-head sec-head--center"><h2><%= t('about.values_title') %></h2></header>
+    <div class="why why--3">
+      <% const vi = ['shield', 'check', 'users']; t('about.values').forEach(function (v, i) { %>
+        <div class="why__item"><span class="why__icon"><svg class="i i--lg" aria-hidden="true"><use href="#i-<%= vi[i] %>"/></svg></span><h3><%= v.t %></h3><p><%= v.d %></p></div>
+      <% }) %>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <header class="sec-head sec-head--center"><h2><%= t('about.offices_title') %></h2></header>
+    <div class="grid grid--4">
+      <% [['hq', 'addr_hq'], ['hcm', 'addr_hcm'], ['taiwan', 'addr_tw'], ['japan', 'addr_jp']].forEach(function (o) { if (S[o[1]]) { %>
+        <div class="office"><svg class="i i--lg" aria-hidden="true"><use href="#i-building"/></svg><h3><%= t('footer.' + o[0]) %></h3><p><%= S[o[1]] %></p></div>
+      <% } }) %>
+    </div>
+  </div>
+</section>
+<%- include('partials/foot') %>

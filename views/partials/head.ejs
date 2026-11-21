@@ -1,0 +1,100 @@
+<%
+  const prog = [
+    ['study', t('nav.study'), u('/du-hoc'), 'cap'],
+    ['labor', t('nav.labor'), u('/xuat-khau-lao-dong'), 'briefcase'],
+    ['engineer', t('nav.engineer'), u('/ky-su-dai-loan'), 'cog'],
+  ];
+  const fullTitle = pageTitle ? `${pageTitle} | ${t('meta.site')}` : `${t('meta.site')} - ${t('meta.tagline')}`;
+  const canonical = `${siteUrl}/${lang}${path || '/'}`;
+  const tel = (S.hotline_tel || '').replace(/\D/g, '');
+  const zalo = (S.zalo || '').replace(/\D/g, '');
+  const ogImage = pageImage ? (pageImage.startsWith('http') ? pageImage : siteUrl + pageImage) : '';
+%><!doctype html>
+<html lang="<%= lang === 'zh' ? 'zh-Hant' : lang %>">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title><%= fullTitle %></title>
+<meta name="description" content="<%= pageDesc || t('meta.description') %>">
+<% if (typeof noindex !== 'undefined' && noindex) { %><meta name="robots" content="noindex"><% } %>
+<link rel="canonical" href="<%= canonical %>">
+<% langs.forEach(function (l) { %><link rel="alternate" hreflang="<%= l === 'zh' ? 'zh-Hant' : l %>" href="<%= siteUrl %>/<%= l %><%= path || '/' %>"><% }) %>
+<link rel="alternate" hreflang="x-default" href="<%= siteUrl %>/vi<%= path || '/' %>">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="TB GROUP">
+<meta property="og:title" content="<%= fullTitle %>">
+<meta property="og:description" content="<%= pageDesc || t('meta.description') %>">
+<meta property="og:url" content="<%= canonical %>">
+<% if (ogImage) { %><meta property="og:image" content="<%= ogImage %>"><% } %>
+<meta name="theme-color" content="#0B1F4B">
+<link rel="icon" type="image/svg+xml" href="/img/logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;700&family=Source+Sans+3:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="/css/site.css?v=1">
+<% if (jsonLd) { %><script type="application/ld+json"><%- JSON.stringify(jsonLd).replace(/</g, '\\u003c') %></script><% } %>
+</head>
+<body data-lang="<%= lang %>">
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+  <symbol id="i-cap" viewBox="0 0 24 24"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/></symbol>
+  <symbol id="i-briefcase" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2M2 13h20"/></symbol>
+  <symbol id="i-cog" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3.2"/><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></symbol>
+  <symbol id="i-building" viewBox="0 0 24 24"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M9 22v-4h6v4M8 6h.01M12 6h.01M16 6h.01M8 10h.01M12 10h.01M16 10h.01M8 14h.01M12 14h.01M16 14h.01"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2 21v-1a6 6 0 0 1 6-6h2a6 6 0 0 1 6 6v1M17 4.5a3.5 3.5 0 0 1 0 7M22 21v-1a6 6 0 0 0-4-5.6"/></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></symbol>
+  <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></symbol>
+  <symbol id="i-chat" viewBox="0 0 24 24"><path d="M21 12a8 8 0 0 1-11.6 7.1L3 21l1.9-5.4A8 8 0 1 1 21 12z"/></symbol>
+  <symbol id="i-coin" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v10M9.5 9.5c0-1 1-1.5 2.5-1.5s2.5.7 2.5 1.7-1 1.5-2.5 1.8-2.5.8-2.5 1.8 1 1.7 2.5 1.7 2.5-.5 2.5-1.5"/></symbol>
+  <symbol id="i-home" viewBox="0 0 24 24"><path d="m3 11 9-8 9 8v10a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1z"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+  <symbol id="i-ext" viewBox="0 0 24 24"><path d="M15 3h6v6M10 14 21 3M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></symbol>
+</svg>
+<a class="skip" href="#main"><%= t('nav.skip') %></a>
+
+<div class="topbar">
+  <div class="container topbar__in">
+    <span class="topbar__txt"><svg class="i" aria-hidden="true"><use href="#i-clock"/></svg><%= t('contact.hours') %></span>
+    <nav class="lang" aria-label="<%= t('lang_switch') %>">
+      <% langs.forEach(function (l) { %>
+        <a href="/<%= l %><%= path || '/' %>" hreflang="<%= l === 'zh' ? 'zh-Hant' : l %>" lang="<%= l === 'zh' ? 'zh-Hant' : l %>"<%- l === lang ? ' aria-current="true"' : '' %>><%= l === 'vi' ? 'VI' : l === 'zh' ? '中文' : 'EN' %></a>
+      <% }) %>
+    </nav>
+  </div>
+</div>
+
+<header class="header" id="top">
+  <div class="container header__in">
+    <a class="brand" href="<%= u('/') %>" aria-label="TB GROUP">
+      <img src="/img/logo.svg" width="40" height="40" alt="">
+      <span class="brand__txt"><strong>TB GROUP</strong><small><%= t('meta.company') %></small></span>
+    </a>
+    <button class="burger" type="button" aria-expanded="false" aria-controls="nav" aria-label="<%= t('nav.menu') %>">
+      <svg class="i i--lg" aria-hidden="true"><use href="#i-menu"/></svg>
+    </button>
+    <nav class="nav" id="nav" aria-label="Main">
+      <ul>
+        <li><a href="<%= u('/') %>"<%- page === 'home' ? ' aria-current="page"' : '' %>><%= t('nav.home') %></a></li>
+        <% prog.forEach(function (p) { %>
+          <li><a class="nav__<%= p[0] %>" href="<%= p[2] %>"<%- page === p[0] ? ' aria-current="page"' : '' %>><%= p[1] %></a></li>
+        <% }) %>
+        <li><a href="<%= u('/tin-tuc') %>"<%- page === 'news' ? ' aria-current="page"' : '' %>><%= t('nav.news') %></a></li>
+        <li><a href="<%= u('/ve-chung-toi') %>"<%- page === 'about' ? ' aria-current="page"' : '' %>><%= t('nav.about') %></a></li>
+        <li><a href="<%= u('/lien-he') %>"<%- page === 'contact' ? ' aria-current="page"' : '' %>><%= t('nav.contact') %></a></li>
+      </ul>
+      <div class="nav__cta">
+        <% if (tel) { %><a class="nav__tel" href="tel:<%= tel %>"><svg class="i" aria-hidden="true"><use href="#i-phone"/></svg><%= S.hotline %></a><% } %>
+        <a class="btn btn--primary btn--sm" href="<%= u('/lien-he') %>#dang-ky"><%= t('nav.register') %></a>
+      </div>
+    </nav>
+  </div>
+</header>
+<main id="main">
