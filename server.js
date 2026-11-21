@@ -61,7 +61,21 @@ app.use(
 
 // Cài đặt website dùng chung (hotline, địa chỉ...)
 app.use((req, res, next) => {
-  res.locals.S = getSettings();
+  // Địa chỉ/hotline mặc định của công ty; giá trị nhập trong trang quản trị (nếu có) sẽ ghi đè
+  const COMPANY_DEFAULTS = {
+    hotline: '0982.735.714',
+    hotline_tel: '0982735714',
+    zalo: '0982735714',
+    addr_hq: 'Liền kề 24, NO7B, Khu đất dịch vụ Vạn Phúc, phường Hà Đông, thành phố Hà Nội',
+    addr_hcm: 'Số 27/48/2/3 Bùi Tư Toàn, khu phố 53, phường An Lạc, TP. Hồ Chí Minh',
+    addr_tw: '台中市中區自由路二段9號',
+    addr_jp: '東京都新宿区新宿1-26-6',
+    map_query: 'TB GROUP - Kỹ sư, Du học và XKLĐ, NO7-B, Khu đất dịch vụ Vạn Phúc, LK24, Hà Đông, Hà Nội',
+  };
+  const saved = getSettings();
+  const S = { ...COMPANY_DEFAULTS };
+  for (const [k, v] of Object.entries(saved)) if (v !== '' && v != null) S[k] = v;
+  res.locals.S = S;
   res.locals.siteUrl = (process.env.SITE_URL || `${req.protocol}://${req.get('host')}`).replace(/\/$/, '');
   next();
 });

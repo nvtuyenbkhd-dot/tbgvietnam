@@ -24,4 +24,17 @@
     </aside>
   </div>
 </section>
+<% const mapQ = encodeURIComponent(S.map_query || S.addr_hq || ''); %>
+<% if (mapQ) { %>
+<section class="section section--tight">
+  <div class="container">
+    <h2><%= t('contact.address') %> — <%= t('footer.hq') %></h2>
+    <p><%= S.addr_hq %></p>
+    <div class="map-embed">
+      <iframe title="<%= t('footer.hq') %> - Google Maps" src="https://www.google.com/maps?q=<%= mapQ %>&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+    </div>
+    <p><a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=<%= mapQ %>" target="_blank" rel="noopener">Google Maps ↗</a></p>
+  </div>
+</section>
+<% } %>
 <%- include('partials/foot') %>
