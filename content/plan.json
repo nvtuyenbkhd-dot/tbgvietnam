@@ -1,5 +1,5 @@
 {
-  "rules": "Mỗi bài: nghiên cứu nguồn chính thức TRƯỚC khi viết, chỉ nêu số liệu/điều kiện có trong nguồn đã đọc, ghi ngày truy cập. Không sao chép nguyên văn (diễn đạt lại). Không bịa nhân vật/lời chứng thực. Ảnh: Wikimedia Commons (CC/PD) qua scripts/commons-image.js. Trạng thái done=true chỉ sau khi file content/posts/<slug>.json đã commit và push.",
+  "rules": "Mỗi bài: nghiên cứu nguồn chính thức TRƯỚC khi viết, chỉ nêu số liệu/điều kiện có trong nguồn đã đọc, ghi ngày truy cập. Không sao chép nguyên văn (diễn đạt lại). Không bịa nhân vật/lời chứng thực. Ảnh: Wikimedia Commons (CC/PD) qua scripts/commons-image.js. Trạng thái done=true chỉ sau khi file content/posts/<slug>.json đã commit và push. | Giờ hiện (publish_at) đã gán sẵn cho từng chủ đề trong plan.json: dùng đúng giá trị đó. Nếu thay chủ đề bị chặn thì giữ nguyên n và publish_at.",
   "sources_hint": {
     "labor": [
       "mol.gov.tw (Bộ Lao động)",
@@ -43,356 +43,903 @@
       "cat": "guide",
       "topic": "Điều kiện du học Đài Loan bậc đại học cho sinh viên Việt Nam",
       "kw": "điều kiện du học Đài Loan",
-      "done": false
+      "done": true,
+      "publish_at": "2026-11-22T00:50:00Z",
+      "old_publish_at": "2026-11-21T15:50:00Z"
     },
     {
       "n": 3,
       "cat": "guide",
       "topic": "Chương trình học bổng chính phủ Đài Loan (Taiwan Scholarship, MOE Taiwan Scholarship)",
       "kw": "học bổng Đài Loan",
-      "done": false
+      "done": true,
+      "publish_at": "2026-11-22T01:00:00Z",
+      "old_publish_at": "2026-11-21T16:00:00Z"
     },
     {
       "n": 4,
       "cat": "guide",
       "topic": "Học bổng ICDF và học bổng của Bộ Ngoại giao Đài Loan",
       "kw": "học bổng ICDF",
-      "done": false
+      "done": true,
+      "publish_at": "2026-11-22T01:10:00Z",
+      "old_publish_at": "2026-11-21T16:10:00Z"
     },
     {
       "n": 5,
       "cat": "guide",
       "topic": "Học tiếng Hoa tại Đài Loan: trung tâm ngôn ngữ đại học, chứng chỉ TOCFL",
       "kw": "học tiếng Hoa Đài Loan TOCFL",
-      "done": false
+      "done": true,
+      "publish_at": "2026-11-22T01:20:00Z",
+      "old_publish_at": "2026-11-21T16:20:00Z"
     },
     {
       "n": 6,
       "cat": "guide",
       "topic": "Quy định làm thêm của sinh viên quốc tế tại Đài Loan",
       "kw": "sinh viên quốc tế làm thêm Đài Loan",
-      "done": false
+      "done": true,
+      "publish_at": "2026-11-22T01:30:00Z",
+      "old_publish_at": "2026-11-21T16:30:00Z"
     },
     {
       "n": 7,
       "cat": "guide",
       "topic": "Visa du học Đài Loan: hồ sơ, quy trình xin visa tại TECO",
       "kw": "visa du học Đài Loan",
-      "done": false
+      "done": true,
+      "publish_at": "2026-11-22T01:40:00Z",
+      "old_publish_at": "2026-11-21T16:40:00Z"
     },
     {
       "n": 8,
       "cat": "guide",
       "topic": "Thẻ cư trú ARC cho sinh viên quốc tế tại Đài Loan",
       "kw": "thẻ cư trú ARC Đài Loan",
-      "done": false
+      "done": true,
+      "publish_at": "2026-11-22T01:50:00Z",
+      "old_publish_at": "2026-11-21T16:50:00Z"
     },
     {
       "n": 9,
       "cat": "guide",
       "topic": "Bảo hiểm y tế toàn dân (NHI) với sinh viên quốc tế",
       "kw": "bảo hiểm y tế Đài Loan sinh viên",
-      "done": false
+      "done": true,
+      "publish_at": "2026-11-22T02:00:00Z",
+      "old_publish_at": "2026-11-21T17:00:00Z"
     },
     {
       "n": 10,
       "cat": "guide",
       "topic": "Chi phí du học Đài Loan: học phí, sinh hoạt phí theo thành phố",
       "kw": "chi phí du học Đài Loan",
-      "done": false
+      "done": true,
+      "publish_at": "2026-11-22T02:10:00Z",
+      "old_publish_at": "2026-11-21T17:10:00Z"
     },
     {
       "n": 11,
       "cat": "guide",
       "topic": "Du học thạc sĩ, tiến sĩ tại Đài Loan: điều kiện và học bổng",
       "kw": "du học thạc sĩ Đài Loan",
-      "done": false
+      "done": true,
+      "publish_at": "2026-11-22T02:20:00Z",
+      "old_publish_at": "2026-11-21T17:20:00Z"
     },
     {
       "n": 12,
       "cat": "guide",
       "topic": "Du học hệ cao đẳng/đại học kỹ thuật (kỹ thuật nghề) tại Đài Loan",
       "kw": "đại học khoa học kỹ thuật Đài Loan",
-      "done": false
+      "done": true,
+      "publish_at": "2026-11-22T02:30:00Z",
+      "old_publish_at": "2026-11-21T17:30:00Z"
     },
     {
       "n": 13,
       "cat": "guide",
       "topic": "Ở lại làm việc sau tốt nghiệp: chính sách giữ chân nhân tài nước ngoài",
       "kw": "ở lại Đài Loan sau tốt nghiệp",
-      "done": false
+      "done": true,
+      "publish_at": "2026-11-22T02:40:00Z",
+      "old_publish_at": "2026-11-21T17:40:00Z"
     },
     {
       "n": 14,
       "cat": "guide",
       "topic": "Chương trình Employment Gold Card của Đài Loan",
       "kw": "Employment Gold Card",
-      "done": false
+      "done": true,
+      "publish_at": "2026-11-22T02:50:00Z",
+      "old_publish_at": "2026-11-21T17:50:00Z"
     },
     {
       "n": 15,
       "cat": "guide",
       "topic": "Hệ thống điểm cho lao động nước ngoài trình độ trung cấp (Kỹ thuật viên lành nghề)",
       "kw": "lao động trung cấp Đài Loan",
-      "done": false
+      "done": true,
+      "publish_at": "2026-11-22T03:00:00Z",
+      "old_publish_at": "2026-11-21T18:00:00Z"
     },
     {
       "n": 16,
       "cat": "news",
       "topic": "Chính sách Đài Loan thu hút sinh viên Đông Nam Á (New Southbound Policy) về giáo dục",
       "kw": "Chính sách Hướng Nam mới giáo dục",
-      "done": false
+      "done": true,
+      "publish_at": "2026-11-22T03:10:00Z",
+      "old_publish_at": "2026-11-21T18:10:00Z"
     },
     {
       "n": 17,
       "cat": "guide",
       "topic": "Các trường đại học hàng đầu Đài Loan theo bảng xếp hạng quốc tế",
       "kw": "đại học hàng đầu Đài Loan",
-      "done": false
+      "done": true,
+      "publish_at": "2026-11-22T03:20:00Z",
+      "old_publish_at": "2026-11-21T18:20:00Z"
     },
     {
       "n": 18,
       "cat": "guide",
       "topic": "Cách chọn ngành học tại Đài Loan: bán dẫn, kỹ thuật, CNTT, kinh doanh",
       "kw": "chọn ngành du học Đài Loan",
-      "done": false
+      "done": true,
+      "publish_at": "2026-11-22T03:30:00Z",
+      "old_publish_at": "2026-11-21T18:30:00Z"
     },
     {
       "n": 19,
       "cat": "guide",
       "topic": "Ký túc xá và nhà ở cho sinh viên quốc tế Đài Loan",
       "kw": "ký túc xá Đài Loan",
-      "done": false
+      "done": true,
+      "publish_at": "2026-11-22T03:40:00Z",
+      "old_publish_at": "2026-11-21T18:40:00Z"
     },
     {
       "n": 20,
       "cat": "guide",
       "topic": "Văn hoá và đời sống sinh viên Việt tại Đài Loan: giao thông, ăn uống, an ninh",
       "kw": "đời sống du học sinh Đài Loan",
-      "done": false
+      "done": true,
+      "publish_at": "2026-11-22T03:50:00Z",
+      "old_publish_at": "2026-11-21T18:50:00Z"
     },
     {
       "n": 21,
       "cat": "guide",
       "topic": "Khung pháp lý lao động nước ngoài tại Đài Loan: Luật Dịch vụ Việc làm",
       "kw": "luật lao động nước ngoài Đài Loan",
-      "done": false
+      "done": true,
+      "publish_at": "2026-11-22T04:00:00Z",
+      "old_publish_at": "2026-11-21T19:00:00Z"
     },
     {
       "n": 22,
       "cat": "guide",
       "topic": "Xuất khẩu lao động Đài Loan: các nhóm ngành được phép tuyển lao động nước ngoài",
       "kw": "xuất khẩu lao động Đài Loan",
-      "done": false
+      "done": true,
+      "publish_at": "2026-11-22T04:10:00Z",
+      "old_publish_at": "2026-11-21T19:10:00Z"
     },
     {
       "n": 23,
       "cat": "guide",
       "topic": "Quy trình sang Đài Loan làm việc: các bước từ đăng ký đến nhập cảnh",
       "kw": "quy trình xuất khẩu lao động Đài Loan",
-      "done": false
+      "done": true,
+      "publish_at": "2026-11-22T04:20:00Z",
+      "old_publish_at": "2026-11-21T19:20:00Z"
     },
     {
       "n": 24,
       "cat": "guide",
       "topic": "Chi phí môi giới và phí dịch vụ hợp pháp: quy định của Việt Nam và Đài Loan",
       "kw": "phí xuất khẩu lao động Đài Loan",
-      "done": false
+      "done": true,
+      "publish_at": "2026-11-22T04:30:00Z",
+      "old_publish_at": "2026-11-21T19:30:00Z"
     },
     {
       "n": 25,
       "cat": "guide",
       "topic": "Hợp đồng lao động tại Đài Loan: những điều khoản cần đọc kỹ",
       "kw": "hợp đồng lao động Đài Loan",
-      "done": false
+      "done": true,
+      "publish_at": "2026-11-22T04:40:00Z",
+      "old_publish_at": "2026-11-21T19:40:00Z"
     },
     {
       "n": 26,
       "cat": "guide",
       "topic": "Mức lương cơ bản (minimum wage) Đài Loan và cách tính lương làm thêm giờ",
       "kw": "lương tối thiểu Đài Loan",
-      "done": false
+      "done": true,
+      "publish_at": "2026-11-22T04:50:00Z",
+      "old_publish_at": "2026-11-21T19:50:00Z"
     },
     {
       "n": 27,
       "cat": "guide",
       "topic": "Bảo hiểm lao động, bảo hiểm y tế và tai nạn lao động của lao động nước ngoài",
       "kw": "bảo hiểm lao động Đài Loan",
-      "done": false
+      "done": true,
+      "publish_at": "2026-11-22T05:00:00Z",
+      "old_publish_at": "2026-11-21T20:00:00Z"
     },
     {
       "n": 28,
       "cat": "guide",
       "topic": "Quyền của lao động nước ngoài và các đường dây hỗ trợ tại Đài Loan (1955)",
       "kw": "đường dây 1955 Đài Loan",
-      "done": false
+      "done": true,
+      "publish_at": "2026-11-22T05:10:00Z",
+      "old_publish_at": "2026-11-21T20:10:00Z"
     },
     {
       "n": 29,
       "cat": "guide",
       "topic": "Chuyển đổi chủ lao động tại Đài Loan: điều kiện và thủ tục",
       "kw": "chuyển chủ lao động Đài Loan",
-      "done": false
+      "done": true,
+      "publish_at": "2026-11-22T05:20:00Z",
+      "old_publish_at": "2026-11-21T20:20:00Z"
     },
     {
       "n": 30,
       "cat": "guide",
       "topic": "Gia hạn hợp đồng, thời gian làm việc tối đa (12 năm/14 năm) của lao động nước ngoài",
       "kw": "thời hạn làm việc Đài Loan",
-      "done": false
+      "done": true,
+      "publish_at": "2026-11-22T05:30:00Z",
+      "old_publish_at": "2026-11-21T20:30:00Z"
     },
     {
       "n": 31,
       "cat": "guide",
       "topic": "Lao động bỏ trốn: hậu quả pháp lý và cách tránh rủi ro",
       "kw": "lao động bỏ trốn Đài Loan",
-      "done": false
+      "done": true,
+      "publish_at": "2026-11-22T05:40:00Z",
+      "old_publish_at": "2026-11-21T20:40:00Z"
     },
     {
       "n": 32,
       "cat": "guide",
       "topic": "Khám sức khoẻ định kỳ và quy định y tế với lao động nước ngoài",
       "kw": "khám sức khoẻ lao động Đài Loan",
-      "done": false
+      "done": true,
+      "publish_at": "2026-11-22T05:50:00Z",
+      "old_publish_at": "2026-11-21T20:50:00Z"
     },
     {
       "n": 33,
       "cat": "guide",
       "topic": "Nhà ở và ký túc xá của lao động nước ngoài: quy định của Bộ Lao động Đài Loan",
       "kw": "chỗ ở lao động nước ngoài Đài Loan",
-      "done": false
+      "done": true,
+      "publish_at": "2026-11-22T06:00:00Z",
+      "old_publish_at": "2026-11-21T21:00:00Z"
     },
     {
       "n": 34,
       "cat": "guide",
       "topic": "Chuyển tiền về nước an toàn: ngân hàng, thuế thu nhập của lao động tại Đài Loan",
       "kw": "gửi tiền về Việt Nam từ Đài Loan",
-      "done": false
+      "done": true,
+      "publish_at": "2026-11-22T06:10:00Z",
+      "old_publish_at": "2026-11-21T21:10:00Z"
     },
     {
       "n": 35,
       "cat": "guide",
       "topic": "Hướng dẫn dành cho lao động mới sang Đài Loan: hội nhập, an toàn, giao thông",
       "kw": "lao động mới sang Đài Loan",
-      "done": false
+      "done": true,
+      "publish_at": "2026-11-22T06:20:00Z",
+      "old_publish_at": "2026-11-21T21:20:00Z"
     },
     {
       "n": 36,
       "cat": "news",
       "topic": "Số liệu lao động nước ngoài tại Đài Loan theo thống kê của Bộ Lao động",
       "kw": "số lượng lao động nước ngoài Đài Loan",
-      "done": false
+      "done": false,
+      "publish_at": "2026-11-21T21:30:00Z",
+      "blocked": "chưa có bài (thiếu nguồn chính thức đọc được)"
     },
     {
       "n": 37,
       "cat": "news",
       "topic": "Thay đổi chính sách mới nhất về lao động nước ngoài của Bộ Lao động Đài Loan",
       "kw": "chính sách lao động nước ngoài Đài Loan mới",
-      "done": false
+      "done": true,
+      "publish_at": "2026-11-22T06:30:00Z",
+      "old_publish_at": "2026-11-21T21:40:00Z"
     },
     {
       "n": 38,
       "cat": "guide",
       "topic": "Chương trình Hợp tác lao động Việt Nam - Đài Loan: vai trò Bộ LĐTBXH và các doanh nghiệp được cấp phép",
       "kw": "doanh nghiệp xuất khẩu lao động được cấp phép",
-      "done": false
+      "done": true,
+      "publish_at": "2026-11-22T06:40:00Z",
+      "old_publish_at": "2026-11-21T21:50:00Z"
     },
     {
       "n": 39,
       "cat": "guide",
       "topic": "Cách nhận biết lừa đảo xuất khẩu lao động và kiểm tra doanh nghiệp hợp pháp",
       "kw": "lừa đảo xuất khẩu lao động",
-      "done": false
+      "done": true,
+      "publish_at": "2026-11-22T06:50:00Z",
+      "old_publish_at": "2026-11-21T22:00:00Z"
     },
     {
       "n": 40,
       "cat": "guide",
       "topic": "Ngành điều dưỡng, chăm sóc người bệnh/người già tại Đài Loan: điều kiện và đặc thù",
       "kw": "lao động chăm sóc Đài Loan",
-      "done": false
+      "done": true,
+      "publish_at": "2026-11-22T07:00:00Z",
+      "old_publish_at": "2026-11-21T22:10:00Z"
     },
     {
       "n": 41,
       "cat": "guide",
       "topic": "Ngành sản xuất chế tạo: điều kiện, môi trường làm việc tại Đài Loan",
       "kw": "lao động nhà máy Đài Loan",
-      "done": false
+      "done": true,
+      "publish_at": "2026-11-22T07:10:00Z",
+      "old_publish_at": "2026-11-21T22:20:00Z"
     },
     {
       "n": 42,
       "cat": "guide",
       "topic": "Ngành xây dựng và nông nghiệp, thuỷ sản: quy định riêng của lao động nước ngoài",
       "kw": "lao động xây dựng nông nghiệp Đài Loan",
-      "done": false
+      "done": true,
+      "publish_at": "2026-11-22T07:20:00Z",
+      "old_publish_at": "2026-11-21T22:30:00Z"
     },
     {
       "n": 43,
       "cat": "guide",
       "topic": "Kỹ sư Việt Nam đi làm việc tại Đài Loan: các diện visa và giấy phép làm việc",
       "kw": "kỹ sư Việt Nam làm việc tại Đài Loan",
-      "done": false
+      "done": true,
+      "publish_at": "2026-11-22T07:30:00Z",
+      "old_publish_at": "2026-11-21T22:40:00Z"
     },
     {
       "n": 44,
       "cat": "guide",
       "topic": "Điều kiện lương tối thiểu và bằng cấp với chuyên gia nước ngoài (Work Permit hạng chuyên môn)",
       "kw": "giấy phép làm việc chuyên môn Đài Loan",
-      "done": false
+      "done": true,
+      "publish_at": "2026-11-22T07:40:00Z",
+      "old_publish_at": "2026-11-21T22:50:00Z"
     },
     {
       "n": 45,
       "cat": "guide",
       "topic": "Bán dẫn Đài Loan: nhu cầu nhân lực kỹ sư và cơ hội cho người Việt",
       "kw": "kỹ sư bán dẫn Đài Loan",
-      "done": false
+      "done": true,
+      "publish_at": "2026-11-22T07:50:00Z",
+      "old_publish_at": "2026-11-21T23:00:00Z"
     },
     {
       "n": 46,
       "cat": "news",
       "topic": "Chính sách Bộ Lao động Đài Loan về tuyển kỹ sư nước ngoài ngành công nghệ cao",
       "kw": "tuyển kỹ sư nước ngoài Đài Loan",
-      "done": false
+      "done": true,
+      "publish_at": "2026-11-22T08:00:00Z",
+      "old_publish_at": "2026-11-21T23:10:00Z"
     },
     {
       "n": 47,
       "cat": "guide",
       "topic": "Chương trình Kỹ thuật viên lành nghề (Mid-level Technical Workforce) và con đường ở lại dài hạn",
       "kw": "kỹ thuật viên lành nghề Đài Loan",
-      "done": false
+      "done": true,
+      "publish_at": "2026-11-22T08:10:00Z",
+      "old_publish_at": "2026-11-21T23:20:00Z"
     },
     {
       "n": 48,
       "cat": "guide",
       "topic": "Thẻ cư trú vĩnh viễn và nhập quốc tịch: điều kiện đối với người nước ngoài làm việc tại Đài Loan",
       "kw": "cư trú vĩnh viễn Đài Loan",
-      "done": false
+      "done": true,
+      "publish_at": "2026-11-22T08:20:00Z",
+      "old_publish_at": "2026-11-21T23:30:00Z"
     },
     {
       "n": 49,
       "cat": "guide",
       "topic": "Đưa gia đình theo: điều kiện bảo lãnh vợ/chồng, con cái cho lao động chuyên môn",
       "kw": "bảo lãnh gia đình Đài Loan",
-      "done": false
+      "done": true,
+      "publish_at": "2026-11-22T08:30:00Z",
+      "old_publish_at": "2026-11-21T23:40:00Z"
     },
     {
       "n": 50,
       "cat": "guide",
       "topic": "Thuế thu nhập cá nhân cho người nước ngoài làm việc tại Đài Loan",
       "kw": "thuế thu nhập Đài Loan người nước ngoài",
-      "done": false
+      "done": true,
+      "publish_at": "2026-11-22T08:40:00Z",
+      "old_publish_at": "2026-11-21T23:50:00Z"
+    },
+    {
+      "n": 51,
+      "cat": "guide",
+      "topic": "Lộ trình 12 tháng chuẩn bị hồ sơ du học Đài Loan",
+      "kw": "lộ trình du học Đài Loan",
+      "done": true,
+      "publish_at": "2026-11-22T08:50:00Z",
+      "old_publish_at": "2026-11-22T00:00:00Z"
+    },
+    {
+      "n": 52,
+      "cat": "guide",
+      "topic": "15 câu hỏi thường gặp khi du học Đài Loan",
+      "kw": "câu hỏi thường gặp du học Đài Loan",
+      "done": true,
+      "publish_at": "2026-11-22T09:00:00Z",
+      "old_publish_at": "2026-11-22T00:10:00Z"
+    },
+    {
+      "n": 53,
+      "cat": "guide",
+      "topic": "Hợp pháp hoá lãnh sự và dịch thuật giấy tờ cho hồ sơ Đài Loan",
+      "kw": "hợp pháp hoá lãnh sự Đài Loan",
+      "done": true,
+      "publish_at": "2026-11-22T09:10:00Z",
+      "old_publish_at": "2026-11-22T00:20:00Z"
+    },
+    {
+      "n": 54,
+      "cat": "guide",
+      "topic": "Du học nghề và chương trình hợp tác công nghiệp - đào tạo (Industry-Academia) tại Đài Loan",
+      "kw": "chương trình hợp tác doanh nghiệp đại học Đài Loan",
+      "done": true,
+      "publish_at": "2026-11-22T09:20:00Z",
+      "old_publish_at": "2026-11-22T00:30:00Z"
+    },
+    {
+      "n": 55,
+      "cat": "guide",
+      "topic": "Du học ngành bán dẫn và công nghệ cao Đài Loan: chương trình, trường, học bổng",
+      "kw": "du học ngành bán dẫn Đài Loan",
+      "done": true,
+      "publish_at": "2026-11-22T09:30:00Z",
+      "old_publish_at": "2026-11-22T00:40:00Z"
+    },
+    {
+      "n": 56,
+      "cat": "guide",
+      "topic": "Du học ngành CNTT và trí tuệ nhân tạo tại Đài Loan",
+      "kw": "du học CNTT Đài Loan",
+      "done": true,
+      "publish_at": "2026-11-22T09:40:00Z",
+      "old_publish_at": "2026-11-22T00:50:00Z"
+    },
+    {
+      "n": 57,
+      "cat": "guide",
+      "topic": "Du học ngành y, điều dưỡng, dược tại Đài Loan: quy định đặc thù",
+      "kw": "du học ngành y Đài Loan",
+      "done": true,
+      "publish_at": "2026-11-22T09:50:00Z",
+      "old_publish_at": "2026-11-22T01:00:00Z"
+    },
+    {
+      "n": 58,
+      "cat": "guide",
+      "topic": "Du học ngành kinh doanh, quản trị, logistics tại Đài Loan",
+      "kw": "du học quản trị kinh doanh Đài Loan",
+      "done": true,
+      "publish_at": "2026-11-22T10:00:00Z",
+      "old_publish_at": "2026-11-22T01:10:00Z"
+    },
+    {
+      "n": 59,
+      "cat": "guide",
+      "topic": "Du học ngành du lịch, nhà hàng khách sạn, ẩm thực tại Đài Loan",
+      "kw": "du học du lịch khách sạn Đài Loan",
+      "done": true,
+      "publish_at": "2026-11-22T10:10:00Z",
+      "old_publish_at": "2026-11-22T01:20:00Z"
+    },
+    {
+      "n": 60,
+      "cat": "guide",
+      "topic": "Du học ngành thiết kế, nghệ thuật và văn hoá tại Đài Loan",
+      "kw": "du học thiết kế Đài Loan",
+      "done": true,
+      "publish_at": "2026-11-22T10:20:00Z",
+      "old_publish_at": "2026-11-22T01:30:00Z"
+    },
+    {
+      "n": 61,
+      "cat": "guide",
+      "topic": "Du học Đài Loan từ lớp 10 - 12: có những lựa chọn nào cho học sinh quốc tế?",
+      "kw": "du học Đài Loan sau THPT",
+      "done": true,
+      "publish_at": "2026-11-22T10:30:00Z",
+      "old_publish_at": "2026-11-22T01:40:00Z"
+    },
+    {
+      "n": 62,
+      "cat": "guide",
+      "topic": "Trao đổi sinh viên, học kỳ trao đổi và chương trình ngắn hạn tại Đài Loan",
+      "kw": "trao đổi sinh viên Đài Loan",
+      "done": true,
+      "publish_at": "2026-11-22T10:40:00Z",
+      "old_publish_at": "2026-11-22T01:50:00Z"
+    },
+    {
+      "n": 63,
+      "cat": "guide",
+      "topic": "Du học Đài Loan: thủ tục sau khi nhập cảnh (đăng ký ARC, SIM, ngân hàng)",
+      "kw": "thủ tục sau nhập cảnh Đài Loan",
+      "done": true,
+      "publish_at": "2026-11-22T10:50:00Z",
+      "old_publish_at": "2026-11-22T02:00:00Z"
+    },
+    {
+      "n": 64,
+      "cat": "guide",
+      "topic": "An toàn, y tế và khẩn cấp: số điện thoại cần nhớ khi ở Đài Loan",
+      "kw": "số khẩn cấp Đài Loan",
+      "done": true,
+      "publish_at": "2026-11-22T11:00:00Z",
+      "old_publish_at": "2026-11-22T02:10:00Z"
+    },
+    {
+      "n": 65,
+      "cat": "guide",
+      "topic": "Chương trình giữ chân nhân tài sau tốt nghiệp: điều kiện xin việc và ở lại",
+      "kw": "ở lại làm việc sau tốt nghiệp Đài Loan",
+      "done": true,
+      "publish_at": "2026-11-22T11:10:00Z",
+      "old_publish_at": "2026-11-22T02:20:00Z"
+    },
+    {
+      "n": 66,
+      "cat": "guide",
+      "topic": "Visa tìm việc (Job Seeking) cho sinh viên mới tốt nghiệp tại Đài Loan",
+      "kw": "visa tìm việc Đài Loan",
+      "done": true,
+      "publish_at": "2026-11-22T11:20:00Z",
+      "old_publish_at": "2026-11-22T02:30:00Z"
+    },
+    {
+      "n": 67,
+      "cat": "guide",
+      "topic": "Thẻ cư trú ARC, APRC và AGC: so sánh các loại thẻ cư trú ở Đài Loan",
+      "kw": "APRC AGC ARC Đài Loan",
+      "done": true,
+      "publish_at": "2026-11-22T11:30:00Z",
+      "old_publish_at": "2026-11-22T02:40:00Z"
+    },
+    {
+      "n": 68,
+      "cat": "guide",
+      "topic": "Sở Di dân Đài Loan (NIA): các dịch vụ trực tuyến cần biết",
+      "kw": "Sở Di dân Đài Loan dịch vụ trực tuyến",
+      "done": true,
+      "publish_at": "2026-11-22T11:40:00Z",
+      "old_publish_at": "2026-11-22T02:50:00Z"
+    },
+    {
+      "n": 69,
+      "cat": "guide",
+      "topic": "Văn phòng Kinh tế Văn hoá Đài Bắc (TECO) tại Việt Nam: dịch vụ lãnh sự và cách đặt lịch",
+      "kw": "TECO Việt Nam dịch vụ visa",
+      "done": true,
+      "publish_at": "2026-11-22T11:50:00Z",
+      "old_publish_at": "2026-11-22T03:00:00Z"
+    },
+    {
+      "n": 70,
+      "cat": "guide",
+      "topic": "Visa Đài Loan: các loại visa chính (thăm thân, làm việc, du học) và thời hạn",
+      "kw": "các loại visa Đài Loan",
+      "done": true,
+      "publish_at": "2026-11-22T12:00:00Z",
+      "old_publish_at": "2026-11-22T03:10:00Z"
+    },
+    {
+      "n": 71,
+      "cat": "guide",
+      "topic": "Quy định nhập cảnh và hải quan Đài Loan: những vật dụng bị hạn chế",
+      "kw": "hải quan Đài Loan mang theo",
+      "done": true,
+      "publish_at": "2026-11-22T12:10:00Z",
+      "old_publish_at": "2026-11-22T03:20:00Z"
+    },
+    {
+      "n": 72,
+      "cat": "guide",
+      "topic": "Tiếng Hoa cho người đi làm: chứng chỉ TOCFL và lộ trình học",
+      "kw": "TOCFL lộ trình học tiếng Hoa",
+      "done": true,
+      "publish_at": "2026-11-22T12:20:00Z",
+      "old_publish_at": "2026-11-22T03:30:00Z"
+    },
+    {
+      "n": 73,
+      "cat": "guide",
+      "topic": "Luật Lao động Đài Loan (Labor Standards Act): quyền cơ bản của người lao động",
+      "kw": "Luật Tiêu chuẩn Lao động Đài Loan",
+      "done": true,
+      "publish_at": "2026-11-22T12:30:00Z",
+      "old_publish_at": "2026-11-22T03:40:00Z"
+    },
+    {
+      "n": 74,
+      "cat": "guide",
+      "topic": "Nghỉ phép, nghỉ lễ và thời giờ làm việc theo Luật Tiêu chuẩn Lao động",
+      "kw": "nghỉ phép nghỉ lễ Đài Loan",
+      "done": true,
+      "publish_at": "2026-11-22T12:40:00Z",
+      "old_publish_at": "2026-11-22T03:50:00Z"
+    },
+    {
+      "n": 75,
+      "cat": "guide",
+      "topic": "Quy định về nghỉ thai sản, nghỉ ốm và bảo hiểm với lao động nước ngoài",
+      "kw": "thai sản Đài Loan lao động nước ngoài",
+      "done": true,
+      "publish_at": "2026-11-22T12:50:00Z",
+      "old_publish_at": "2026-11-22T04:00:00Z"
+    },
+    {
+      "n": 76,
+      "cat": "guide",
+      "topic": "Giải quyết tranh chấp lao động: kênh khiếu nại và hỗ trợ pháp lý tại Đài Loan",
+      "kw": "khiếu nại lao động Đài Loan",
+      "done": true,
+      "publish_at": "2026-11-22T13:00:00Z",
+      "old_publish_at": "2026-11-22T04:10:00Z"
+    },
+    {
+      "n": 77,
+      "cat": "guide",
+      "topic": "Hỗ trợ lao động nước ngoài: Trung tâm dịch vụ và tư vấn do chính quyền địa phương Đài Loan lập",
+      "kw": "trung tâm hỗ trợ lao động nước ngoài Đài Loan",
+      "done": true,
+      "publish_at": "2026-11-22T13:10:00Z",
+      "old_publish_at": "2026-11-22T04:20:00Z"
+    },
+    {
+      "n": 78,
+      "cat": "guide",
+      "topic": "Phiên dịch và dịch vụ hỗ trợ tiếng Việt cho người nước ngoài tại Đài Loan",
+      "kw": "hỗ trợ tiếng Việt Đài Loan",
+      "done": true,
+      "publish_at": "2026-11-22T13:20:00Z",
+      "old_publish_at": "2026-11-22T04:30:00Z"
+    },
+    {
+      "n": 79,
+      "cat": "guide",
+      "topic": "Tài chính cá nhân cho người đi làm: mở tài khoản, tiết kiệm, bảo hiểm",
+      "kw": "tài chính cá nhân lao động Đài Loan",
+      "done": true,
+      "publish_at": "2026-11-22T13:30:00Z",
+      "old_publish_at": "2026-11-22T04:40:00Z"
+    },
+    {
+      "n": 80,
+      "cat": "guide",
+      "topic": "Thuế thu nhập: khai thuế hằng năm và hoàn thuế của người nước ngoài",
+      "kw": "khai thuế người nước ngoài Đài Loan",
+      "done": true,
+      "publish_at": "2026-11-22T13:40:00Z",
+      "old_publish_at": "2026-11-22T04:50:00Z"
+    },
+    {
+      "n": 81,
+      "cat": "guide",
+      "topic": "Cẩm nang an toàn lao động: quy định của Bộ Lao động Đài Loan",
+      "kw": "an toàn lao động Đài Loan",
+      "done": true,
+      "publish_at": "2026-11-22T13:50:00Z",
+      "old_publish_at": "2026-11-22T05:00:00Z"
+    },
+    {
+      "n": 82,
+      "cat": "guide",
+      "topic": "Quy định về nhà ở, tiền thuê và quyền của người thuê tại Đài Loan",
+      "kw": "thuê nhà Đài Loan người nước ngoài",
+      "done": true,
+      "publish_at": "2026-11-22T14:00:00Z",
+      "old_publish_at": "2026-11-22T05:10:00Z"
+    },
+    {
+      "n": 83,
+      "cat": "guide",
+      "topic": "Bằng lái xe và giao thông: đổi bằng, quy định xe máy tại Đài Loan",
+      "kw": "bằng lái xe Đài Loan người nước ngoài",
+      "done": false,
+      "publish_at": "2026-11-22T14:10:00Z",
+      "blocked": "chưa có bài (thiếu nguồn chính thức đọc được)"
+    },
+    {
+      "n": 84,
+      "cat": "guide",
+      "topic": "Kỹ sư cơ khí - tự động hoá: nhu cầu và điều kiện làm việc tại Đài Loan",
+      "kw": "kỹ sư cơ khí Đài Loan",
+      "done": true,
+      "publish_at": "2026-11-22T14:20:00Z",
+      "old_publish_at": "2026-11-22T05:30:00Z"
+    },
+    {
+      "n": 85,
+      "cat": "guide",
+      "topic": "Kỹ sư điện - điện tử: cơ hội làm việc tại Đài Loan",
+      "kw": "kỹ sư điện tử Đài Loan",
+      "done": true,
+      "publish_at": "2026-11-22T14:30:00Z",
+      "old_publish_at": "2026-11-22T05:40:00Z"
+    },
+    {
+      "n": 86,
+      "cat": "guide",
+      "topic": "Kỹ sư xây dựng và quản lý công trình: giấy phép hành nghề ở Đài Loan",
+      "kw": "kỹ sư xây dựng Đài Loan",
+      "done": true,
+      "publish_at": "2026-11-22T14:40:00Z",
+      "old_publish_at": "2026-11-22T05:50:00Z"
+    },
+    {
+      "n": 87,
+      "cat": "guide",
+      "topic": "Kỹ sư phần mềm và CNTT làm việc tại Đài Loan: visa và lương tham khảo",
+      "kw": "kỹ sư phần mềm Đài Loan",
+      "done": true,
+      "publish_at": "2026-11-22T14:50:00Z",
+      "old_publish_at": "2026-11-22T06:00:00Z"
+    },
+    {
+      "n": 88,
+      "cat": "guide",
+      "topic": "Chương trình tuyển dụng chuyên gia nước ngoài (Foreign Professionals) theo luật mới của Đài Loan",
+      "kw": "Foreign Professionals Act Đài Loan",
+      "done": true,
+      "publish_at": "2026-11-22T15:00:00Z",
+      "old_publish_at": "2026-11-22T06:10:00Z"
+    },
+    {
+      "n": 89,
+      "cat": "news",
+      "topic": "Tổng hợp cập nhật chính sách tháng này của Sở Di dân và Bộ Lao động Đài Loan",
+      "kw": "cập nhật chính sách Đài Loan",
+      "done": true,
+      "publish_at": "2026-11-22T15:10:00Z",
+      "old_publish_at": "2026-11-22T06:20:00Z"
+    },
+    {
+      "n": 90,
+      "cat": "news",
+      "topic": "Cập nhật mức lương cơ bản và các điều chỉnh liên quan tại Đài Loan",
+      "kw": "lương cơ bản Đài Loan điều chỉnh",
+      "done": true,
+      "publish_at": "2026-11-22T15:20:00Z",
+      "old_publish_at": "2026-11-22T06:30:00Z"
+    },
+    {
+      "n": 91,
+      "cat": "news",
+      "topic": "Hợp tác Việt Nam - Đài Loan về giáo dục và lao động: những điểm chính",
+      "kw": "hợp tác Việt Nam Đài Loan",
+      "done": true,
+      "publish_at": "2026-11-22T15:30:00Z",
+      "old_publish_at": "2026-11-22T06:40:00Z"
+    },
+    {
+      "n": 92,
+      "cat": "news",
+      "topic": "Thông tin mới về tuyển sinh sinh viên quốc tế của Đài Loan năm học tới",
+      "kw": "tuyển sinh quốc tế Đài Loan năm học mới",
+      "done": true,
+      "publish_at": "2026-11-22T15:40:00Z",
+      "old_publish_at": "2026-11-22T06:50:00Z"
+    },
+    {
+      "n": 93,
+      "cat": "news",
+      "topic": "Số liệu sinh viên quốc tế tại Đài Loan theo thống kê của Bộ Giáo dục",
+      "kw": "thống kê sinh viên quốc tế Đài Loan",
+      "done": true,
+      "publish_at": "2026-11-22T15:50:00Z",
+      "old_publish_at": "2026-11-22T07:00:00Z"
+    },
+    {
+      "n": 94,
+      "cat": "news",
+      "topic": "Số liệu kỹ sư và chuyên gia nước ngoài làm việc tại Đài Loan",
+      "kw": "thống kê chuyên gia nước ngoài Đài Loan",
+      "done": true,
+      "publish_at": "2026-11-22T16:00:00Z",
+      "old_publish_at": "2026-11-22T07:10:00Z"
+    },
+    {
+      "n": 95,
+      "cat": "story",
+      "topic": "Câu chuyện chính sách: vì sao Đài Loan cần lao động và kỹ sư nước ngoài?",
+      "kw": "Đài Loan thiếu hụt nhân lực",
+      "done": true,
+      "publish_at": "2026-11-22T16:10:00Z",
+      "old_publish_at": "2026-11-22T07:20:00Z"
+    },
+    {
+      "n": 96,
+      "cat": "story",
+      "topic": "Câu chuyện chính sách: con đường từ sinh viên quốc tế đến chuyên gia ở lại Đài Loan",
+      "kw": "từ sinh viên đến chuyên gia Đài Loan",
+      "done": true,
+      "publish_at": "2026-11-22T16:20:00Z",
+      "old_publish_at": "2026-11-22T07:30:00Z"
+    },
+    {
+      "n": 97,
+      "cat": "story",
+      "topic": "Câu chuyện từ số liệu: cộng đồng người Việt tại Đài Loan",
+      "kw": "cộng đồng người Việt Đài Loan",
+      "done": true,
+      "publish_at": "2026-11-22T16:30:00Z",
+      "old_publish_at": "2026-11-22T07:40:00Z"
+    },
+    {
+      "n": 98,
+      "cat": "guide",
+      "topic": "Checklist trước khi lên đường sang Đài Loan: giấy tờ, hành lý, kết nối",
+      "kw": "checklist sang Đài Loan",
+      "done": true,
+      "publish_at": "2026-11-22T16:40:00Z",
+      "old_publish_at": "2026-11-22T07:50:00Z"
+    },
+    {
+      "n": 99,
+      "cat": "guide",
+      "topic": "Bảng thuật ngữ du học Đài Loan: tên cơ quan, giấy tờ và viết tắt thường gặp",
+      "kw": "thuật ngữ du học Đài Loan",
+      "done": true,
+      "publish_at": "2026-11-22T16:50:00Z",
+      "old_publish_at": "2026-11-22T08:00:00Z"
+    },
+    {
+      "n": 100,
+      "cat": "guide",
+      "topic": "Bảng thuật ngữ làm việc tại Đài Loan: tên cơ quan, giấy tờ và viết tắt thường gặp",
+      "kw": "thuật ngữ lao động Đài Loan",
+      "done": true,
+      "publish_at": "2026-11-22T17:00:00Z",
+      "old_publish_at": "2026-11-22T08:10:00Z"
     }
   ],
-  "topics_continue": "Các chủ đề 51-100 sẽ được lập tiếp (cập nhật chính sách theo từng nguồn, câu hỏi thường gặp, so sánh các chương trình, bài về từng trường/ngành/vùng) dựa trên những gì đã tìm thấy ở nguồn chính thức; ghi thêm vào mảng topics.",
   "image_pool_local": {
     "root": "G:/My Drive/0000. ẢNH BAY/2026",
     "note": "Ảnh của công ty (người dùng cung cấp 21/11/2026), chụp tại sân bay Nội Bài khi đưa lao động/kỹ sư xuất cảnh. Chỉ dùng làm ảnh minh hoạ.",
     "rules": [
-      "Chỉ dùng cho bài về xuất khẩu lao động / kỹ sư (quy trình, xuất cảnh, hành trang...). Không dùng cho bài du học hoặc bài số liệu chính sách.",
+      "Dùng cho bài về xuất khẩu lao động / kỹ sư (quy trình, xuất cảnh, hành trang...). Không dùng cho bài du học hoặc bài số liệu chính sách thuần túy.",
       "KHÔNG dùng ảnh trong danh sách exclude (có giấy tờ cá nhân, tiền mặt, tên, chữ ký).",
-      "Không nêu tên người trong ảnh; alt/caption chỉ mô tả chung (\"Lao động TB GROUP tại sân bay Nội Bài trước chuyến bay\"), không gắn ảnh với số liệu hay lời chứng thực nào.",
+      "Không nêu tên người trong ảnh; alt chỉ mô tả chung (ví dụ \"Kỹ sư TB GROUP tại sân bay Nội Bài trước chuyến bay\"), không gắn ảnh với số liệu hay lời chứng thực nào.",
       "Mỗi ảnh dùng cho tối đa 1 bài; ảnh liền số thường là cùng một nhóm nên tránh dùng nhiều ảnh gần giống nhau.",
-      "Chỉ chép ảnh vào public/img/news khi dùng, thu nhỏ ngang 1200px; image_credit: \"Ảnh: TB GROUP\".",
-      "Cần người dùng xác nhận đã có sự đồng ý của những người trong ảnh trước khi đăng công khai (đã nhắc, chưa được xác nhận). Chưa xác nhận thì KHÔNG dùng ảnh này."
+      "Chép ảnh vào public/img/news khi dùng, thu nhỏ ngang 1200px. KHÔNG ghi nguồn ảnh: để image_credit là chuỗi rỗng \"\" (người dùng yêu cầu). Ảnh Wikimedia thì vẫn phải ghi nguồn/giấy phép đúng quy định CC.",
+      "CẢNH BÁO (rà soát 22/11/2026): phần lớn ảnh trong pool có người cầm tờ giấy ghi họ tên, số hộ chiếu, chuyến bay đọc được, KHÔNG được đăng. Chỉ 5 ảnh đã duyệt sạch đang dùng (cu-tru-vinh-vien, giay-phep-lam-viec-chuyen-mon, khieu-nai-lao-dong, lao-dong-moi-sang, bao-lanh-gia-dinh). Muốn dùng thêm phải xem từng ảnh ở kích thước đầy đủ trước."
     ],
     "exclude": {
       "1": "hộ chiếu + giấy tờ có tên",
@@ -565,6 +1112,8 @@
         "n": 40,
         "file": "Thang 11/15.11/z8489896706627_23288cddfa9d4520d33c7aab8c75c41c.jpg"
       }
-    ]
+    ],
+    "consent": "Người dùng xác nhận 21/11/2026: mọi người trong ảnh là lao động/kỹ sư đã xuất cảnh của công ty và đều đồng ý cho đăng công khai.",
+    "who": "Người mặc đồng phục áo polo xanh navy TB GROUP = KỸ SƯ; người còn lại = LAO ĐỘNG xuất khẩu lao động. Chọn ảnh cho bài kỹ sư thì ưu tiên ảnh đồng phục; bài xuất khẩu lao động thì ảnh người không mặc đồng phục."
   }
 }
