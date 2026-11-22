@@ -29,12 +29,12 @@
       { "k": "years", "label": "Years of experience" },
       { "k": "students", "label": "Candidates departed" },
       { "k": "partners", "label": "Taiwan partners" },
-      { "k": "offices", "label": "Offices in 4 locations" }
+      { "k": "offices", "label": "Offices in 3 locations" }
     ],
     "why_title": "Why TB GROUP", "why_sub": "Four principles that apply to every case we handle.",
     "why": [
       { "t": "Transparent costs", "d": "A written quote before you sign. No fees outside the agreement." },
-      { "t": "Offices at the destination", "d": "Our teams in Taiwan (Taichung) and Japan support you in person once you arrive." },
+      { "t": "Offices at the destination", "d": "Our team in Taiwan (Taichung) supports you in person once you arrive." },
       { "t": "The right program for you", "d": "We assess your qualifications and experience to match the right program, not just the easiest one to sell." },
       { "t": "Support after departure", "d": "Help with housing, work and any issues throughout your time working or studying abroad." }
     ],
@@ -103,7 +103,7 @@
   "about": {
     "title": "About TB GROUP", "sub": "TB Vietnam Group JSC (越南TB集團股份公司)",
     "story_title": "Who we are",
-    "story": ["TB GROUP provides study abroad advisory, overseas labor placement and the Taiwan engineer program, with offices in Hanoi, Ho Chi Minh City, Taichung (Taiwan) and Tokyo (Japan).", "We believe going abroad changes a whole life and family. So every case gets straight advice on requirements, costs and risks before you decide."],
+    "story": ["TB GROUP provides study abroad advisory, overseas labor placement and the Taiwan engineer program, with offices in Hanoi, Ho Chi Minh City and Taichung (Taiwan).", "We believe going abroad changes a whole life and family. So every case gets straight advice on requirements, costs and risks before you decide."],
     "values_title": "Core values",
     "values": [
       { "t": "Honesty", "d": "Clear on requirements, costs and timelines. No promises we cannot keep." },
@@ -116,7 +116,7 @@
   "footer": {
     "about": "Advisory for study abroad, overseas labor and Taiwan engineers. Transparent, responsible, long-term support.",
     "programs": "Programs", "company": "Company", "offices": "Offices", "rights": "All rights reserved.",
-    "hq": "Head office", "hcm": "Ho Chi Minh City office", "taiwan": "Taiwan office", "japan": "Japan office"
+    "hq": "Head office", "hcm": "Ho Chi Minh City office", "taiwan": "Taiwan office"
   },
   "lang_switch": "Language"
 }

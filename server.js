@@ -72,7 +72,6 @@ app.use((req, res, next) => {
     addr_hq: 'Liền kề 24, NO7B, Khu đất dịch vụ Vạn Phúc, phường Hà Đông, thành phố Hà Nội',
     addr_hcm: 'Số 27/48/2/3 Bùi Tư Toàn, khu phố 53, phường An Lạc, TP. Hồ Chí Minh',
     addr_tw: '台中市中區自由路二段9號',
-    addr_jp: '東京都新宿区新宿1-26-6',
     map_query: 'TB GROUP - Kỹ sư, Du học và XKLĐ, NO7-B, Khu đất dịch vụ Vạn Phúc, LK24, Hà Đông, Hà Nội',
   };
   const saved = getSettings();

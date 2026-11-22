@@ -26,7 +26,7 @@
   <div class="container">
     <header class="sec-head sec-head--center"><h2><%= t('about.offices_title') %></h2></header>
     <div class="grid grid--4">
-      <% [['hq', 'addr_hq'], ['hcm', 'addr_hcm'], ['taiwan', 'addr_tw'], ['japan', 'addr_jp']].forEach(function (o) { if (S[o[1]]) { %>
+      <% [['hq', 'addr_hq'], ['hcm', 'addr_hcm'], ['taiwan', 'addr_tw']].forEach(function (o) { if (S[o[1]]) { %>
         <div class="office"><svg class="i i--lg" aria-hidden="true"><use href="#i-building"/></svg><h3><%= t('footer.' + o[0]) %></h3><p><%= S[o[1]] %></p></div>
       <% } }) %>
     </div>

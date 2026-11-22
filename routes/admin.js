@@ -93,7 +93,7 @@ const SETTING_FIELDS = [
   ['hotline', 'Hotline hiển thị (ví dụ 0982.735.714)'], ['hotline_tel', 'Số gọi/Zalo (chỉ chữ số, ví dụ 0982735714)'], ['zalo', 'Số Zalo (chỉ chữ số)'],
   ['email', 'Email liên hệ'], ['facebook', 'Link Facebook (https://...)'],
   ['hours_vi', 'Giờ làm việc'],
-  ['addr_hq', 'Địa chỉ trụ sở chính'], ['addr_hcm', 'Văn phòng TP. HCM'], ['addr_tw', 'Văn phòng Đài Loan'], ['addr_jp', 'Văn phòng Nhật Bản'],
+  ['addr_hq', 'Địa chỉ trụ sở chính'], ['addr_hcm', 'Văn phòng TP. HCM'], ['addr_tw', 'Văn phòng Đài Loan'],
   ['show_stats', 'Hiện khối số liệu ở trang chủ (1 = hiện, 0 = ẩn). Chỉ bật khi số liệu bên dưới là THẬT.'],
   ['stat_years', 'Số liệu: Năm kinh nghiệm'], ['stat_students', 'Số liệu: Học viên đã xuất cảnh'], ['stat_partners', 'Số liệu: Đối tác Đài Loan'], ['stat_offices', 'Số liệu: Số văn phòng'],
 ];

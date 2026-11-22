@@ -29,12 +29,12 @@
       { "k": "years", "label": "Năm kinh nghiệm" },
       { "k": "students", "label": "Học viên đã xuất cảnh" },
       { "k": "partners", "label": "Đối tác Đài Loan" },
-      { "k": "offices", "label": "Văn phòng tại 4 địa điểm" }
+      { "k": "offices", "label": "Văn phòng tại 3 địa điểm" }
     ],
     "why_title": "Vì sao chọn TB GROUP", "why_sub": "Chúng tôi làm việc theo bốn nguyên tắc, áp dụng cho mọi hồ sơ.",
     "why": [
       { "t": "Chi phí minh bạch", "d": "Báo giá bằng văn bản trước khi ký hợp đồng. Không phát sinh khoản thu ngoài thoả thuận." },
-      { "t": "Có văn phòng tại nơi đến", "d": "Đội ngũ tại Đài Loan (Đài Trung) và Nhật Bản hỗ trợ trực tiếp khi bạn đã sang." },
+      { "t": "Có văn phòng tại nơi đến", "d": "Đội ngũ tại Đài Loan (Đài Trung) hỗ trợ trực tiếp khi bạn đã sang." },
       { "t": "Tư vấn đúng diện", "d": "Đánh giá bằng cấp và kinh nghiệm để chọn chương trình phù hợp, thay vì chỉ chọn chương trình dễ bán." },
       { "t": "Đồng hành sau xuất cảnh", "d": "Hỗ trợ ổn định nơi ở, công việc và giải quyết vấn đề phát sinh trong suốt thời gian làm việc, học tập." }
     ],
@@ -103,7 +103,7 @@
   "about": {
     "title": "Về TB GROUP", "sub": "CTCP Tập đoàn TB Việt Nam (越南TB集團股份公司)",
     "story_title": "Chúng tôi là ai",
-    "story": ["TB GROUP là doanh nghiệp hoạt động trong lĩnh vực tư vấn du học, xuất khẩu lao động và chương trình kỹ sư Đài Loan, với văn phòng tại Hà Nội, TP. Hồ Chí Minh, Đài Trung (Đài Loan) và Tokyo (Nhật Bản).", "Chúng tôi tin rằng một quyết định đi nước ngoài thay đổi cả cuộc đời và gia đình. Vì vậy, mỗi hồ sơ được tư vấn thẳng thắn về điều kiện, chi phí và rủi ro trước khi bạn quyết định."],
+    "story": ["TB GROUP là doanh nghiệp hoạt động trong lĩnh vực tư vấn du học, xuất khẩu lao động và chương trình kỹ sư Đài Loan, với văn phòng tại Hà Nội, TP. Hồ Chí Minh và Đài Trung (Đài Loan).", "Chúng tôi tin rằng một quyết định đi nước ngoài thay đổi cả cuộc đời và gia đình. Vì vậy, mỗi hồ sơ được tư vấn thẳng thắn về điều kiện, chi phí và rủi ro trước khi bạn quyết định."],
     "values_title": "Giá trị cốt lõi",
     "values": [
       { "t": "Trung thực", "d": "Nói rõ điều kiện, chi phí, thời gian. Không hứa điều không làm được." },
@@ -116,7 +116,7 @@
   "footer": {
     "about": "Tư vấn du học, xuất khẩu lao động và kỹ sư Đài Loan. Minh bạch, trách nhiệm, đồng hành lâu dài.",
     "programs": "Chương trình", "company": "Công ty", "offices": "Văn phòng", "rights": "Bảo lưu mọi quyền.",
-    "hq": "Trụ sở chính", "hcm": "Văn phòng TP. HCM", "taiwan": "Văn phòng Đài Loan", "japan": "Văn phòng Nhật Bản"
+    "hq": "Trụ sở chính", "hcm": "Văn phòng TP. HCM", "taiwan": "Văn phòng Đài Loan"
   },
   "lang_switch": "Ngôn ngữ"
 }

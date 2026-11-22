@@ -31,7 +31,7 @@
     <div class="footer__offices">
       <h2 class="footer__h"><%= t('footer.offices') %></h2>
       <ul class="footer__list">
-        <% [['hq', 'addr_hq'], ['hcm', 'addr_hcm'], ['taiwan', 'addr_tw'], ['japan', 'addr_jp']].forEach(function (o) { if (S[o[1]]) { %>
+        <% [['hq', 'addr_hq'], ['hcm', 'addr_hcm'], ['taiwan', 'addr_tw']].forEach(function (o) { if (S[o[1]]) { %>
           <li><strong><%= t('footer.' + o[0]) %></strong><br><span><%= S[o[1]] %></span></li>
         <% } }) %>
       </ul>
