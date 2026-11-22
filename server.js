@@ -10,6 +10,7 @@ const { getSettings } = require('./lib/db');
 const { LANGS, DEFAULT_LANG } = require('./lib/helpers');
 try { require('./lib/bootstrap-admin').bootstrapAdmin(); } catch (e) { console.error('[admin]', e.message); }
 try { { const c = require('./lib/content'); console.log(`[content] đã nạp ${c.importPosts()} bài, ${c.importSchools()} trường`); } } catch (e) { console.error('[content]', e.message); }
+try { console.log(`[content] đã nạp ${require('./lib/content-jobs').importJobs()} đơn tuyển dụng`); } catch (e) { console.error('[content-jobs]', e.message); }
 
 const isProd = process.env.NODE_ENV === 'production';
 if (isProd && !process.env.SESSION_SECRET) {
