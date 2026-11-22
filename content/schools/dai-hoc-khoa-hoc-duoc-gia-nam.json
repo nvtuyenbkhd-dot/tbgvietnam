@@ -5,23 +5,17 @@
   "name_vi": "Đại học Khoa học Dược Gia Nam (Chia Nan)",
   "name_zh": "嘉南藥理大學",
   "name_en": "Chia Nan University of Pharmacy and Science",
-  "summary_vi": "Trường ở quận Nhân Đức, Đài Nam. Theo Taiwan Diary, kỳ Xuân 2027 trường mở hệ 1+4 với hai khoa là Khoa học và Công nghệ thực phẩm, Quản lý dịch vụ người cao tuổi và sức khoẻ; tổng chỉ tiêu 54.\n\nLưu ý: thông tin dưới đây lấy từ trang tổng hợp của Taiwan Diary, không phải từ trang của trường. Một số tiêu đề trên trang gốc còn ghi nhầm năm; hãy đối chiếu mốc hạn và học phí với thông báo của trường trước khi nộp hồ sơ.",
+  "summary_vi": "Trường ở quận Nhân Đức, Đài Nam. Theo thông tin tổng hợp, kỳ Xuân 2027 trường mở hệ 1+4 với hai khoa là Khoa học và Công nghệ thực phẩm, Quản lý dịch vụ người cao tuổi và sức khoẻ; tổng chỉ tiêu 54.\n\nLưu ý: thông tin dưới đây là thông tin tổng hợp từ nhiều nguồn, chưa được đối chiếu với trang tuyển sinh chính thức của trường và có thể đã thay đổi. Hãy kiểm tra mốc hạn, học phí và điều kiện với thông báo của trường trước khi nộp hồ sơ.",
   "summary_en": "Chia Nan University of Pharmacy and Science offers a 1+4 track for Spring 2027 in food science and senior-service health management, per a secondary summary.",
   "summary_zh": "嘉南藥理大學 2027 年春季班設 1+4 學程（食品科技、高齡服務與健康管理），依二手整理資料。",
   "majors_vi": "Khoa học và Công nghệ thực phẩm\nQuản lý dịch vụ người cao tuổi và sức khoẻ",
   "requirements_vi": "- Hồ sơ nộp đến 23/10/2026 (đã đóng); xét duyệt 24-30/10; kết quả và thư nhập học giữa tháng 11/2026; nhập học 22/2/2027, hoàn tất thủ tục trước 12/3/2027.\n- Không yêu cầu TOCFL khi nộp (người chưa biết tiếng Hoa); năm đầu phải đạt TOCFL A2 để lên đại học, năm 2 phải đạt B1 theo bảng chương trình.\n- Điểm trung bình THPT từ 6.0.",
-  "scholarship_vi": "Theo Taiwan Diary: học kỳ 1 năm nhất miễn ký túc xá; học kỳ 1 năm 2 miễn 100% học phí nếu đạt TOCFL B1, giảm 50% nếu đạt A2.",
-  "tuition": "Theo Taiwan Diary: năm nhất 20.000 Đài tệ/học kỳ; năm 2 học kỳ 2 đến năm 5: 54.422 (thực phẩm) hoặc 52.069 (sức khoẻ) Đài tệ/học kỳ; ký túc xá 9.500 - 17.000",
+  "scholarship_vi": "Thông tin tổng hợp: học kỳ 1 năm nhất miễn ký túc xá; học kỳ 1 năm 2 miễn 100% học phí nếu đạt TOCFL B1, giảm 50% nếu đạt A2.",
+  "tuition": "Thông tin tổng hợp: năm nhất 20.000 Đài tệ/học kỳ; năm 2 học kỳ 2 đến năm 5: 54.422 (thực phẩm) hoặc 52.069 (sức khoẻ) Đài tệ/học kỳ; ký túc xá 9.500 - 17.000",
   "intake": "Xuân 2027 (nhập học 22/2/2027)",
-  "deadline": "Đã đóng 23/10/2026 (theo Taiwan Diary)",
-  "sources": [
-    {
-      "title": "Hệ 1+4 Đại học Khoa học Dược Gia Nam kỳ Xuân",
-      "url": "https://taiwandiary.vn/he-14-dai-hoc-khoa-hoc-duoc-gia-nam-ky-xuan/",
-      "publisher": "Taiwan Diary (trung tâm tư vấn du học; nguồn thứ cấp, tổng hợp từ nhiều nguồn)",
-      "accessed": "22/11/2026"
-    }
-  ],
+  "deadline": "Đã đóng 23/10/2026 (thông tin tổng hợp)",
+  "sources": [],
+  "aggregated": true,
   "image": "/img/news/school-chia-nan.jpg",
   "image_credit": "Ảnh: Aa7778273 / CC BY-SA 4.0 / Wikimedia Commons (https://commons.wikimedia.org/wiki/File:%E5%98%89%E8%97%A5%E4%B8%AD%E5%A4%AE%E8%8D%89%E5%9D%AA.jpg)"
 }

@@ -5,22 +5,16 @@
   "name_vi": "Đại học Quốc lập Liên Hợp (NUU) - chương trình INTENSE",
   "name_zh": "國立聯合大學",
   "name_en": "National United University (INTENSE)",
-  "summary_vi": "Trường ở Miêu Lật. Theo Taiwan Diary, trường có chương trình INTENSE (hợp tác chính phủ và doanh nghiệp) ngành kỹ thuật hoá học và kỹ thuật cơ khí, nhưng lịch kỳ Xuân 2027 chưa được công bố chính thức; trang chỉ đưa ra ước tính theo thông lệ.\n\nLưu ý: thông tin dưới đây lấy từ trang tổng hợp của Taiwan Diary, không phải từ trang của trường. Một số tiêu đề trên trang gốc còn ghi nhầm năm; hãy đối chiếu mốc hạn và học phí với thông báo của trường trước khi nộp hồ sơ.",
+  "summary_vi": "Trường ở Miêu Lật. Theo thông tin tổng hợp, trường có chương trình INTENSE (hợp tác chính phủ và doanh nghiệp) ngành kỹ thuật hoá học và kỹ thuật cơ khí, nhưng lịch kỳ Xuân 2027 chưa được công bố chính thức; trang chỉ đưa ra ước tính theo thông lệ.\n\nLưu ý: thông tin dưới đây là thông tin tổng hợp từ nhiều nguồn, chưa được đối chiếu với trang tuyển sinh chính thức của trường và có thể đã thay đổi. Hãy kiểm tra mốc hạn, học phí và điều kiện với thông báo của trường trước khi nộp hồ sơ.",
   "summary_en": "NUU runs an INTENSE program in chemical and mechanical engineering; the official Spring 2027 schedule had not been published on the secondary page we read.",
   "summary_zh": "聯合大學設有 INTENSE 學程（化工、機械）；所見二手頁面指出 2027 年春季班正式時程尚未公布。",
   "majors_vi": "Kỹ thuật hoá học (thạc sĩ công nghệ bền vững và năng lượng xanh; cử nhân 2 năm)\nKỹ thuật cơ khí (thạc sĩ sản xuất thông minh; cử nhân 2 năm)",
-  "requirements_vi": "- Lịch nộp hồ sơ kỳ Xuân 2027 chưa có thông báo chính thức; mọi mốc thời gian trên trang gốc chỉ là ước tính theo thông lệ.\n- Chương trình tiếng Hoa: CEFR A2 trở lên (chỉ nhận TOCFL). Chương trình tiếng Anh: CEFR B1 trở lên (IELTS, TOEFL iBT...).\n- Trang gốc nêu sinh viên phải ký hợp đồng làm việc 2 năm với doanh nghiệp đối tác sau tốt nghiệp. Đây là mô tả của Taiwan Diary, chúng tôi chưa xác nhận trên trang của trường.",
-  "scholarship_vi": "Theo mô tả của Taiwan Diary: miễn học phí 3 năm đầu, hỗ trợ vé máy bay một chiều và phụ cấp sinh hoạt 10.000 Đài tệ/tháng năm đầu từ doanh nghiệp đối tác. Chưa xác nhận trên trang của trường.",
+  "requirements_vi": "- Lịch nộp hồ sơ kỳ Xuân 2027 chưa có thông báo chính thức; mọi mốc thời gian trên trang gốc chỉ là ước tính theo thông lệ.\n- Chương trình tiếng Hoa: CEFR A2 trở lên (chỉ nhận TOCFL). Chương trình tiếng Anh: CEFR B1 trở lên (IELTS, TOEFL iBT...).\n- Trang gốc nêu sinh viên phải ký hợp đồng làm việc 2 năm với doanh nghiệp đối tác sau tốt nghiệp. Đây là thông tin tổng hợp, chúng tôi chưa xác nhận trên trang của trường.",
+  "scholarship_vi": "Theo thông tin tổng hợp: miễn học phí 3 năm đầu, hỗ trợ vé máy bay một chiều và phụ cấp sinh hoạt 10.000 Đài tệ/tháng năm đầu từ doanh nghiệp đối tác. Chưa xác nhận trên trang của trường.",
   "intake": "Chưa có lịch chính thức cho Xuân 2027",
   "deadline": "Chưa công bố",
-  "sources": [
-    {
-      "title": "Chương trình INTENSE Đại học Quốc lập Liên Hợp kỳ Xuân",
-      "url": "https://taiwandiary.vn/chuong-trinh-intense-dai-hoc-quoc-lap-lien-hop-ky-xuan/",
-      "publisher": "Taiwan Diary (trung tâm tư vấn du học; nguồn thứ cấp, tổng hợp từ nhiều nguồn)",
-      "accessed": "22/11/2026"
-    }
-  ],
+  "sources": [],
+  "aggregated": true,
   "image": "/img/news/school-nuu.jpg",
   "image_credit": "Ảnh: Nuu381000 / CC BY 3.0 / Wikimedia Commons (https://commons.wikimedia.org/wiki/File:%E8%81%AF%E5%90%88%E5%A4%A7%E5%AD%B8-%E5%A4%A7%E5%AD%B8%E6%B9%96.JPG)"
 }

@@ -5,23 +5,17 @@
   "name_vi": "Đại học Công nghệ Triều Dương (CYUT)",
   "name_zh": "朝陽科技大學",
   "name_en": "Chaoyang University of Technology",
-  "summary_vi": "Trường ở Vụ Phong, Đài Trung. Theo Taiwan Diary, kỳ Xuân 2027 trường mở hệ vừa học vừa làm (chuyên ban quốc tế) giảng bằng tiếng Hoa, mỗi ngành 40 chỉ tiêu.\n\nLưu ý: thông tin dưới đây lấy từ trang tổng hợp của Taiwan Diary, không phải từ trang của trường. Một số tiêu đề trên trang gốc còn ghi nhầm năm; hãy đối chiếu mốc hạn và học phí với thông báo của trường trước khi nộp hồ sơ.",
+  "summary_vi": "Trường ở Vụ Phong, Đài Trung. Theo thông tin tổng hợp, kỳ Xuân 2027 trường mở hệ vừa học vừa làm (chuyên ban quốc tế) giảng bằng tiếng Hoa, mỗi ngành 40 chỉ tiêu.\n\nLưu ý: thông tin dưới đây là thông tin tổng hợp từ nhiều nguồn, chưa được đối chiếu với trang tuyển sinh chính thức của trường và có thể đã thay đổi. Hãy kiểm tra mốc hạn, học phí và điều kiện với thông báo của trường trước khi nộp hồ sơ.",
   "summary_en": "Chaoyang University of Technology offers a work-study international class taught in Chinese for Spring 2027, 40 places per program, per a secondary summary.",
   "summary_zh": "朝陽科技大學 2027 年春季班開設國際產學專班（中文授課），每系 40 名（依二手整理資料）。",
   "majors_vi": "Quản lý dịch vụ giải trí\nQuản lý tiếp thị và logistics\nQuản lý và kỹ thuật công nghiệp",
   "requirements_vi": "- Nộp hồ sơ trước 27/11/2026; phỏng vấn trước 24/12; danh sách trúng tuyển trước 8/1/2027; thư nhập học trước 15/1/2027; khai giảng 22/2/2027.\n- Tốt nghiệp THPT, điểm trung bình từ 6.0 (hoặc 60/100).\n- Ưu tiên người có TOCFL A1 trở lên hoặc qua kiểm tra nói của trường; sau khi nhập học phải đạt TOCFL A2 trước hết học kỳ 2 năm nhất, nếu không bị thôi học. Trường mở thêm lớp tiếng Hoa 180 giờ/học kỳ (đã có A1) hoặc 270 giờ/học kỳ (chưa có TOCFL).",
-  "scholarship_vi": "Theo Taiwan Diary: học kỳ 1 năm nhất miễn 100% học phí và tạp phí, học kỳ 2 giảm 50%; các năm 2-4 có hỗ trợ 1.000 - 2.000 Đài tệ/học kỳ tuỳ xếp hạng.",
-  "tuition": "Theo Taiwan Diary: 48.409 Đài tệ/học kỳ (ngành giải trí, tiếp thị - logistics) hoặc 55.684 (quản lý và kỹ thuật công nghiệp); ký túc xá 13.000 - 23.400",
+  "scholarship_vi": "Thông tin tổng hợp: học kỳ 1 năm nhất miễn 100% học phí và tạp phí, học kỳ 2 giảm 50%; các năm 2-4 có hỗ trợ 1.000 - 2.000 Đài tệ/học kỳ tuỳ xếp hạng.",
+  "tuition": "Thông tin tổng hợp: 48.409 Đài tệ/học kỳ (ngành giải trí, tiếp thị - logistics) hoặc 55.684 (quản lý và kỹ thuật công nghiệp); ký túc xá 13.000 - 23.400",
   "intake": "Xuân 2027 (khai giảng 22/2/2027)",
-  "deadline": "Trước 27/11/2026 (theo Taiwan Diary)",
-  "sources": [
-    {
-      "title": "Hệ vừa học vừa làm Đại học Công nghệ Triều Dương kỳ Xuân",
-      "url": "https://taiwandiary.vn/he-vhvl-dai-hoc-cong-nghe-trieu-duong-ky-xuan/",
-      "publisher": "Taiwan Diary (trung tâm tư vấn du học; nguồn thứ cấp, tổng hợp từ nhiều nguồn)",
-      "accessed": "22/11/2026"
-    }
-  ],
+  "deadline": "Trước 27/11/2026 (thông tin tổng hợp)",
+  "sources": [],
+  "aggregated": true,
   "image": "/img/news/school-cyut.jpg",
   "image_credit": "Ảnh: Ncisagent / CC BY-SA 3.0 / Wikimedia Commons (https://commons.wikimedia.org/wiki/File:Cyutadministrationbuilding.jpg)"
 }

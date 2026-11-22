@@ -5,22 +5,16 @@
   "name_vi": "Đại học Đông Ngô (Soochow)",
   "name_zh": "東吳大學",
   "name_en": "Soochow University",
-  "summary_vi": "Trường ở quận Sĩ Lâm, Đài Bắc. Theo Taiwan Diary, kỳ Xuân tuyển hệ tự túc với chỉ tiêu cử nhân 12 và thạc sĩ 7; chương trình tiếng Hoa hoặc tiếng Anh.\n\nLưu ý: thông tin dưới đây lấy từ trang tổng hợp của Taiwan Diary, không phải từ trang của trường. Một số tiêu đề trên trang gốc còn ghi nhầm năm; hãy đối chiếu mốc hạn và học phí với thông báo của trường trước khi nộp hồ sơ.",
+  "summary_vi": "Trường ở quận Sĩ Lâm, Đài Bắc. Theo thông tin tổng hợp, kỳ Xuân tuyển hệ tự túc với chỉ tiêu cử nhân 12 và thạc sĩ 7; chương trình tiếng Hoa hoặc tiếng Anh.\n\nLưu ý: thông tin dưới đây là thông tin tổng hợp từ nhiều nguồn, chưa được đối chiếu với trang tuyển sinh chính thức của trường và có thể đã thay đổi. Hãy kiểm tra mốc hạn, học phí và điều kiện với thông báo của trường trước khi nộp hồ sơ.",
   "summary_en": "Soochow University (Taipei) lists 12 bachelor's and 7 master's places for the spring intake, per a secondary summary.",
   "summary_zh": "東吳大學（臺北）春季班學士 12 名、碩士 7 名（依二手整理資料）。",
   "requirements_vi": "- Nộp hồ sơ 14/9 - 31/10/2026 (đã đóng); xét duyệt 9/11 - 20/11; công bố 7/12/2026; xác nhận nhập học trực tuyến trước 18/12/2026.\n- Yêu cầu TOCFL theo nhóm ngành: B1 (văn học Trung Quốc, lịch sử, triết học, xã hội học, công tác xã hội, âm nhạc, nhân quyền, toán, tiếng Đức, công nghệ thông tin), B2 (kỹ thuật tài chính, toán bảo hiểm), A2 (hoá học, luật, kinh doanh tiếng Hoa, khoa học dữ liệu...). Một số thạc sĩ tiếng Anh cần CEFR B1.\n- Tài chính: tài khoản tiết kiệm từ 120.000 Đài tệ hoặc 4.000 USD trong 3 tháng gần nhất.",
   "scholarship_vi": "Có học bổng cho sinh viên quốc tế xuất sắc qua phòng quốc tế của trường, chưa nêu mức.",
-  "tuition": "Theo Taiwan Diary: 48.370 - 58.044 Đài tệ/học kỳ tuỳ nhóm ngành",
+  "tuition": "Thông tin tổng hợp: 48.370 - 58.044 Đài tệ/học kỳ tuỳ nhóm ngành",
   "intake": "Xuân 2027 (trang chưa nêu tháng khai giảng)",
-  "deadline": "Đã đóng 31/10/2026 (theo Taiwan Diary)",
-  "sources": [
-    {
-      "title": "Thông tin tuyển sinh Đại học Đông Ngô kỳ Xuân",
-      "url": "https://taiwandiary.vn/thong-tin-tuyen-sinh-dai-hoc-dong-ngo-ky-xuan/",
-      "publisher": "Taiwan Diary (trung tâm tư vấn du học; nguồn thứ cấp, tổng hợp từ nhiều nguồn)",
-      "accessed": "22/11/2026"
-    }
-  ],
+  "deadline": "Đã đóng 31/10/2026 (thông tin tổng hợp)",
+  "sources": [],
+  "aggregated": true,
   "image": "/img/news/school-scu.jpg",
   "image_credit": "Ảnh: Solomon203 / CC BY-SA 3.0 / Wikimedia Commons (https://commons.wikimedia.org/wiki/File:SCU_Waishuanghsi_Campus_view_from_Zhishan_Road_20130928.jpg)"
 }

@@ -5,22 +5,16 @@
   "name_vi": "Đại học Nam Hoa (Nanhua)",
   "name_zh": "南華大學",
   "name_en": "Nanhua University",
-  "summary_vi": "Trường ở Đại Lâm, Gia Nghĩa. Theo Taiwan Diary, kỳ Xuân 2027 tuyển hệ tự túc, chương trình tiếng Hoa hoặc tiếng Anh, còn đợt 2 đến giữa tháng 12/2026.\n\nLưu ý: thông tin dưới đây lấy từ trang tổng hợp của Taiwan Diary, không phải từ trang của trường. Một số tiêu đề trên trang gốc còn ghi nhầm năm; hãy đối chiếu mốc hạn và học phí với thông báo của trường trước khi nộp hồ sơ.",
+  "summary_vi": "Trường ở Đại Lâm, Gia Nghĩa. Theo thông tin tổng hợp, kỳ Xuân 2027 tuyển hệ tự túc, chương trình tiếng Hoa hoặc tiếng Anh, còn đợt 2 đến giữa tháng 12/2026.\n\nLưu ý: thông tin dưới đây là thông tin tổng hợp từ nhiều nguồn, chưa được đối chiếu với trang tuyển sinh chính thức của trường và có thể đã thay đổi. Hãy kiểm tra mốc hạn, học phí và điều kiện với thông báo của trường trước khi nộp hồ sơ.",
   "summary_en": "Nanhua University (Chiayi) has a second round for Spring 2027 open until 15 Dec 2026, per a secondary summary.",
   "summary_zh": "南華大學（嘉義）2027 年春季班第二梯次至 2026 年 12 月 15 日止（依二手整理資料）。",
   "requirements_vi": "- Đợt 1: đóng 31/10/2026 13:00 (giờ Đài Loan), kết quả trước 20/11/2026.\n- Đợt 2: đóng 15/12/2026, kết quả trước 20/1/2027 (còn mở).\n- Phải nộp phiếu xác nhận nhập học trong 7 ngày sau khi nhận thông báo trúng tuyển.\n- Tiếng Hoa: TOCFL A2 (cử nhân năm nhất), B1 (chuyển tiếp từ năm 2, thạc sĩ, tiến sĩ). Tiếng Anh: CEFR B1 (ví dụ TOEIC 550, IELTS 4.0).",
-  "scholarship_vi": "Theo Taiwan Diary có các mức A1 đến C, từ giảm 100% học phí và tạp phí (một số mức yêu cầu làm công tác công ích hoặc cộng đồng) đến giảm 20.000 - 30.000 Đài tệ.",
-  "tuition": "Theo Taiwan Diary: cử nhân 44.865 - 51.597 Đài tệ/học kỳ; thạc sĩ, tiến sĩ 46.597 - 51.557 Đài tệ/học kỳ; ký túc xá 9.100 - 12.500",
+  "scholarship_vi": "Theo thông tin tổng hợp có các mức A1 đến C, từ giảm 100% học phí và tạp phí (một số mức yêu cầu làm công tác công ích hoặc cộng đồng) đến giảm 20.000 - 30.000 Đài tệ.",
+  "tuition": "Thông tin tổng hợp: cử nhân 44.865 - 51.597 Đài tệ/học kỳ; thạc sĩ, tiến sĩ 46.597 - 51.557 Đài tệ/học kỳ; ký túc xá 9.100 - 12.500",
   "intake": "Tháng 2/2027",
-  "deadline": "Đợt 2: đến 15/12/2026 (theo Taiwan Diary)",
-  "sources": [
-    {
-      "title": "Thông tin tuyển sinh Đại học Nam Hoa kỳ Xuân 2027",
-      "url": "https://taiwandiary.vn/dai-hoc-nam-hoa-ky-xuan/",
-      "publisher": "Taiwan Diary (trung tâm tư vấn du học; nguồn thứ cấp, tổng hợp từ nhiều nguồn)",
-      "accessed": "22/11/2026"
-    }
-  ],
+  "deadline": "Đợt 2: đến 15/12/2026 (thông tin tổng hợp)",
+  "sources": [],
+  "aggregated": true,
   "image": "/img/news/school-nanhua.jpg",
   "image_credit": "Ảnh: 舟集 Boattoad / CC BY-SA 4.0 / Wikimedia Commons (https://commons.wikimedia.org/wiki/File:%E5%98%89%E7%BE%A9%E5%8D%97%E8%8F%AF%E5%A4%A7%E5%AD%B8_02.jpg)"
 }
