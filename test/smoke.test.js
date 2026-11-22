@@ -121,3 +121,16 @@ test('bài hẹn giờ: chưa tới giờ thì ẩn (cả trang chi tiết, danh
   const home = await (await get('/vi/')).text();
   assert.doesNotMatch(home, /Bài chưa tới giờ/);
 });
+
+test('bootstrapAdmin chỉ tạo tài khoản khi chưa có user và mật khẩu đủ dài', () => {
+  const { bootstrapAdmin } = require('../lib/bootstrap-admin');
+  const { get } = require('../lib/db');
+  const before = get('SELECT COUNT(*) c FROM users').c;
+  process.env.ADMIN_PASSWORD = 'short';
+  assert.equal(bootstrapAdmin(), false);
+  process.env.ADMIN_PASSWORD = 'mat-khau-test-rat-dai-123';
+  process.env.ADMIN_USER = 'tester';
+  assert.equal(bootstrapAdmin(), before === 0);
+  assert.equal(bootstrapAdmin(), false); // lần hai không tạo thêm
+  delete process.env.ADMIN_PASSWORD; delete process.env.ADMIN_USER;
+});
