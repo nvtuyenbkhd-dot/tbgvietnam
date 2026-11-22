@@ -110,7 +110,11 @@
       { "t": "Trách nhiệm", "d": "Theo sát hồ sơ đến khi hoàn tất và cả sau khi bạn xuất cảnh." },
       { "t": "Tôn trọng", "d": "Mỗi người có hoàn cảnh riêng; chúng tôi tư vấn theo hoàn cảnh đó." }
     ],
-    "offices_title": "Hệ thống văn phòng"
+    "offices_title": "Hệ thống văn phòng",
+    "gallery_title": "Hình ảnh thực tế",
+    "gallery_sub": "Những khoảnh khắc tại văn phòng TB GROUP và tại sân bay Nội Bài trước giờ lên đường.",
+    "office_caps": ["Kỹ sư mặc đồng phục TB GROUP trong buổi gặp mặt tại văn phòng","Buổi gặp mặt, trao đổi trực tiếp tại văn phòng TB GROUP","Buổi làm việc tại phòng họp của TB GROUP"],
+    "airport_caps": ["Nhóm kỹ sư TB GROUP mặc đồng phục tại sân bay Nội Bài trước chuyến bay","Kỹ sư TB GROUP tại sân bay Nội Bài","Kỹ sư và lao động TB GROUP tại sảnh đi, sân bay Nội Bài","Kỹ sư TB GROUP trước cổng Departures, sân bay Nội Bài","Lao động TB GROUP trước chuyến bay xuất cảnh","Lao động và kỹ sư TB GROUP lên đường tại sân bay Nội Bài"]
   },
   "contact": { "title": "Liên hệ", "sub": "Gọi hotline, nhắn Zalo hoặc để lại thông tin. Chúng tôi phản hồi trong giờ làm việc.", "hours": "Giờ làm việc: Thứ 2 - Thứ 7, 8:00 - 17:30", "hotline": "Hotline / Zalo", "email": "Email", "address": "Địa chỉ" },
   "footer": {

@@ -110,7 +110,11 @@
       { "t": "負責", "d": "從文件到完成，甚至出境後都持續追蹤。" },
       { "t": "尊重", "d": "每個人的情況不同，我們依您的情況提供建議。" }
     ],
-    "offices_title": "辦事處據點"
+    "offices_title": "辦事處據點",
+    "gallery_title": "現場照片",
+    "gallery_sub": "TB GROUP 辦公室與河內內排機場出發前的片刻。",
+    "office_caps": ["身穿 TB GROUP 制服的工程師在辦公室座談","TB GROUP 辦公室的面對面交流","TB GROUP 會議室的工作場景"],
+    "airport_caps": ["身穿制服的 TB GROUP 工程師在內排機場登機前","TB GROUP 工程師在內排機場","TB GROUP 工程師與勞工在內排機場出境大廳","TB GROUP 工程師在內排機場出境門前","TB GROUP 勞工登機前","TB GROUP 勞工與工程師在內排機場啟程"]
   },
   "contact": { "title": "聯絡我們", "sub": "歡迎來電、傳 Zalo 訊息或留下資料，我們會在上班時間回覆。", "hours": "服務時間：週一至週六 8:00 - 17:30（越南時間）", "hotline": "熱線／Zalo", "email": "電子郵件", "address": "地址" },
   "footer": {

@@ -110,7 +110,11 @@
       { "t": "Responsibility", "d": "We follow each file through completion, and after you depart." },
       { "t": "Respect", "d": "Everyone's situation is different; our advice reflects that." }
     ],
-    "offices_title": "Our offices"
+    "offices_title": "Our offices",
+    "gallery_title": "Photos from our work",
+    "gallery_sub": "Moments at the TB GROUP office and at Noi Bai Airport before departure.",
+    "office_caps": ["Engineers in TB GROUP uniforms at a meeting in our office","A face-to-face meeting at the TB GROUP office","A working session in the TB GROUP meeting room"],
+    "airport_caps": ["A group of TB GROUP engineers in uniform at Noi Bai Airport before their flight","TB GROUP engineers at Noi Bai Airport","TB GROUP engineers and workers in the departure hall, Noi Bai Airport","A TB GROUP engineer in front of the Departures gate, Noi Bai Airport","TB GROUP workers before their departure flight","TB GROUP workers and engineers setting off at Noi Bai Airport"]
   },
   "contact": { "title": "Contact", "sub": "Call the hotline, message us on Zalo or leave your details. We reply during business hours.", "hours": "Hours: Mon - Sat, 8:00 - 17:30 (GMT+7)", "hotline": "Hotline / Zalo", "email": "Email", "address": "Address" },
   "footer": {

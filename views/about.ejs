@@ -12,6 +12,18 @@
     <div class="prose prose--lg"><% t('about.story').forEach(function (p) { %><p><%= p %></p><% }) %></div>
   </div>
 </section>
+<section class="section section--tight">
+  <div class="container">
+    <header class="sec-head sec-head--center"><div><h2><%= t('about.gallery_title') %></h2><p><%= t('about.gallery_sub') %></p></div></header>
+    <% const office = ['office1', 'office5', 'office7']; const air = ['air36', 'air23', 'air20', 'air16', 'air8', 'air31']; const oc = t('about.office_caps'); const ac = t('about.airport_caps'); %>
+    <div class="gallery gallery--office">
+      <% office.forEach(function (f, i) { %><figure><img src="/img/about/<%= f %>.jpg" width="1000" height="750" loading="lazy" alt="<%= oc[i] %>"><figcaption><%= oc[i] %></figcaption></figure><% }) %>
+    </div>
+    <div class="gallery gallery--air">
+      <% air.forEach(function (f, i) { %><figure><img src="/img/about/<%= f %>.jpg" width="750" height="1000" loading="lazy" alt="<%= ac[i] %>"><figcaption><%= ac[i] %></figcaption></figure><% }) %>
+    </div>
+  </div>
+</section>
 <section class="section section--alt">
   <div class="container">
     <header class="sec-head sec-head--center"><h2><%= t('about.values_title') %></h2></header>
