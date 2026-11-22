@@ -16,6 +16,10 @@
     "server_error": "Something went wrong. Please try again later.", "open_positions": "open positions", "schools_count": "partner schools"
   },
   "home": {
+    "activity_title": "TB GROUP in action",
+    "activity_sub": "From consultation and interviews to the day they leave: real moments with our team and candidates.",
+    "activity_more": "See more photos",
+    "activity": [ { "t": "Consultation & admissions", "d": "Face-to-face meetings at the TB GROUP office to assess eligibility and choose the right program." }, { "t": "Interviews", "d": "Interviews and working sessions held in person at the TB GROUP office." }, { "t": "Departure", "d": "Engineers and workers at Noi Bai Airport before their flight abroad." } ],
     "hero_eyebrow": "Your partner on the way to Taiwan",
     "hero_title": "Three paths. One destination: a secure future for you.",
     "hero_sub": "TB GROUP advises on studying abroad, overseas labor and the Taiwan engineer program: clear costs, transparent files, and support from day one until you are settled.",
@@ -99,7 +103,7 @@
     "err_rate": "Too many requests. Please try again in a few minutes.",
     "ok_title": "We received your details", "ok_text": "Thank you. A TB GROUP advisor will contact you shortly. If urgent, please call the hotline.", "ok_again": "Send another request"
   },
-  "news": { "sources": "References", "title": "News & guides", "sub": "Policy updates, application tips and real stories.", "related": "Related articles", "cat_news": "News", "cat_guide": "Guide", "cat_story": "Story" },
+  "news": { "sources": "References", "gallery_title": "TB GROUP in action", "gallery_caps": { "air_labor": "TB GROUP workers at Noi Bai Airport before their flight", "air_eng": "TB GROUP engineers at Noi Bai Airport before their flight", "air_mixed": "TB GROUP workers and engineers at Noi Bai Airport", "office": "A meeting at the TB GROUP office", "interview": "An interview and working session at the TB GROUP office" }, "title": "News & guides", "sub": "Policy updates, application tips and real stories.", "related": "Related articles", "cat_news": "News", "cat_guide": "Guide", "cat_story": "Story" },
   "about": {
     "title": "About TB GROUP", "sub": "TB Vietnam Group JSC (越南TB集團股份公司)",
     "story_title": "Who we are",

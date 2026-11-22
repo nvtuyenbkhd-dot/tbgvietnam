@@ -40,5 +40,15 @@
       "accessed": "21/11/2026"
     }
   ],
-  "image_own": true
+  "image_own": true,
+  "gallery": [
+    {
+      "src": "/img/activity/air17.jpg",
+      "kind": "air_eng"
+    },
+    {
+      "src": "/img/activity/air35.jpg",
+      "kind": "air_eng"
+    }
+  ]
 }

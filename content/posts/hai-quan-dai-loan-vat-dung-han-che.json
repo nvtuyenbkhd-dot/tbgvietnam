@@ -33,5 +33,15 @@
       "publisher": "Hải quan Đài Loan - Cục Hải quan Cao Hùng",
       "accessed": "21/11/2026"
     }
+  ],
+  "gallery": [
+    {
+      "src": "/img/activity/air30.jpg",
+      "kind": "air_labor"
+    },
+    {
+      "src": "/img/activity/air33.jpg",
+      "kind": "air_mixed"
+    }
   ]
 }

@@ -16,6 +16,10 @@
     "server_error": "發生錯誤，請稍後再試。", "open_positions": "個職缺", "schools_count": "所合作學校"
   },
   "home": {
+    "activity_title": "TB GROUP 現場紀實",
+    "activity_sub": "從諮詢、面試到啟程當天：團隊與學員的真實片刻。",
+    "activity_more": "查看更多照片",
+    "activity": [ { "t": "諮詢與招生", "d": "在 TB GROUP 辦公室面對面評估條件、選擇合適專案。" }, { "t": "面試", "d": "在 TB GROUP 辦公室進行的面試與工作場景。" }, { "t": "啟程", "d": "工程師與勞工在內排機場登機前。" } ],
     "hero_eyebrow": "陪伴您前往台灣",
     "hero_title": "三條道路，一個目標：您穩健的未來。",
     "hero_sub": "TB GROUP 提供留學、勞務輸出與台灣工程師專案諮詢：費用清楚、文件透明，從第一天陪伴您直到安頓生活。",
@@ -99,7 +103,7 @@
     "err_rate": "送出過於頻繁，請稍後再試。",
     "ok_title": "已收到您的資料", "ok_text": "謝謝您。TB GROUP 顧問將儘快與您聯絡。如有急事，請直接撥打熱線。", "ok_again": "再送出一筆"
   },
-  "news": { "sources": "參考來源", "title": "最新消息與指南", "sub": "政策資訊、申辦經驗與真實故事。", "related": "相關文章", "cat_news": "消息", "cat_guide": "指南", "cat_story": "故事" },
+  "news": { "sources": "參考來源", "gallery_title": "TB GROUP 現場紀實", "gallery_caps": { "air_labor": "TB GROUP 勞工在內排機場登機前", "air_eng": "TB GROUP 工程師在內排機場登機前", "air_mixed": "TB GROUP 勞工與工程師在內排機場", "office": "TB GROUP 辦公室的面對面交流", "interview": "TB GROUP 辦公室的面試與工作場景" }, "title": "最新消息與指南", "sub": "政策資訊、申辦經驗與真實故事。", "related": "相關文章", "cat_news": "消息", "cat_guide": "指南", "cat_story": "故事" },
   "about": {
     "title": "關於 TB GROUP", "sub": "越南TB集團股份公司（CTCP Tập đoàn TB Việt Nam）",
     "story_title": "我們是誰",

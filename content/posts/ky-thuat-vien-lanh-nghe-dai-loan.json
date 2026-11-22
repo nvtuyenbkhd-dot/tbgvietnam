@@ -27,5 +27,15 @@
       "publisher": "Cục Di trú Đài Loan (NIA)",
       "accessed": "21/11/2026"
     }
+  ],
+  "gallery": [
+    {
+      "src": "/img/activity/air37.jpg",
+      "kind": "air_eng"
+    },
+    {
+      "src": "/img/activity/air28.jpg",
+      "kind": "air_eng"
+    }
   ]
 }

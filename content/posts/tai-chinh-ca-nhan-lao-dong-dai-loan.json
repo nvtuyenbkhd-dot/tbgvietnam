@@ -39,5 +39,15 @@
       "publisher": "Cục Bảo hiểm Lao động (BLI), Bộ Lao động",
       "accessed": "21/11/2026"
     }
+  ],
+  "gallery": [
+    {
+      "src": "/img/activity/air27.jpg",
+      "kind": "air_mixed"
+    },
+    {
+      "src": "/img/activity/air12.jpg",
+      "kind": "air_labor"
+    }
   ]
 }

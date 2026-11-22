@@ -71,6 +71,17 @@
 </section>
 <% } %>
 
+<section class="section">
+  <div class="container">
+    <header class="sec-head"><div><h2><%= t('home.activity_title') %></h2><p><%= t('home.activity_sub') %></p></div><a class="link" href="<%= u('/ve-chung-toi') %>"><%= t('home.activity_more') %><svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a></header>
+    <div class="activity">
+      <% const actImgs = ['/img/about/office1.jpg', '/img/activity/interview2.jpg', '/img/activity/air37.jpg']; t('home.activity').forEach(function (a, i) { %>
+        <figure class="activity__item"><img src="<%= actImgs[i] %>" width="<%= i === 2 ? 750 : 1000 %>" height="<%= i === 2 ? 1000 : 750 %>" loading="lazy" alt="<%= a.t %>"><figcaption><h3><%= a.t %></h3><p><%= a.d %></p></figcaption></figure>
+      <% }) %>
+    </div>
+  </div>
+</section>
+
 <% if (featuredEng.length) { %>
 <section class="section section--alt">
   <div class="container">

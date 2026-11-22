@@ -44,3 +44,13 @@ test('mọi trang trường trong content/schools hợp lệ, có nguồn và �
     for (const s of p.sources) assert.match(s.url, /^https:\/\//, `${f}: nguồn phải là https`);
   }
 });
+
+test('ảnh hoạt động trong bài (gallery) tồn tại và đúng loại', () => {
+  for (const f of fs.readdirSync(dir).filter((x) => x.endsWith('.json'))) {
+    const p = JSON.parse(fs.readFileSync(path.join(dir, f), 'utf8'));
+    for (const g of p.gallery || []) {
+      assert.ok(fs.existsSync(path.join(__dirname, '..', 'public', g.src)), `${f}: thiếu ảnh ${g.src}`);
+    }
+    assert.ok((p.gallery || []).length <= 4, `${f}: tối đa 4 ảnh trong gallery`);
+  }
+});

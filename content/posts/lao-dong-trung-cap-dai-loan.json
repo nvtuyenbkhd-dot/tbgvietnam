@@ -39,5 +39,15 @@
     }
   ],
   "image": "/img/news/lao-dong-trung-cap-dai-loan.jpg",
-  "image_credit": "Ảnh: Yuriy kosygin / CC BY-SA 4.0 / Wikimedia Commons (https://commons.wikimedia.org/wiki/File:Dajia_Youth_Industrial_Park.jpg)"
+  "image_credit": "Ảnh: Yuriy kosygin / CC BY-SA 4.0 / Wikimedia Commons (https://commons.wikimedia.org/wiki/File:Dajia_Youth_Industrial_Park.jpg)",
+  "gallery": [
+    {
+      "src": "/img/activity/air21.jpg",
+      "kind": "air_mixed"
+    },
+    {
+      "src": "/img/activity/air9.jpg",
+      "kind": "air_labor"
+    }
+  ]
 }

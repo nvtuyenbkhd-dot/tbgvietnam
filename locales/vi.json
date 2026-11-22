@@ -16,6 +16,10 @@
     "server_error": "Đã có lỗi xảy ra. Vui lòng thử lại sau.", "open_positions": "đơn hàng đang tuyển", "schools_count": "trường đối tác"
   },
   "home": {
+    "activity_title": "Hoạt động của TB GROUP",
+    "activity_sub": "Từ buổi tư vấn, phỏng vấn đến ngày lên đường: những hình ảnh thực tế của đội ngũ và học viên.",
+    "activity_more": "Xem thêm hình ảnh",
+    "activity": [ { "t": "Tư vấn & tuyển sinh", "d": "Gặp mặt trực tiếp tại văn phòng TB GROUP để đánh giá điều kiện và chọn chương trình phù hợp." }, { "t": "Phỏng vấn", "d": "Buổi phỏng vấn và làm việc trực tiếp tại văn phòng TB GROUP." }, { "t": "Lên đường", "d": "Kỹ sư và lao động tại sân bay Nội Bài trước chuyến bay xuất cảnh." } ],
     "hero_eyebrow": "Đồng hành cùng bạn đến Đài Loan",
     "hero_title": "Ba con đường. Một đích đến: tương lai vững vàng của bạn.",
     "hero_sub": "TB GROUP tư vấn du học, xuất khẩu lao động và chương trình kỹ sư Đài Loan: chi phí rõ ràng, hồ sơ minh bạch, đồng hành từ ngày đầu đến khi bạn ổn định cuộc sống.",
@@ -99,7 +103,7 @@
     "err_rate": "Bạn gửi quá nhanh. Vui lòng thử lại sau ít phút.",
     "ok_title": "Đã nhận thông tin của bạn", "ok_text": "Cảm ơn bạn. Tư vấn viên TB GROUP sẽ liên hệ lại trong thời gian sớm nhất. Cần gấp, hãy gọi hotline.", "ok_again": "Gửi thêm một đăng ký"
   },
-  "news": { "sources": "Nguồn tham khảo", "title": "Tin tức & cẩm nang", "sub": "Thông tin chính sách, kinh nghiệm hồ sơ và câu chuyện thực tế.", "related": "Bài viết liên quan", "cat_news": "Tin tức", "cat_guide": "Cẩm nang", "cat_story": "Câu chuyện" },
+  "news": { "sources": "Nguồn tham khảo", "gallery_title": "Hình ảnh hoạt động của TB GROUP", "gallery_caps": { "air_labor": "Lao động TB GROUP tại sân bay Nội Bài trước chuyến bay", "air_eng": "Kỹ sư TB GROUP tại sân bay Nội Bài trước chuyến bay", "air_mixed": "Lao động và kỹ sư TB GROUP tại sân bay Nội Bài", "office": "Buổi gặp mặt tại văn phòng TB GROUP", "interview": "Buổi phỏng vấn và làm việc tại văn phòng TB GROUP" }, "title": "Tin tức & cẩm nang", "sub": "Thông tin chính sách, kinh nghiệm hồ sơ và câu chuyện thực tế.", "related": "Bài viết liên quan", "cat_news": "Tin tức", "cat_guide": "Cẩm nang", "cat_story": "Câu chuyện" },
   "about": {
     "title": "Về TB GROUP", "sub": "CTCP Tập đoàn TB Việt Nam (越南TB集團股份公司)",
     "story_title": "Chúng tôi là ai",

@@ -45,5 +45,15 @@
       "publisher": "Bộ Giáo dục Đài Loan (MOE) - Vụ Thống kê",
       "accessed": "21/11/2026"
     }
+  ],
+  "gallery": [
+    {
+      "src": "/img/activity/air37.jpg",
+      "kind": "air_eng"
+    },
+    {
+      "src": "/img/activity/air12.jpg",
+      "kind": "air_labor"
+    }
   ]
 }

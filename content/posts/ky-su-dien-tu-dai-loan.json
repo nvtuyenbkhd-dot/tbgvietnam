@@ -33,5 +33,15 @@
       "publisher": "Cục Phát triển Lực lượng Lao động (WDA), Bộ Lao động Đài Loan",
       "accessed": "21/11/2026"
     }
+  ],
+  "gallery": [
+    {
+      "src": "/img/activity/air35.jpg",
+      "kind": "air_eng"
+    },
+    {
+      "src": "/img/activity/interview2.jpg",
+      "kind": "interview"
+    }
   ]
 }

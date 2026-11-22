@@ -33,5 +33,15 @@
       "publisher": "Bộ Tư pháp Đài Loan - Cơ sở dữ liệu pháp luật",
       "accessed": "21/11/2026"
     }
+  ],
+  "gallery": [
+    {
+      "src": "/img/activity/air17.jpg",
+      "kind": "air_eng"
+    },
+    {
+      "src": "/img/about/office1.jpg",
+      "kind": "office"
+    }
   ]
 }

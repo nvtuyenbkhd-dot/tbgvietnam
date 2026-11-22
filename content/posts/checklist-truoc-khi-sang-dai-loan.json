@@ -51,5 +51,15 @@
       "publisher": "Bộ Lao động Đài Loan (MOL)",
       "accessed": "21/11/2026"
     }
+  ],
+  "gallery": [
+    {
+      "src": "/img/activity/air9.jpg",
+      "kind": "air_labor"
+    },
+    {
+      "src": "/img/activity/air3.jpg",
+      "kind": "air_mixed"
+    }
   ]
 }

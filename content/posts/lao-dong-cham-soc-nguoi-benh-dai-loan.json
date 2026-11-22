@@ -39,5 +39,15 @@
       "publisher": "Bộ Lao động Đài Loan - Cổng Quyền lợi lao động nước ngoài (fw.wda.gov.tw)",
       "accessed": "21/11/2026"
     }
+  ],
+  "gallery": [
+    {
+      "src": "/img/activity/air33.jpg",
+      "kind": "air_mixed"
+    },
+    {
+      "src": "/img/activity/air30.jpg",
+      "kind": "air_labor"
+    }
   ]
 }

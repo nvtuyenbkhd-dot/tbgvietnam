@@ -33,5 +33,15 @@
       "publisher": "Báo điện tử Chính phủ (baochinhphu.vn)",
       "accessed": "21/11/2026"
     }
+  ],
+  "gallery": [
+    {
+      "src": "/img/about/office1.jpg",
+      "kind": "office"
+    },
+    {
+      "src": "/img/activity/air19.jpg",
+      "kind": "air_mixed"
+    }
   ]
 }

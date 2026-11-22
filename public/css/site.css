@@ -193,3 +193,10 @@ textarea { resize: vertical; min-height: 88px; } input:focus, select:focus, text
 .gallery figcaption { margin-top: 6px; font-size: .88rem; color: var(--muted); line-height: 1.4; }
 .gallery--office { grid-template-columns: 1fr; } .gallery--air { grid-template-columns: repeat(2, 1fr); }
 @media (min-width: 700px) { .gallery--office { grid-template-columns: repeat(3, 1fr); } .gallery--air { grid-template-columns: repeat(3, 1fr); } }
+
+.postgal-wrap { margin: 28px 0 8px; } .postgal-wrap h2 { font-size: 1.15rem; }
+.postgal { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; align-items: start; } .postgal figure { margin: 0; }
+.postgal img { width: 100%; height: auto; border-radius: var(--radius); background: var(--bg-alt); } .postgal figcaption { margin-top: 6px; font-size: .85rem; color: var(--muted); line-height: 1.4; }
+.activity { display: grid; gap: 18px; grid-template-columns: 1fr; } .activity__item { margin: 0; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); }
+.activity__item img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; object-position: center 22%; } .activity__item figcaption { padding: 14px 16px 18px; } .activity__item h3 { margin: 0 0 .3em; } .activity__item p { margin: 0; color: var(--muted); font-size: .96rem; }
+@media (min-width: 700px) { .activity { grid-template-columns: repeat(3, 1fr); } }

@@ -39,5 +39,15 @@
       "publisher": "Cơ sở dữ liệu pháp quy Trung Hoa Dân Quốc (Bộ Tư pháp)",
       "accessed": "21/11/2026"
     }
+  ],
+  "gallery": [
+    {
+      "src": "/img/activity/air24.jpg",
+      "kind": "air_eng"
+    },
+    {
+      "src": "/img/activity/air28.jpg",
+      "kind": "air_eng"
+    }
   ]
 }
