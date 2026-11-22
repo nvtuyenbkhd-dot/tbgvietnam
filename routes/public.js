@@ -5,6 +5,7 @@ const { all, get, run } = require('../lib/db');
 const { makeT } = require('../lib/i18n');
 const { notifyLead } = require('../lib/notify');
 const H = require('../lib/helpers');
+const SEO = require('../lib/seo');
 
 const router = express.Router({ mergeParams: true });
 const PAGE = 12;
@@ -83,6 +84,11 @@ router.get('/du-hoc/:slug', (req, res, next) => {
 });
 
 // ---------------- Xuất khẩu lao động / Kỹ sư ----------------
+// Giá trị lọc giữ tiếng Việt, nhãn hiển thị theo ngôn ngữ đang xem
+function jobOpts(col, category, lang) {
+  return all(`SELECT DISTINCT ${col} v, ${col}_en en, ${col}_zh zh FROM jobs WHERE published=1 AND category=? AND ${col}<>'' ORDER BY ${col}`, category)
+    .map((r) => ({ v: r.v, label: (lang === 'en' ? r.en : lang === 'zh' ? r.zh : '') || r.v }));
+}
 function jobList(category) {
   return (req, res) => {
     const { q = '', industry = '', location = '' } = req.query;
@@ -96,7 +102,7 @@ function jobList(category) {
     res.render('jobs', {
       page: category, category, pageTitle: res.locals.t(`${category}.title`), pageDesc: res.locals.t(`${category}.sub`),
       items, total, pg: page, pages: Math.ceil(total / PAGE),
-      industries: distinct('jobs', 'industry', 'category=?', category), locations: distinct('jobs', 'location', 'category=?', category),
+      industries: jobOpts('industry', category, req.params.lang), locations: jobOpts('location', category, req.params.lang),
       filters: { q, industry, location },
     });
   };
@@ -106,18 +112,19 @@ function jobDetail(category) {
     const item = get('SELECT * FROM jobs WHERE slug=? AND category=? AND published=1', req.params.slug, category);
     if (!item) return next('route');
     const others = all('SELECT * FROM jobs WHERE published=1 AND category=? AND id<>? ORDER BY featured DESC, id DESC LIMIT 3', category, item.id);
-    const title = H.L(item, 'title', req.params.lang);
+    const lang = req.params.lang;
+    const title = H.L(item, 'title', lang);
+    const location = H.L(item, 'location', lang);
+    const salary = H.L(item, 'salary', lang);
+    const description = H.L(item, 'description', lang);
+    const canonical = `${res.locals.siteUrl}/${lang}/${JOB_PATH[category]}/${item.slug}`;
+    const desc = SEO.truncate([title, location, salary, SEO.plain(description.split('\n')[0])].filter(Boolean).join('. '));
     res.render('job', {
-      page: category, category, item, others, pageTitle: title, pageDesc: `${title} - ${item.location} - ${item.salary}`.slice(0, 160),
-      jsonLd: {
-        '@context': 'https://schema.org', '@type': 'JobPosting', title,
-        description: H.L(item, 'description', req.params.lang) || title,
-        datePosted: String(item.created_at).slice(0, 10),
-        validThrough: /^\d{4}-\d{2}-\d{2}$/.test(item.deadline) ? item.deadline : undefined,
-        employmentType: 'FULL_TIME',
-        hiringOrganization: { '@type': 'Organization', name: 'CTCP Tập đoàn TB Việt Nam (TB GROUP)', sameAs: res.locals.siteUrl },
-        jobLocation: { '@type': 'Place', address: { '@type': 'PostalAddress', addressLocality: item.location, addressCountry: 'TW' } },
-      },
+      page: category, category, item, others, pageTitle: title, pageDesc: desc, pageImage: item.image || '',
+      jsonLd: [
+        SEO.jobPosting({ item, title, description, location, industry: H.L(item, 'industry', lang), canonical, lang }),
+        SEO.breadcrumb([[res.locals.t('nav.home'), `${res.locals.siteUrl}/${lang}/`], [res.locals.t('nav.' + category), `${res.locals.siteUrl}/${lang}/${JOB_PATH[category]}`], [title, canonical]]),
+      ],
     });
   };
 }
@@ -143,7 +150,8 @@ router.get('/tin-tuc/:slug', (req, res, next) => {
   const title = H.L(item, 'title', req.params.lang);
   res.render('post', {
     page: 'news', item, related, pageTitle: title, pageDesc: H.L(item, 'excerpt', req.params.lang), pageImage: item.image,
-    jsonLd: {
+    ogType: 'article', publishedTime: item.publish_at || item.published_at,
+    jsonLd: [{
       '@context': 'https://schema.org', '@type': 'Article', headline: title, description: H.L(item, 'excerpt', req.params.lang),
       datePublished: item.published_at, dateModified: (item.updated_at || item.published_at).slice(0, 10),
       image: item.image ? res.locals.siteUrl + item.image : undefined, inLanguage: req.params.lang,
@@ -151,6 +159,7 @@ router.get('/tin-tuc/:slug', (req, res, next) => {
       publisher: { '@type': 'Organization', name: 'TB GROUP' },
       mainEntityOfPage: `${res.locals.siteUrl}/${req.params.lang}/tin-tuc/${item.slug}`,
     },
+    SEO.breadcrumb([[res.locals.t('nav.home'), `${res.locals.siteUrl}/${req.params.lang}/`], [res.locals.t('nav.news'), `${res.locals.siteUrl}/${req.params.lang}/tin-tuc`], [title, `${res.locals.siteUrl}/${req.params.lang}/tin-tuc/${item.slug}`]])],
   });
 });
 

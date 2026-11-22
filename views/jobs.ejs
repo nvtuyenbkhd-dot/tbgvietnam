@@ -28,9 +28,9 @@
     <form class="filters" method="get" action="<%= base %>#danh-sach" role="search">
       <div class="field"><label for="q"><%= t('common.search') %></label><input id="q" name="q" type="search" value="<%= filters.q %>" placeholder="<%= t('common.search_ph') %>"></div>
       <div class="field"><label for="industry"><%= t('job.filter_industry') %></label>
-        <select id="industry" name="industry"><option value=""><%= t('common.all') %></option><% industries.forEach(function (c) { %><option<%- filters.industry === c ? ' selected' : '' %>><%= c %></option><% }) %></select></div>
+        <select id="industry" name="industry"><option value=""><%= t('common.all') %></option><% industries.forEach(function (c) { %><option value="<%= c.v %>"<%- filters.industry === c.v ? ' selected' : '' %>><%= c.label %></option><% }) %></select></div>
       <div class="field"><label for="location"><%= t('job.filter_location') %></label>
-        <select id="location" name="location"><option value=""><%= t('common.all') %></option><% locations.forEach(function (c) { %><option<%- filters.location === c ? ' selected' : '' %>><%= c %></option><% }) %></select></div>
+        <select id="location" name="location"><option value=""><%= t('common.all') %></option><% locations.forEach(function (c) { %><option value="<%= c.v %>"<%- filters.location === c.v ? ' selected' : '' %>><%= c.label %></option><% }) %></select></div>
       <button class="btn btn--primary" type="submit"><svg class="i" aria-hidden="true"><use href="#i-search"/></svg><%= t('common.search') %></button>
     </form>
     <p class="count"><strong><%= total %></strong> <%= t('common.results') %></p>

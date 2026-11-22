@@ -4,7 +4,7 @@
   <div class="container">
     <p class="crumbs"><a href="<%= u('/') %>"><%= t('nav.home') %></a> / <a href="<%= base %>"><%= t('nav.' + category) %></a> / <span><%= title %></span></p>
     <h1><%= title %></h1>
-    <p class="page-head__meta"><svg class="i" aria-hidden="true"><use href="#i-pin"/></svg><%= item.location %><% if (item.industry) { %> · <%= item.industry %><% } %></p>
+    <p class="page-head__meta"><svg class="i" aria-hidden="true"><use href="#i-pin"/></svg><%= L(item, 'location') %><% if (item.industry) { %> · <%= L(item, 'industry') %><% } %></p>
   </div>
 </section>
 
@@ -12,12 +12,12 @@
   <div class="container detail">
     <article class="detail__main">
       <dl class="spec">
-        <div><dt><%= t('job.salary') %></dt><dd class="spec__big"><%= item.salary || t('job.negotiable') %></dd></div>
-        <% [['headcount', item.headcount], ['gender', item.gender], ['age', item.age], ['deadline', item.deadline]].forEach(function (r) { if (r[1]) { %>
+        <div><dt><%= t('job.salary') %></dt><dd class="spec__big"><%= L(item, 'salary') || t('job.negotiable') %></dd></div>
+        <% [['headcount', item.headcount], ['gender', L(item, 'gender')], ['age', L(item, 'age')], ['deadline', item.deadline]].forEach(function (r) { if (r[1]) { %>
           <div><dt><%= t('job.' + r[0]) %></dt><dd><%= r[0] === 'deadline' ? fmtDate(r[1]) : r[1] %></dd></div>
         <% } }) %>
       </dl>
-      <% if (item.image) { %><img class="detail__img" src="<%= item.image %>" alt="" width="960" height="540"><% } %>
+      <% if (item.image) { %><img class="detail__img" src="<%= item.image %>" alt="<%= title %>" width="960" height="540"><% } %>
       <% if (L(item, 'description')) { %><h2><%= t('job.description') %></h2><div class="prose"><%- richText(L(item, 'description')) %></div><% } %>
       <% if (L(item, 'requirements')) { %><h2><%= t('job.requirements') %></h2><div class="prose"><%- richText(L(item, 'requirements')) %></div><% } %>
       <% if (L(item, 'benefits')) { %><h2><%= t('job.benefits') %></h2><div class="prose"><%- richText(L(item, 'benefits')) %></div><% } %>

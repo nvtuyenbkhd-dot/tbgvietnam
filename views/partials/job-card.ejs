@@ -1,12 +1,12 @@
 <% const base = u('/' + JOB_PATH[j.category] + '/' + j.slug); %>
 <article class="card card--job prog-<%= j.category %>">
   <div class="card__body">
-    <p class="card__meta"><svg class="i" aria-hidden="true"><use href="#i-pin"/></svg><%= j.location %><% if (j.industry) { %><span class="tag tag--soft"><%= j.industry %></span><% } %><% if (j.featured) { %><span class="tag"><%= t('common.featured') %></span><% } %></p>
+    <p class="card__meta"><svg class="i" aria-hidden="true"><use href="#i-pin"/></svg><%= L(j, 'location') %><% if (j.industry) { %><span class="tag tag--soft"><%= L(j, 'industry') %></span><% } %><% if (j.featured) { %><span class="tag"><%= t('common.featured') %></span><% } %></p>
     <h3 class="card__title"><a href="<%= base %>"><%= L(j, 'title') %></a></h3>
     <dl class="facts">
-      <div><dt><%= t('job.salary') %></dt><dd class="facts__big"><%= j.salary || t('job.negotiable') %></dd></div>
+      <div><dt><%= t('job.salary') %></dt><dd class="facts__big"><%= L(j, 'salary') || t('job.negotiable') %></dd></div>
       <% if (j.headcount) { %><div><dt><%= t('job.headcount') %></dt><dd><%= j.headcount %></dd></div><% } %>
-      <% if (j.age) { %><div><dt><%= t('job.age') %></dt><dd><%= j.age %></dd></div><% } %>
+      <% if (j.age) { %><div><dt><%= t('job.age') %></dt><dd><%= L(j, 'age') %></dd></div><% } %>
     </dl>
     <a class="link" href="<%= base %>"><%= t('common.read_more') %><svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a>
   </div>
