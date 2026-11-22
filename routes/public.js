@@ -51,7 +51,8 @@ router.get('/', (req, res) => {
     featuredSchools, featuredLabor, featuredEng, stories, posts, counts,
     jsonLd: {
       '@context': 'https://schema.org', '@type': 'Organization', name: 'CTCP Tập đoàn TB Việt Nam (TB GROUP)', alternateName: '越南TB集團股份公司',
-      url: res.locals.siteUrl, telephone: res.locals.S.hotline_tel || undefined, address: res.locals.S.addr_hq || undefined,
+      url: res.locals.siteUrl, logo: `${res.locals.siteUrl}/img/icon-512.png`,
+      telephone: res.locals.S.hotline_tel || undefined, address: res.locals.S.addr_hq || undefined,
     },
   });
 });

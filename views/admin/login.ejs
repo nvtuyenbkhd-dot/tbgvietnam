@@ -1,6 +1,6 @@
 <%- include('_head', { nav: '' }) %>
 <form class="login" method="post" action="/admin/login">
-  <img src="/img/logo.svg" width="48" height="48" alt="">
+  <img src="/img/logo-mark.png" width="45" height="48" alt="">
   <h1>Đăng nhập quản trị</h1>
   <% if (error) { %><p class="flash flash--error" role="alert"><%= error %></p><% } %>
   <input type="hidden" name="_csrf" value="<%= csrf %>">

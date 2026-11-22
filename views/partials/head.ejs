@@ -8,7 +8,7 @@
   const canonical = `${siteUrl}/${lang}${path || '/'}`;
   const tel = (S.hotline_tel || '').replace(/\D/g, '');
   const zalo = (S.zalo || '').replace(/\D/g, '');
-  const ogImage = pageImage ? (pageImage.startsWith('http') ? pageImage : siteUrl + pageImage) : '';
+  const ogImage = pageImage ? (pageImage.startsWith('http') ? pageImage : siteUrl + pageImage) : siteUrl + '/img/og-default.jpg';
 %><!doctype html>
 <html lang="<%= lang === 'zh' ? 'zh-Hant' : lang %>">
 <head>
@@ -34,7 +34,9 @@
 <meta name="twitter:title" content="<%= fullTitle %>">
 <meta name="twitter:description" content="<%= pageDesc || t('meta.description') %>">
 <meta name="theme-color" content="#0B1F4B">
-<link rel="icon" type="image/svg+xml" href="/img/logo.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/img/favicon-48.png">
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;700&family=Source+Sans+3:wght@400;500;600;700&display=swap">
@@ -82,7 +84,7 @@
 <header class="header" id="top">
   <div class="container header__in">
     <a class="brand" href="<%= u('/') %>" aria-label="TB GROUP">
-      <img src="/img/logo.svg" width="40" height="40" alt="">
+      <img src="/img/logo-mark.png" width="43" height="46" alt="">
       <span class="brand__txt"><strong>TB GROUP</strong><small><%= t('meta.company') %></small></span>
     </a>
     <button class="burger" type="button" aria-expanded="false" aria-controls="nav" aria-label="<%= t('nav.menu') %>">
