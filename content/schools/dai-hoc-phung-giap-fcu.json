@@ -1,0 +1,25 @@
+{
+  "slug": "dai-hoc-phung-giap-fcu",
+  "type": "university",
+  "city": "Đài Trung",
+  "name_vi": "Đại học Phùng Giáp (FCU)",
+  "name_zh": "逢甲大學",
+  "name_en": "Feng Chia University",
+  "summary_vi": "Trường nhận sinh viên quốc tế ở cả hai kỳ Xuân (tháng 2) và Thu (tháng 9). Trang tuyển sinh của trường nêu hoan nghênh người nộp mọi quốc tịch và cho biết trường không ủy thác việc tuyển sinh quốc tế cho tổ chức bên ngoài. Trang nhắc rằng chỉ chấp nhận tệp TOCFL gốc có thể xác thực trên hệ thống.\n\nTrang không nêu rõ hệ đào tạo (tự túc, 1+4...); bạn cần xem sổ tay tuyển sinh để biết chi tiết.",
+  "summary_en": "Feng Chia University accepts international students in Spring (February) and Fall (September) intakes and says it does not outsource international admissions.",
+  "summary_zh": "逢甲大學春季（2 月）與秋季（9 月）皆招收國際學生，並表示不委託外部機構辦理外國學生招生。",
+  "requirements_vi": "- Sổ tay tuyển sinh Xuân 2027 phát hành ngày 27/8/2026.\n- Vòng 1: nộp trực tuyến 15/9 - 8/11/2026 (đã đóng), công bố kết quả 24/11/2026.\n- Vòng 2: nộp trực tuyến và giấy tờ 11/11 - 30/11/2026 (còn mở), công bố kết quả 15/12/2026.\n- Khai giảng 22/2/2027.\n- Chứng chỉ TOCFL: chỉ nhận tệp PDF chính thức có thể xác thực.\n\nChi tiết (ngoại ngữ, học phí, lệ phí) có trong sổ tay tuyển sinh dạng PDF của trường mà chúng tôi chưa đọc được; hãy xem trực tiếp tài liệu của trường.",
+  "intake": "Tháng 2 và tháng 9 (Xuân 2027: khai giảng 22/2/2027)",
+  "deadline": "Xuân 2027, vòng 2: đến 30/11/2026 (còn mở); kết quả 15/12/2026",
+  "website": "https://www.fcu.edu.tw/en/recurit_list/international-spring-semester/",
+  "sources": [
+    {
+      "title": "Feng Chia University - International Student Spring Semester",
+      "url": "https://www.fcu.edu.tw/en/recurit_list/international-spring-semester/",
+      "publisher": "Đại học Phùng Giáp (FCU)",
+      "accessed": "22/11/2026"
+    }
+  ],
+  "image": "/img/news/school-fcu.jpg",
+  "image_credit": "Ảnh: SSR2000 / CC BY-SA 3.0 / Wikimedia Commons (https://commons.wikimedia.org/wiki/File:West_Gate,_Feng_Chia_University,_Main_Campus_20140824.jpg)"
+}

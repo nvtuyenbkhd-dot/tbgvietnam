@@ -28,3 +28,19 @@ test('richText hiển thị tiêu đề, danh sách số và chữ nghiêng', ()
   assert.match(h, /<em>nghiêng<\/em>/);
   assert.match(h, /<strong>đậm<\/strong>/);
 });
+
+test('mọi trang trường trong content/schools hợp lệ, có nguồn và ảnh', () => {
+  const { validateSchool } = require('../lib/content');
+  const sdir = path.join(__dirname, '..', 'content', 'schools');
+  const files = fs.existsSync(sdir) ? fs.readdirSync(sdir).filter((x) => x.endsWith('.json')) : [];
+  const slugs = new Set();
+  for (const f of files) {
+    const p = JSON.parse(fs.readFileSync(path.join(sdir, f), 'utf8'));
+    validateSchool(p, f);
+    assert.equal(p.slug + '.json', f, `${f}: tên file phải trùng slug`);
+    assert.ok(!slugs.has(p.slug), `${f}: trùng slug`);
+    slugs.add(p.slug);
+    assert.ok(p.image_credit && fs.existsSync(path.join(__dirname, '..', 'public', p.image)), `${f}: thiếu ảnh hoặc ghi nguồn ảnh`);
+    for (const s of p.sources) assert.match(s.url, /^https:\/\//, `${f}: nguồn phải là https`);
+  }
+});

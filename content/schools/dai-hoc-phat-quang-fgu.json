@@ -1,0 +1,26 @@
+{
+  "slug": "dai-hoc-phat-quang-fgu",
+  "type": "university",
+  "city": "Nghi Lan",
+  "name_vi": "Đại học Phật Quang (FGU)",
+  "name_zh": "佛光大學",
+  "name_en": "Fo Guang University",
+  "summary_vi": "Trường ở huyện Nghi Lan (Tiêu Khê). Theo Taiwan Diary, kỳ Xuân 2027 trường tuyển hệ tự túc với chương trình giảng bằng tiếng Hoa hoặc tiếng Anh; chỉ tiêu cử nhân 43, thạc sĩ 10, tiến sĩ 1.\n\nLưu ý: thông tin dưới đây lấy từ trang tổng hợp của Taiwan Diary, không phải từ trang của trường. Một số tiêu đề trên trang gốc còn ghi nhầm năm; hãy đối chiếu mốc hạn và học phí với thông báo của trường trước khi nộp hồ sơ.",
+  "summary_en": "Fo Guang University (Yilan) admits self-funded students for Spring 2027 in Chinese- or English-taught programs, per a secondary summary.",
+  "summary_zh": "佛光大學（宜蘭）2027 年春季班招收自費生，授課語言為中文或英文（依二手整理資料）。",
+  "requirements_vi": "- Nộp hồ sơ trực tuyến 20/10 - 10/11/2026 (đã đóng); xét duyệt 11/11 - 30/11; danh sách trúng tuyển 3/12; thư nhập học 4/12; xác nhận nhập học trước 4/1/2027; khai giảng 23/2/2027.\n- Chương trình tiếng Hoa: TOCFL A2 trở lên; chương trình tiếng Anh: CEFR B1 trở lên.\n- Sao kê tối thiểu 3.000 USD.",
+  "scholarship_vi": "Học bổng Chính phủ Đài Loan nộp từ 1/2 - 31/3 hằng năm; trường có học bổng riêng (sinh viên xuất sắc, Phật học, sinh viên mới), chưa nêu mức.",
+  "tuition": "Theo Taiwan Diary: 44.725 - 50.745 Đài tệ/học kỳ tuỳ nhóm ngành; ký túc xá 9.075 - 11.825 Đài tệ/học kỳ",
+  "intake": "Xuân 2027 (khai giảng 23/2/2027)",
+  "deadline": "Đã đóng 10/11/2026 (theo Taiwan Diary)",
+  "sources": [
+    {
+      "title": "Thông tin tuyển sinh Đại học Phật Quang kỳ Xuân 2027",
+      "url": "https://taiwandiary.vn/dai-hoc-phat-quang/",
+      "publisher": "Taiwan Diary (trung tâm tư vấn du học; nguồn thứ cấp, tổng hợp từ nhiều nguồn)",
+      "accessed": "22/11/2026"
+    }
+  ],
+  "image": "/img/news/school-fgu.jpg",
+  "image_credit": "Ảnh: hnchhu1 / CC BY 3.0 / Wikimedia Commons (https://commons.wikimedia.org/wiki/File:%E4%BD%9B%E5%85%89%E5%A4%A7%E5%AD%B8%E5%9C%96%E6%9B%B8%E9%A4%A8_-_panoramio.jpg)"
+}

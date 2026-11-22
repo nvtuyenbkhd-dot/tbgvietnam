@@ -1,0 +1,25 @@
+{
+  "slug": "dai-hoc-dong-nam-tungnan",
+  "type": "college",
+  "city": "Tân Bắc",
+  "name_vi": "Đại học Khoa học Kỹ thuật Đông Nam (Tungnan)",
+  "name_zh": "東南科技大學",
+  "name_en": "Tungnan University",
+  "summary_vi": "Trường có hệ 1+4 (Quốc tế chuyên tu) dành cho sinh viên nước ngoài, trang web riêng có tuỳ chọn tiếng Việt. Hạn nộp kỳ Xuân 2027 đã qua.",
+  "summary_en": "Tungnan University runs a 1+4 International Foundation Program with a Vietnamese-language site option. The Spring 2027 deadline has passed.",
+  "summary_zh": "東南科技大學設有國際專修部（1+4學程），網站提供越南語選項；2027 年春季班已截止。",
+  "requirements_vi": "- Thông báo tuyển sinh học kỳ 2 năm học 115 (Xuân 2027) đăng ngày 12/8/2026; hạn nộp hồ sơ trực tuyến 30/9/2026 (đã đóng).\n- Trang liệt kê buổi giới thiệu 17/8/2026 và sự kiện phỏng vấn 22/10/2026.\n\nChi tiết (ngoại ngữ, học phí, lệ phí) có trong sổ tay tuyển sinh dạng PDF của trường mà chúng tôi chưa đọc được; hãy xem trực tiếp tài liệu của trường.",
+  "intake": "Học kỳ 2 năm học 115 (Xuân 2027)",
+  "deadline": "Đã đóng 30/9/2026",
+  "website": "https://ifp.tnu.edu.tw",
+  "sources": [
+    {
+      "title": "115學年度第2學期國際專修部(1+4學程)申請入學簡章",
+      "url": "https://ifp.tnu.edu.tw",
+      "publisher": "Đại học Khoa học Kỹ thuật Đông Nam (Tungnan)",
+      "accessed": "22/11/2026"
+    }
+  ],
+  "image": "/img/news/school-tungnan.jpg",
+  "image_credit": "Ảnh: Ianbu / CC BY-SA 4.0 / Wikimedia Commons (https://commons.wikimedia.org/wiki/File:%E6%9D%B1%E5%8D%97%E7%A7%91%E6%8A%80%E5%A4%A7%E5%AD%B8%E6%A0%A1%E9%96%80%E5%8F%A3.JPG)"
+}

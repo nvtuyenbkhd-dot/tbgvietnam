@@ -11,7 +11,8 @@
 <section class="section section--tight">
   <div class="container detail">
     <article class="detail__main">
-      <% if (item.image) { %><img class="detail__img" src="<%= item.image %>" alt="<%= name %>" width="960" height="540"><% } %>
+      <% let srcs = []; try { srcs = JSON.parse(item.sources || '[]'); } catch (e) {} %>
+      <% if (item.image) { %><figure class="post-fig"><img class="detail__img" src="<%= item.image %>" alt="<%= name %>" width="960" height="540"><% if (item.image_credit) { %><figcaption><%= item.image_credit %></figcaption><% } %></figure><% } %>
       <dl class="spec">
         <% [['tuition', item.tuition], ['intake', item.intake], ['apply_by', item.deadline]].forEach(function (r) { if (r[1]) { %>
           <div><dt><%= r[0] === 'apply_by' ? t('common.apply_by') : t('study.' + r[0]) %></dt><dd><%= r[1] %></dd></div>
@@ -21,6 +22,9 @@
       <% if (L(item, 'majors')) { %><h2><%= t('study.majors') %></h2><ul class="chips chips--lg"><% splitList(L(item, 'majors')).forEach(function (m) { %><li><%= m %></li><% }) %></ul><% } %>
       <% if (L(item, 'requirements')) { %><h2><%= t('study.requirements') %></h2><div class="prose"><%- richText(L(item, 'requirements')) %></div><% } %>
       <% if (L(item, 'scholarship')) { %><h2><%= t('study.scholarship') %></h2><div class="prose"><%- richText(L(item, 'scholarship')) %></div><% } %>
+      <% if (srcs.length) { %><section class="post-sources" aria-labelledby="src-h"><h2 id="src-h"><%= t('news.sources') %></h2><ol>
+        <% srcs.forEach(function (s) { %><li><a href="<%= s.url %>" target="_blank" rel="noopener nofollow"><%= s.title %></a><% if (s.publisher) { %> — <%= s.publisher %><% } %><% if (s.accessed) { %> (<%= s.accessed %>)<% } %></li><% }) %>
+      </ol></section><% } %>
       <% if (item.website) { %><p><a class="link" href="<%= item.website %>" target="_blank" rel="noopener nofollow"><%= t('study.website') %><svg class="i" aria-hidden="true"><use href="#i-ext"/></svg></a></p><% } %>
     </article>
     <aside class="detail__side" id="dang-ky">

@@ -1,0 +1,27 @@
+{
+  "slug": "dai-hoc-dai-nhan-tajen",
+  "type": "university",
+  "city": "Bình Đông",
+  "name_vi": "Đại học Khoa học Kỹ thuật Đại Nhân (Tajen)",
+  "name_zh": "大仁科技大學",
+  "name_en": "Tajen University",
+  "summary_vi": "Trường nhận hồ sơ kỳ Xuân 2027 trong thời gian dài, đến giữa tháng 1/2027. Trang tuyển sinh nêu đối tượng là sinh viên hệ đại học kỹ thuật bốn năm, kèm sổ tay tuyển sinh năm học 2026/27.",
+  "summary_en": "Tajen University accepts Spring 2027 applications from 17 Nov 2026 to 16 Jan 2027.",
+  "summary_zh": "大仁科技大學 2027 年春季班自 2026 年 11 月 17 日起受理申請，至 2027 年 1 月 16 日止。",
+  "requirements_vi": "- Thời gian: công bố sổ tay 17/11/2026; nộp hồ sơ 17/11/2026 - 16/1/2027 (còn mở); có kết quả 30/1/2027; đăng ký nhập học 23/2/2027.\n- Tiếng Hoa: TOCFL cấp 2 trở lên hoặc tương đương, hoặc chứng minh đã học bằng tiếng Hoa. Chương trình giảng bằng tiếng Anh: CEFR B1 trở lên. Khoa có thể kiểm tra thêm.\n- Tài chính: sao kê ngân hàng trong 3 tháng gần nhất từ 150.000 Đài tệ hoặc 5.000 USD trở lên, hoặc giấy tờ học bổng. Người có Học bổng Chính phủ Đài Loan: 60.000 Đài tệ hoặc 2.000 USD.",
+  "scholarship_vi": "Học kỳ đầu có học bổng nhập học có thể bù một phần học phí cho sinh viên đủ điều kiện (theo trang tuyển sinh; mức cụ thể xem sổ tay).",
+  "tuition": "Hệ đại học kỹ thuật 4 năm: 42.000 Đài tệ/học kỳ từ học kỳ 2 đến 8 (học phí 30.000; tạp phí 10.450; máy tính 600; bảo hiểm tai nạn 950). Ký túc xá 4.500 Đài tệ/học kỳ từ học kỳ 2",
+  "intake": "Xuân 2027 (đăng ký nhập học 23/2/2027)",
+  "deadline": "Đến 16/1/2027 (còn mở)",
+  "website": "https://a29.tajen.edu.tw/p/412-1029-6275.php?Lang=en",
+  "sources": [
+    {
+      "title": "Tajen University - International Student Admission",
+      "url": "https://a29.tajen.edu.tw/p/412-1029-6275.php?Lang=en",
+      "publisher": "Đại học Đại Nhân (Tajen)",
+      "accessed": "22/11/2026"
+    }
+  ],
+  "image": "/img/news/school-tajen.jpg",
+  "image_credit": "Ảnh: Outlookxp / CC BY-SA 4.0 / Wikimedia Commons (https://commons.wikimedia.org/wiki/File:%E5%A4%A7%E4%BB%81%E7%A7%91%E6%8A%80%E5%A4%A7%E5%AD%B8%E5%90%B3%E6%8C%AF%E7%91%9E%E6%95%85%E4%BA%8B%E9%A4%A8.jpg)"
+}

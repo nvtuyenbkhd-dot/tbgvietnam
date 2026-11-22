@@ -1,0 +1,39 @@
+{
+  "slug": "dai-hoc-van-hoa-trung-quoc-pccu",
+  "type": "university",
+  "city": "Đài Bắc",
+  "name_vi": "Đại học Văn hoá Trung Quốc (PCCU)",
+  "name_zh": "中國文化大學",
+  "name_en": "Chinese Culture University",
+  "summary_vi": "Trường có hệ 1+4 (Quốc tế chuyên tu): một năm tiếng Hoa dự bị rồi bốn năm cử nhân, người mới học tiếng Hoa vẫn nộp được. Ngoài ra trường tuyển sinh viên quốc tế hệ tự túc ở các bậc cử nhân, thạc sĩ, tiến sĩ.",
+  "summary_en": "PCCU runs a 1+4 International Foundation Program (one Chinese-language year plus four years of bachelor's study) and regular degree admissions for international students.",
+  "summary_zh": "中國文化大學設有國際專修部（1+4：華語先修一年加四年學士），另有外國學生一般學位申請管道。",
+  "requirements_vi": "**Hệ 1+4 (Quốc tế chuyên tu) - trang của trường**\n- Nộp hồ sơ 15/10 - 6/11/2026 (đã đóng); phỏng vấn trực tiếp 25-26/11 và trực tuyến 1-2/12; công bố kết quả 15/12/2026.\n- Năm tiếng Hoa dự bị phải đạt TOCFL nghe-đọc cấp A2 để vào chương trình cử nhân và đạt B1 trước khi hết năm nhất.\n- Lệ phí hồ sơ 1.200 Đài tệ hoặc 40 USD; tạp phí năm dự bị 30.000 Đài tệ/học kỳ, thêm sách và lệ phí thi khoảng 3.600 Đài tệ; chứng minh tài chính từ 100.000 Đài tệ trong 3 tháng gần nhất hoặc học bổng toàn phần.\n\n**Hệ tự túc kỳ Xuân 2027 - theo Taiwan Diary (nguồn thứ cấp)**\n- Nộp trực tuyến 15/10 - 30/11/2026 15:00; xét duyệt 9-17/12; công bố kết quả và học bổng 24/12/2026; khai giảng 22/2/2027; không thu lệ phí hồ sơ.\n- Chương trình tiếng Hoa cần TOCFL A1 (cấp 2) trở lên hoặc tương đương; chương trình tiếng Anh cần CEFR B1 (ví dụ TOEFL iBT 57, IELTS 4.0, TOEIC 550); sao kê từ 100.000 Đài tệ.\n- Chỉ tiêu nêu trên trang: cử nhân 386, thạc sĩ 216, tiến sĩ 14.",
+  "scholarship_vi": "Theo Taiwan Diary: học bổng sinh viên mới xếp loại theo điểm trường cũ, từ giảm 100% học phí và tạp phí năm đầu đến 50.000 Đài tệ/năm; sinh viên đang học có thể được miễn 100% nếu điểm trung bình từ 75, nằm trong 15% đầu lớp và hạnh kiểm từ 80. Hãy đối chiếu với thông báo của trường.",
+  "tuition": "Hệ tự túc (theo Taiwan Diary): học phí 38.055 hoặc 39.810 Đài tệ/học kỳ tuỳ trường thành viên, tạp phí 7.680 - 13.580; tổng 45.735 - 53.390 Đài tệ/học kỳ",
+  "intake": "Tháng 2 và tháng 9 (Xuân 2027: khai giảng 22/2/2027)",
+  "deadline": "1+4: đã đóng 6/11/2026. Hệ tự túc: đến 30/11/2026 (theo Taiwan Diary)",
+  "website": "https://futurestudent.pccu.edu.tw/p/16-1312-137761.php?Lang=zh-tw",
+  "sources": [
+    {
+      "title": "國際專修部申請入學 (International Foundation Program)",
+      "url": "https://futurestudent.pccu.edu.tw/p/16-1312-137761.php?Lang=zh-tw",
+      "publisher": "Đại học Văn hoá Trung Quốc (PCCU)",
+      "accessed": "22/11/2026"
+    },
+    {
+      "title": "Apply and Inquiry - International Foundation Program",
+      "url": "https://futurestudent.pccu.edu.tw/p/404-1312-137763.php?Lang=zh-tw",
+      "publisher": "Đại học Văn hoá Trung Quốc (PCCU)",
+      "accessed": "22/11/2026"
+    },
+    {
+      "title": "Tuyển sinh Đại học Văn hoá Trung Quốc kỳ Xuân 2027",
+      "url": "https://taiwandiary.vn/tuyen-sinh-dai-hoc-van-hoa-trung-quoc/",
+      "publisher": "Taiwan Diary (trung tâm tư vấn du học; nguồn thứ cấp, tổng hợp từ nhiều nguồn)",
+      "accessed": "22/11/2026"
+    }
+  ],
+  "image": "/img/news/school-pccu.jpg",
+  "image_credit": "Ảnh: vegafish / CC BY-SA 2.5 / Wikimedia Commons (https://commons.wikimedia.org/wiki/File:Chinese_Culture_University_Huabiao_20040730.jpg)"
+}
