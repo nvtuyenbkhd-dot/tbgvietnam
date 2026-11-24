@@ -26,8 +26,8 @@
     "cta_primary": "Đăng ký tư vấn miễn phí", "cta_secondary": "Khám phá chương trình",
     "pillars_title": "Chọn lĩnh vực phù hợp với bạn", "pillars_sub": "Mỗi chương trình có điều kiện, chi phí và lộ trình riêng. Chúng tôi giúp bạn chọn đúng ngay từ đầu.",
     "study_desc": "Tuyển sinh các trường đại học, cao đẳng và học viện tại Đài Loan: học bổng, ngành học, chi phí và lộ trình ngôn ngữ.",
-    "labor_desc": "Đơn hàng tuyển dụng lao động phổ thông, rõ ngành nghề, mức lương và quyền lợi, đúng quy định của pháp luật.",
-    "engineer_desc": "Dành cho người có bằng trung cấp trở lên: thu nhập 4-7 vạn Đài tệ/tháng, cơ hội định cư và bảo lãnh người thân.",
+    "labor_desc": "Đơn hàng tuyển dụng lao động phổ thông, nêu rõ ngành nghề, mức lương và quyền lợi theo thông tin đơn tuyển và quy định hiện hành.",
+    "engineer_desc": "Dành cho người có bằng trung cấp trở lên: mức lương theo từng đơn hàng, có lộ trình xin cư trú dài hạn và bảo lãnh người thân nếu đáp ứng điều kiện theo quy định của Đài Loan.",
     "explore": "Tìm hiểu",
     "stats": [
       { "k": "years", "label": "Năm kinh nghiệm" },
@@ -65,19 +65,19 @@
     "intro": "Chương trình lao động phổ thông phù hợp với người muốn đi làm sớm. Thời gian xuất cảnh thường nhanh hơn, mức thu nhập thấp hơn diện kỹ sư."
   },
   "engineer": {
-    "title": "Kỹ sư Đài Loan", "sub": "Chương trình dành cho người có bằng trung cấp trở lên: thu nhập cao, định cư lâu dài, bảo lãnh người thân.",
+    "title": "Kỹ sư Đài Loan", "sub": "Chương trình dành cho người có bằng trung cấp trở lên: mức lương theo từng đơn hàng, lộ trình cư trú dài hạn và bảo lãnh người thân khi đủ điều kiện.",
     "benefits_title": "Quyền lợi kỹ sư Đài Loan",
     "benefits": [
-      { "t": "Thu nhập cao", "d": "Lương cơ bản 4,8 vạn Đài tệ/tháng. Thu nhập thực lĩnh cả tăng ca 4-7 vạn/tháng." },
-      { "t": "Quyền lợi định cư", "d": "Được làm việc và định cư lâu dài tại Đài Loan, không bị hạn chế như xuất khẩu lao động phổ thông." },
-      { "t": "Bảo lãnh người thân", "d": "Có thể bảo lãnh vợ/chồng, con sang ở cùng; vợ/chồng đi làm, con đi học như người bản địa." }
+      { "t": "Mức lương theo đơn hàng", "d": "Mức lương xem chi tiết trong từng đơn tuyển. Thu nhập thực tế phụ thuộc giờ làm thêm và hợp đồng lao động." },
+      { "t": "Lộ trình cư trú", "d": "Có lộ trình xin cư trú dài hạn nếu đáp ứng điều kiện theo quy định của Đài Loan; cơ quan chức năng Đài Loan xét từng trường hợp." },
+      { "t": "Bảo lãnh người thân", "d": "Có thể xin cho vợ/chồng, con sang ở cùng nếu đáp ứng điều kiện theo quy định Đài Loan; quyền làm việc và đi học theo quy định hiện hành." }
     ],
     "compare_title": "So sánh kỹ sư và lao động phổ thông Đài Loan",
     "compare_cols": ["Tiêu chí", "Kỹ sư Đài Loan", "Lao động phổ thông"],
     "compare_rows": [
       ["Chi phí", "Thấp", "Cao"],
-      ["Lương cơ bản", "48.000 Đài tệ/tháng", "29.500 Đài tệ/tháng"],
-      ["Thu nhập thực lĩnh TB", "4-7 vạn Đài tệ/tháng", "2-4 vạn Đài tệ/tháng"],
+      ["Lương cơ bản","Theo từng đơn hàng (tham khảo khoảng 48.000 Đài tệ/tháng)","Theo quy định lương cơ bản hiện hành (tham khảo khoảng 29.500 Đài tệ/tháng)"],
+      ["Thu nhập thực lĩnh","Phụ thuộc đơn hàng và giờ làm thêm","Phụ thuộc đơn hàng và giờ làm thêm"],
       ["Thời gian xuất cảnh", "3-6 tháng", "1-2 tháng"]
     ],
     "compare_note": "Số liệu tham khảo, có thể thay đổi theo thời điểm và đơn hàng cụ thể. Liên hệ để được tư vấn chính xác.",
@@ -91,7 +91,7 @@
   },
   "job": {
     "salary": "Mức lương", "location": "Địa điểm", "headcount": "Số lượng", "gender": "Giới tính", "age": "Độ tuổi", "industry": "Ngành nghề",
-    "deadline": "Hạn nộp", "description": "Mô tả công việc", "requirements": "Yêu cầu", "benefits": "Quyền lợi", "negotiable": "Thoả thuận",
+    "deadline": "Hạn nộp", "description": "Mô tả công việc", "requirements": "Yêu cầu", "benefits": "Quyền lợi", "negotiable": "Thoả thuận", "salary_note": "Mức lương theo thông tin đơn tuyển; con số chính xác theo hợp đồng lao động.",
     "filter_industry": "Ngành nghề", "filter_location": "Địa điểm", "sort_new": "Mới nhất"
   },
   "form": {
@@ -124,7 +124,7 @@
   "footer": {
     "about": "Tư vấn du học, xuất khẩu lao động và kỹ sư Đài Loan. Minh bạch, trách nhiệm, đồng hành lâu dài.",
     "programs": "Chương trình", "company": "Công ty", "offices": "Văn phòng", "rights": "Bảo lưu mọi quyền.",
-    "hq": "Trụ sở chính", "hcm": "Văn phòng TP. HCM", "taiwan": "Văn phòng Đài Loan"
+    "hq": "Trụ sở chính", "hcm": "Văn phòng TP. HCM", "taiwan": "Văn phòng Đài Loan", "social": {"title":"Theo dõi chúng tôi","fanpage":"Fanpage Kỹ Sư Đài Loan","tiktok":"TikTok @kysutaiwan","youtube":"YouTube Kỹ Sư Đài Loan","group":"Nhóm Facebook"}
   },
   "lang_switch": "Ngôn ngữ"
 }

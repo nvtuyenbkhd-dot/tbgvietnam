@@ -17,6 +17,7 @@
           <div><dt><%= t('job.' + r[0]) %></dt><dd><%= r[0] === 'deadline' ? fmtDate(r[1]) : r[1] %></dd></div>
         <% } }) %>
       </dl>
+      <p class="salary-note"><%= t('job.salary_note') %></p>
       <% if (item.image) { %><img class="detail__img" src="<%= item.image %>" alt="<%= title %>" width="960" height="540"><% } %>
       <% if (L(item, 'description')) { %><h2><%= t('job.description') %></h2><div class="prose"><%- richText(L(item, 'description')) %></div><% } %>
       <% if (L(item, 'requirements')) { %><h2><%= t('job.requirements') %></h2><div class="prose"><%- richText(L(item, 'requirements')) %></div><% } %>

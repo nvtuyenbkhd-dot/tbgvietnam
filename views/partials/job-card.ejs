@@ -8,6 +8,7 @@
       <% if (j.headcount) { %><div><dt><%= t('job.headcount') %></dt><dd><%= j.headcount %></dd></div><% } %>
       <% if (j.age) { %><div><dt><%= t('job.age') %></dt><dd><%= L(j, 'age') %></dd></div><% } %>
     </dl>
+    <p class="salary-note"><%= t('job.salary_note') %></p>
     <a class="link" href="<%= base %>"><%= t('common.read_more') %><svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a>
   </div>
 </article>

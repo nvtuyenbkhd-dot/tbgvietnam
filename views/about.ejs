@@ -42,6 +42,7 @@
         <div class="office"><svg class="i i--lg" aria-hidden="true"><use href="#i-building"/></svg><h3><%= t('footer.' + o[0]) %></h3><p><%= S[o[1]] %></p></div>
       <% } }) %>
     </div>
+    <div class="center"><%- include('partials/social', { cls: 'social--center', showTitle: true }) %></div>
   </div>
 </section>
 <%- include('partials/foot') %>

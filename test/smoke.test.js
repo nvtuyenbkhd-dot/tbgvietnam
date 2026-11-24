@@ -134,3 +134,22 @@ test('bootstrapAdmin chỉ tạo tài khoản khi chưa có user và mật khẩ
   assert.equal(bootstrapAdmin(), false); // lần hai không tạo thêm
   delete process.env.ADMIN_PASSWORD; delete process.env.ADMIN_USER;
 });
+
+test('mạng xã hội ở chân trang/Liên hệ/Về chúng tôi và ghi chú mức lương ở đơn tuyển', async () => {
+  for (const l of ['vi', 'zh', 'en']) {
+    for (const p of ['/', '/lien-he', '/ve-chung-toi']) {
+      const html = await (await get(`/${l}${p}`)).text();
+      for (const u of ['facebook.com/profile.php?id=61596485921858', 'tiktok.com/@kysutaiwan', 'youtube.com/@kysutaiwan', 'facebook.com/groups/1824897195603806']) {
+        assert.ok(html.includes(u), `${l}${p} thiếu liên kết ${u}`);
+      }
+    }
+    const job = await (await get(`/${l}/ky-su-dai-loan/j1`)).text();
+    assert.ok(job.includes('salary-note'), `${l}: thiếu ghi chú mức lương ở chi tiết đơn`);
+    const list = await (await get(`/${l}/ky-su-dai-loan`)).text();
+    assert.ok(list.includes('salary-note'), `${l}: thiếu ghi chú mức lương ở danh sách`);
+  }
+  const home = await (await get('/vi/')).text();
+  assert.ok(!/4-7 vạn|định cư lâu dài/.test(home), 'trang chủ không còn câu khẳng định tuyệt đối');
+  const eng = await (await get('/vi/ky-su-dai-loan')).text();
+  assert.ok(!/4-7 vạn|4,8 vạn|định cư lâu dài/.test(eng), 'trang kỹ sư không còn câu khẳng định tuyệt đối');
+});

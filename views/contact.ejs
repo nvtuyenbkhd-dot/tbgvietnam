@@ -18,6 +18,7 @@
         <% } }) %>
         <li><svg class="i i--lg" aria-hidden="true"><use href="#i-clock"/></svg><div><h2><%= t('contact.hours').split(':')[0] %></h2><p><%= t('contact.hours').split(':').slice(1).join(':').trim() %></p></div></li>
       </ul>
+      <%- include('partials/social', { cls: '', showTitle: true }) %>
     </div>
     <aside class="detail__side" id="dang-ky">
       <div class="panel"><h2><%= t('form.title') %></h2><%- include('partials/lead-form', { id: 'contact', program: 'other' }) %></div>

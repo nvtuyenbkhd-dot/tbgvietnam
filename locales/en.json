@@ -26,8 +26,8 @@
     "cta_primary": "Get a free consultation", "cta_secondary": "Explore programs",
     "pillars_title": "Choose the path that fits you", "pillars_sub": "Each program has its own requirements, costs and timeline. We help you pick the right one from the start.",
     "study_desc": "Admissions to universities, colleges and institutes in Taiwan: scholarships, majors, costs and language pathways.",
-    "labor_desc": "Open positions for general workers with clear industry, salary and benefits, fully in line with the law.",
-    "engineer_desc": "For candidates with a vocational diploma or higher: NT$40,000-70,000 per month, long-term residency and family sponsorship.",
+    "labor_desc": "Open positions for general workers, with industry, salary and benefits stated as in each job listing and current regulations.",
+    "engineer_desc": "For candidates with a vocational diploma or higher: salary varies by position, with a pathway to long-term residency and family sponsorship for those who meet Taiwan's requirements.",
     "explore": "Learn more",
     "stats": [
       { "k": "years", "label": "Years of experience" },
@@ -65,19 +65,19 @@
     "intro": "The general labor program suits people who want to start working soon. Departure is usually faster, with income lower than the engineer program."
   },
   "engineer": {
-    "title": "Taiwan engineers", "sub": "For candidates with a vocational diploma or higher: high income, long-term residency, family sponsorship.",
+    "title": "Taiwan engineers", "sub": "For candidates with a vocational diploma or higher: salary varies by position, with pathways to long-term residency and family sponsorship when eligible.",
     "benefits_title": "Benefits of the Taiwan engineer program",
     "benefits": [
-      { "t": "High income", "d": "Base salary NT$48,000 per month. Take-home income including overtime is NT$40,000-70,000 per month." },
-      { "t": "Residency benefits", "d": "Work and settle long term in Taiwan, without the restrictions of general overseas labor." },
-      { "t": "Family sponsorship", "d": "Sponsor your spouse and children; your spouse can work and children attend school like locals." }
+      { "t": "Salary by position", "d": "Pay is stated in each job listing. Actual income depends on overtime hours and the employment contract." },
+      { "t": "Residency pathway", "d": "There is a pathway to apply for long-term residency if you meet Taiwan's requirements; the Taiwanese authorities decide each case." },
+      { "t": "Family sponsorship", "d": "You may apply for your spouse and children to join you if you meet Taiwan's requirements; work and school rights follow current regulations." }
     ],
     "compare_title": "Taiwan engineers vs. general workers",
     "compare_cols": ["Criteria", "Taiwan engineer", "General worker"],
     "compare_rows": [
       ["Cost", "Low", "High"],
-      ["Base salary", "NT$48,000/month", "NT$29,500/month"],
-      ["Average take-home", "NT$40,000-70,000/month", "NT$20,000-40,000/month"],
+      ["Base salary","By position (reference: about NT$48,000/month)","Per current minimum-wage rules (reference: about NT$29,500/month)"],
+      ["Take-home income","Depends on the position and overtime","Depends on the position and overtime"],
       ["Time to departure", "3-6 months", "1-2 months"]
     ],
     "compare_note": "Figures are indicative and may change by period and by position. Contact us for accurate advice.",
@@ -91,7 +91,7 @@
   },
   "job": {
     "salary": "Salary", "location": "Location", "headcount": "Positions", "gender": "Gender", "age": "Age", "industry": "Industry",
-    "deadline": "Deadline", "description": "Job description", "requirements": "Requirements", "benefits": "Benefits", "negotiable": "Negotiable",
+    "deadline": "Deadline", "description": "Job description", "requirements": "Requirements", "benefits": "Benefits", "negotiable": "Negotiable", "salary_note": "Salary follows the job listing; the exact figure is set in the employment contract.",
     "filter_industry": "Industry", "filter_location": "Location", "sort_new": "Newest"
   },
   "form": {
@@ -124,7 +124,7 @@
   "footer": {
     "about": "Advisory for study abroad, overseas labor and Taiwan engineers. Transparent, responsible, long-term support.",
     "programs": "Programs", "company": "Company", "offices": "Offices", "rights": "All rights reserved.",
-    "hq": "Head office", "hcm": "Ho Chi Minh City office", "taiwan": "Taiwan office"
+    "hq": "Head office", "hcm": "Ho Chi Minh City office", "taiwan": "Taiwan office", "social": {"title":"Follow us","fanpage":"Taiwan Engineers fanpage","tiktok":"TikTok @kysutaiwan","youtube":"Taiwan Engineers on YouTube","group":"Facebook group"}
   },
   "lang_switch": "Language"
 }

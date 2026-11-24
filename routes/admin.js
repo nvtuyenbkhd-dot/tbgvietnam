@@ -91,7 +91,8 @@ const colsOf = (f) => (f.ml ? LANG_TABS.map(([l]) => `${f.n}_${l}`) : [f.n]);
 
 const SETTING_FIELDS = [
   ['hotline', 'Hotline hiển thị (ví dụ 0982.735.714)'], ['hotline_tel', 'Số gọi/Zalo (chỉ chữ số, ví dụ 0982735714)'], ['zalo', 'Số Zalo (chỉ chữ số)'],
-  ['email', 'Email liên hệ'], ['facebook', 'Link Facebook (https://...)'],
+  ['email', 'Email liên hệ'], ['facebook', 'Link Facebook (cũ, không còn dùng)'],
+  ['social_fb_page', 'Link Fanpage Facebook (https://...)'], ['social_tiktok', 'Link TikTok (https://...)'], ['social_youtube', 'Link YouTube (https://...)'], ['social_fb_group', 'Link nhóm Facebook (https://...)'],
   ['hours_vi', 'Giờ làm việc'],
   ['addr_hq', 'Địa chỉ trụ sở chính'], ['addr_hcm', 'Văn phòng TP. HCM'], ['addr_tw', 'Văn phòng Đài Loan'],
   ['show_stats', 'Hiện khối số liệu ở trang chủ (1 = hiện, 0 = ẩn). Chỉ bật khi số liệu bên dưới là THẬT.'],

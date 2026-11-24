@@ -200,3 +200,10 @@ textarea { resize: vertical; min-height: 88px; } input:focus, select:focus, text
 .activity { display: grid; gap: 18px; grid-template-columns: 1fr; } .activity__item { margin: 0; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); }
 .activity__item img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; object-position: center 22%; } .activity__item figcaption { padding: 14px 16px 18px; } .activity__item h3 { margin: 0 0 .3em; } .activity__item p { margin: 0; color: var(--muted); font-size: .96rem; }
 @media (min-width: 700px) { .activity { grid-template-columns: repeat(3, 1fr); } }
+
+.social ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; } .social__title { margin: 14px 0 8px; font: 700 1rem var(--font-h); color: var(--navy); }
+.social a { display: inline-flex; align-items: center; gap: 8px; padding: 8px 14px; border-radius: 999px; border: 1px solid var(--line); background: #fff; color: var(--navy); font-weight: 600; font-size: .92rem; text-decoration: none; transition: background-color .18s, border-color .18s; }
+.social a:hover { background: var(--bg-alt); border-color: var(--c-study); }
+.social--center ul { justify-content: center; } .social--center .social__title { text-align: center; }
+.social--light a { background: rgba(255,255,255,.08); border-color: rgba(255,255,255,.3); color: #fff; } .social--light a:hover { background: rgba(255,255,255,.18); border-color: #fff; }
+.salary-note { margin: 6px 0 10px; font-size: .78rem; line-height: 1.4; color: var(--muted); }

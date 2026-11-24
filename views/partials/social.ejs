@@ -1,0 +1,4 @@
+<% const soc = t('footer.social'); const items = [['social_fb_page', 'facebook', 'fanpage'], ['social_tiktok', 'tiktok', 'tiktok'], ['social_youtube', 'youtube', 'youtube'], ['social_fb_group', 'users', 'group']].filter(function (x) { return S[x[0]]; }); %>
+<% if (items.length) { %><div class="social<%= typeof cls !== 'undefined' ? ' ' + cls : '' %>"><% if (typeof showTitle !== 'undefined' && showTitle) { %><p class="social__title"><%= soc.title %></p><% } %><ul>
+  <% items.forEach(function (x) { %><li><a href="<%= S[x[0]] %>" target="_blank" rel="noopener"><svg class="i" aria-hidden="true"><use href="#i-<%= x[1] %>"/></svg><span><%= soc[x[2]] %></span></a></li><% }) %>
+</ul></div><% } %>

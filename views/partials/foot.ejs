@@ -12,6 +12,7 @@
       </a>
       <p><%= t('footer.about') %></p>
       <% if (S.hotline) { %><p class="footer__hot"><svg class="i" aria-hidden="true"><use href="#i-phone"/></svg><a href="tel:<%= tel %>"><%= S.hotline %></a></p><% } %>
+      <%- include('social', { cls: 'social--light', showTitle: false }) %>
       <% if (S.email) { %><p class="footer__hot"><svg class="i" aria-hidden="true"><use href="#i-mail"/></svg><a href="mailto:<%= S.email %>"><%= S.email %></a></p><% } %>
     </div>
     <div>
