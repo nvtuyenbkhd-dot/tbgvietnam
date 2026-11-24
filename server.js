@@ -34,7 +34,7 @@ app.use(
         'style-src': ["'self'", "'unsafe-inline'", 'https://fonts.googleapis.com'],
         'font-src': ["'self'", 'https://fonts.gstatic.com'],
         'img-src': ["'self'", 'data:', 'https:'],
-        'frame-src': ["'self'", 'https://www.google.com'],
+        'frame-src': ["'self'", 'https://www.google.com', 'https://www.youtube-nocookie.com'],
         'form-action': ["'self'"],
         'upgrade-insecure-requests': isProd ? [] : null,
       },

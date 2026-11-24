@@ -11,6 +11,7 @@
   <div class="container container--narrow">
     <% let srcs = []; try { srcs = JSON.parse(item.sources || '[]'); } catch (e) {} %>
     <% if (item.image) { %><figure class="post-fig"><img class="detail__img" src="<%= item.image %>" alt="<%= item.image_alt || title %>" width="960" height="540" fetchpriority="high"><% if (item.image_credit) { %><figcaption><%= item.image_credit %></figcaption><% } %></figure><% } %>
+    <% if (item.youtube && /^[A-Za-z0-9_-]{11}$/.test(item.youtube)) { %><figure class="post-video"><div class="post-video__frame"><iframe src="https://www.youtube-nocookie.com/embed/<%= item.youtube %>" title="<%= title %>" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div></figure><% } %>
     <div class="prose prose--lg"><%- richText(L(item, 'body')) %></div>
     <% let gal = []; try { gal = JSON.parse(item.gallery || '[]'); } catch (e) {} %>
     <% if (gal.length) { const caps = t('news.gallery_caps'); %><section class="postgal-wrap" aria-label="<%= t('news.gallery_title') %>"><h2><%= t('news.gallery_title') %></h2><div class="postgal">

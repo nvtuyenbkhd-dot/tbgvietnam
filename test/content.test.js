@@ -54,3 +54,19 @@ test('ảnh hoạt động trong bài (gallery) tồn tại và đúng loại', 
     assert.ok((p.gallery || []).length <= 4, `${f}: tối đa 4 ảnh trong gallery`);
   }
 });
+
+test('bài có youtube: mã video hợp lệ được nhận, mã sai bị bỏ qua', () => {
+  const fs2 = require('fs'); const os = require('os'); const path2 = require('path');
+  const { importPosts } = require('../lib/content');
+  const tmp = fs2.mkdtempSync(path2.join(os.tmpdir(), 'yt-'));
+  const base = { category: 'guide', title_vi: 'T', excerpt_vi: 'E', body_vi: 'B', published_at: '2026-11-24',
+    sources: [{ title: 'a', url: 'https://a.example' }, { title: 'b', url: 'https://b.example' }] };
+  fs2.writeFileSync(path2.join(tmp, 'ok.json'), JSON.stringify({ ...base, slug: 'yt-test-ok', youtube: '751vzShh_eo' }));
+  fs2.writeFileSync(path2.join(tmp, 'bad.json'), JSON.stringify({ ...base, slug: 'yt-test-bad', youtube: 'javascript:alert(1)' }));
+  const n = importPosts(tmp);
+  assert.strictEqual(n, 1);
+  const { get, run } = require('../lib/db');
+  assert.strictEqual(get('SELECT youtube FROM posts WHERE slug=?', 'yt-test-ok').youtube, '751vzShh_eo');
+  assert.strictEqual(get('SELECT id FROM posts WHERE slug=?', 'yt-test-bad'), undefined);
+  run('DELETE FROM posts WHERE slug=?', 'yt-test-ok');
+});
