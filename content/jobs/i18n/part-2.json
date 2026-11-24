@@ -1,544 +1,544 @@
 {
- "ky-su-dien-nuoc-co-dien-pccc-cao-hung": {
-  "en": {
-   "title": "Plumbing, MEP & Fire Protection Engineers – Kaohsiung (5 male)",
-   "industry": "Mechanical & Electrical, Plumbing & Electrical",
-   "location": "Kaohsiung",
-   "salary": "NT$47,971/month",
-   "gender": "Male",
-   "age": "Ages 25–40",
-   "description": [
-    "Install plumbing, mechanical and electrical, and fire protection systems on construction projects. Fixed morning shift."
-   ],
-   "requirements": [
-    "Male, ages 25–40, in good health, not color-blind.",
-    "Basic Mandarin is required.",
-    "Basic experience in plumbing and electrical work, mechanical and electrical work, or welding is preferred."
-   ],
-   "benefits": [
-    "Currently plenty of overtime (about 2 hours per day, including weekends).",
-    "The company helps arrange dormitory housing; workers pay their own utilities. Lunch provided. Allowance based on ability.",
-    "Paid on the 10th of each month. 3-year contract, renewable."
-   ]
+  "ky-su-dien-nuoc-co-dien-pccc-cao-hung": {
+    "en": {
+      "title": "Plumbing, MEP & Fire Protection Engineers – Kaohsiung (5 male)",
+      "industry": "Mechanical & Electrical, Plumbing & Electrical",
+      "location": "Kaohsiung",
+      "salary": "NT$47,971/month",
+      "gender": "Male",
+      "age": "Ages 25–40",
+      "description": [
+        "Install plumbing, mechanical and electrical, and fire protection systems on construction projects. Fixed morning shift."
+      ],
+      "requirements": [
+        "Male, ages 25–40, in good health, not color-blind.",
+        "Basic Mandarin is required.",
+        "Basic experience in plumbing and electrical work, mechanical and electrical work, or welding is preferred."
+      ],
+      "benefits": [
+        "Currently plenty of overtime (about 2 hours per day, including weekends).",
+        "The company helps arrange dormitory housing; workers pay their own utilities. Lunch provided. Allowance based on ability.",
+        "Paid on the 10th of each month. 3-year contract, renewable."
+      ]
+    },
+    "zh": {
+      "title": "高雄水電、機電、消防工程師（男5名）",
+      "industry": "機電、水電",
+      "location": "高雄",
+      "salary": "每月新台幣47,971元",
+      "gender": "男",
+      "age": "25至40歲",
+      "description": [
+        "負責營建工程的水電、機電及消防系統施工，固定早班。"
+      ],
+      "requirements": [
+        "男性，25至40歲，身體健康，無色盲。",
+        "須具備基本中文能力。",
+        "具水電、機電或焊接基本經驗者優先。"
+      ],
+      "benefits": [
+        "目前加班多（每天約2小時，含週末）。",
+        "公司協助安排宿舍，水電費由員工自付。提供午餐。津貼依能力核定。",
+        "每月10日發薪。合約3年，可續約。"
+      ]
+    }
   },
-  "zh": {
-   "title": "高雄水電、機電、消防工程師（男5名）",
-   "industry": "機電、水電",
-   "location": "高雄",
-   "salary": "每月新台幣47,971元",
-   "gender": "男",
-   "age": "25至40歲",
-   "description": [
-    "負責營建工程的水電、機電及消防系統施工，固定早班。"
-   ],
-   "requirements": [
-    "男性，25至40歲，身體健康，無色盲。",
-    "須具備基本中文能力。",
-    "具水電、機電或焊接基本經驗者優先。"
-   ],
-   "benefits": [
-    "目前加班多（每天約2小時，含週末）。",
-    "公司協助安排宿舍，水電費由員工自付。提供午餐。津貼依能力核定。",
-    "每月10日發薪。合約3年，可續約。"
-   ]
-  }
- },
- "ky-su-co-dien-m-e-cong-trinh-20-nam": {
-  "en": {
-   "title": "MEP Engineers for Construction Projects – Taiwan (20 male)",
-   "industry": "Mechanical & Electrical, Plumbing & Electrical",
-   "location": "All of Taiwan (by project site)",
-   "salary": "NT$48,000/month",
-   "gender": "Male",
-   "age": "",
-   "description": [
-    "Install and build electrical, water supply and drainage, and mechanical and electrical systems for construction projects.",
-    "Assist with installing piping and mechanical and electrical equipment; read drawings, check progress and quality; coordinate with teams on site."
-   ],
-   "requirements": [
-    "Male, with a vocational, college or university degree in mechanical and electrical, electrical, construction or a related field.",
-    "Experience in construction mechanical and electrical or plumbing and electrical work. Ability to read technical drawings is an advantage.",
-    "Basic Mandarin and good health preferred."
-   ],
-   "benefits": [
-    "Mostly day shifts. Overtime is paid according to Taiwan regulations.",
-    "The company helps arrange housing, with a dormitory fee deducted. Meals are at your own expense.",
-    "Insurance and taxes follow Taiwan regulations."
-   ]
+  "ky-su-co-dien-m-e-cong-trinh-20-nam": {
+    "en": {
+      "title": "MEP Engineers for Construction Projects – Taiwan (20 male)",
+      "industry": "Mechanical & Electrical, Plumbing & Electrical",
+      "location": "All of Taiwan (by project site)",
+      "salary": "NT$48,000/month",
+      "gender": "Male",
+      "age": "",
+      "description": [
+        "Install and build electrical, water supply and drainage, and mechanical and electrical systems for construction projects.",
+        "Assist with installing piping and mechanical and electrical equipment; read drawings, check progress and quality; coordinate with teams on site."
+      ],
+      "requirements": [
+        "Male, with a vocational, college or university degree in mechanical and electrical, electrical, construction or a related field.",
+        "Experience in construction mechanical and electrical or plumbing and electrical work. Ability to read technical drawings is an advantage.",
+        "Basic Mandarin and good health preferred."
+      ],
+      "benefits": [
+        "Mostly day shifts. Overtime is paid according to Taiwan regulations.",
+        "The company helps arrange housing, with a dormitory fee deducted. Meals are at your own expense.",
+        "Insurance and taxes follow Taiwan regulations."
+      ]
+    },
+    "zh": {
+      "title": "臺灣各地工程機電（M&E）工程師（男20名）",
+      "industry": "機電、水電",
+      "location": "臺灣各地（依工地而定）",
+      "salary": "每月新台幣48,000元",
+      "gender": "男",
+      "age": "",
+      "description": [
+        "負責工程的電力、給排水及機電系統施工與安裝。",
+        "協助安裝管線及機電設備；閱讀圖面、檢查進度與品質；與現場各施工班組配合。"
+      ],
+      "requirements": [
+        "男性，具機電、電機、營建或相關科系中專、專科或大學學歷。",
+        "具工程機電、水電經驗。會看技術圖面者佔優勢。",
+        "具基本中文能力、身體健康者優先。"
+      ],
+      "benefits": [
+        "以日班為主。加班依臺灣法規計算。",
+        "公司協助安排住宿，並扣除宿舍費。伙食自理。",
+        "保險與稅款依臺灣法規辦理。"
+      ]
+    }
   },
-  "zh": {
-   "title": "臺灣各地工程機電（M&E）工程師（男20名）",
-   "industry": "機電、水電",
-   "location": "臺灣各地（依工地而定）",
-   "salary": "每月新台幣48,000元",
-   "gender": "男",
-   "age": "",
-   "description": [
-    "負責工程的電力、給排水及機電系統施工與安裝。",
-    "協助安裝管線及機電設備；閱讀圖面、檢查進度與品質；與現場各施工班組配合。"
-   ],
-   "requirements": [
-    "男性，具機電、電機、營建或相關科系中專、專科或大學學歷。",
-    "具工程機電、水電經驗。會看技術圖面者佔優勢。",
-    "具基本中文能力、身體健康者優先。"
-   ],
-   "benefits": [
-    "以日班為主。加班依臺灣法規計算。",
-    "公司協助安排住宿，並扣除宿舍費。伙食自理。",
-    "保險與稅款依臺灣法規辦理。"
-   ]
-  }
- },
- "ky-su-dien-nuoc-xay-dung-cao-hung-10-nam": {
-  "en": {
-   "title": "Plumbing & Electrical, Construction Engineers – Kaohsiung (10 male)",
-   "industry": "Mechanical & Electrical, Plumbing & Electrical",
-   "location": "Kaohsiung",
-   "salary": "From NT$47,971/month",
-   "gender": "Male",
-   "age": "",
-   "description": [
-    "Carry out plumbing and electrical work on construction sites; manage work crews and supervise construction. Mostly on-site work."
-   ],
-   "requirements": [
-    "Male, height 1.63 m or taller, weight under 80 kg.",
-    "Degree in mechanical, electrical or construction.",
-    "Plumbing and electrical experience is required.",
-    "Basic conversational Mandarin (can be learned while the application is being processed)."
-   ],
-   "benefits": [
-    "Fixed day shift, average overtime about 30 hours/month.",
-    "Free dormitory. Meals at your own expense."
-   ]
+  "ky-su-dien-nuoc-xay-dung-cao-hung-10-nam": {
+    "en": {
+      "title": "Plumbing & Electrical, Construction Engineers – Kaohsiung (10 male)",
+      "industry": "Mechanical & Electrical, Plumbing & Electrical",
+      "location": "Kaohsiung",
+      "salary": "From NT$47,971/month",
+      "gender": "Male",
+      "age": "",
+      "description": [
+        "Carry out plumbing and electrical work on construction sites; manage work crews and supervise construction. Mostly on-site work."
+      ],
+      "requirements": [
+        "Male, height 1.63 m or taller, weight under 80 kg.",
+        "Degree in mechanical, electrical or construction.",
+        "Plumbing and electrical experience is required.",
+        "Basic conversational Mandarin (can be learned while the application is being processed)."
+      ],
+      "benefits": [
+        "Fixed day shift, average overtime about 30 hours/month.",
+        "Free dormitory. Meals at your own expense."
+      ]
+    },
+    "zh": {
+      "title": "高雄水電、營建工程師（男10名）",
+      "industry": "機電、水電",
+      "location": "高雄",
+      "salary": "每月新台幣47,971元起",
+      "gender": "男",
+      "age": "",
+      "description": [
+        "負責工地水電作業；管理施工班組、監督工程。以現場工作為主。"
+      ],
+      "requirements": [
+        "男性，身高163公分以上，體重80公斤以下。",
+        "機械、電機或營建科系畢業。",
+        "須具水電經驗。",
+        "具基本中文會話能力（可在辦理申請期間學習）。"
+      ],
+      "benefits": [
+        "固定日班，平均每月加班約30小時。",
+        "免費宿舍。伙食自理。"
+      ]
+    }
   },
-  "zh": {
-   "title": "高雄水電、營建工程師（男10名）",
-   "industry": "機電、水電",
-   "location": "高雄",
-   "salary": "每月新台幣47,971元起",
-   "gender": "男",
-   "age": "",
-   "description": [
-    "負責工地水電作業；管理施工班組、監督工程。以現場工作為主。"
-   ],
-   "requirements": [
-    "男性，身高163公分以上，體重80公斤以下。",
-    "機械、電機或營建科系畢業。",
-    "須具水電經驗。",
-    "具基本中文會話能力（可在辦理申請期間學習）。"
-   ],
-   "benefits": [
-    "固定日班，平均每月加班約30小時。",
-    "免費宿舍。伙食自理。"
-   ]
-  }
- },
- "ky-su-thang-may-toan-dai-loan": {
-  "en": {
-   "title": "Elevator Installation & Maintenance Engineers – Taiwan (4–5 male)",
-   "industry": "Elevators",
-   "location": "All of Taiwan (by project site)",
-   "salary": "NT$47,971/month",
-   "gender": "Male",
-   "age": "Under 45",
-   "description": [
-    "Install, build, maintain and finish elevator systems at construction projects (Taipei, Taichung, Kaohsiung)."
-   ],
-   "requirements": [
-    "Male, under 45.",
-    "University graduate (2 years of experience) or college/vocational graduate (5 years of experience).",
-    "Elevator installation experience. Mandarin or English preferred.",
-    "Good health, hardworking, good teamwork."
-   ],
-   "benefits": [
-    "Average income about NT$40,000–60,000/month. Overtime pays NT$270 per hour.",
-    "Free, fully equipped dormitory. Utilities and meals at your own expense.",
-    "3-year contract, renewable."
-   ]
+  "ky-su-thang-may-toan-dai-loan": {
+    "en": {
+      "title": "Elevator Installation & Maintenance Engineers – Taiwan (4–5 male)",
+      "industry": "Elevators",
+      "location": "All of Taiwan (by project site)",
+      "salary": "NT$47,971/month",
+      "gender": "Male",
+      "age": "Under 45",
+      "description": [
+        "Install, build, maintain and finish elevator systems at construction projects (Taipei, Taichung, Kaohsiung)."
+      ],
+      "requirements": [
+        "Male, under 45.",
+        "University graduate (2 years of experience) or college/vocational graduate (5 years of experience).",
+        "Elevator installation experience. Mandarin or English preferred.",
+        "Good health, hardworking, good teamwork."
+      ],
+      "benefits": [
+        "Reference income about NT$40,000–60,000/month (depends on overtime). Overtime pays NT$270 per hour; exact figures follow the employment contract.",
+        "Free, fully equipped dormitory. Utilities and meals at your own expense.",
+        "3-year contract, renewable."
+      ]
+    },
+    "zh": {
+      "title": "臺灣各地電梯安裝、維修工程師（男4至5名）",
+      "industry": "電梯",
+      "location": "臺灣各地（依工地而定）",
+      "salary": "每月新台幣47,971元",
+      "gender": "男",
+      "age": "45歲以下",
+      "description": [
+        "負責各工程案場的電梯系統安裝、施工、維修及收尾（臺北、臺中、高雄）。"
+      ],
+      "requirements": [
+        "男性，45歲以下。",
+        "大學畢業（具2年經驗）或專科／中專畢業（具5年經驗）。",
+        "具電梯安裝經驗。會中文或英文者優先。",
+        "身體健康、勤奮、善於團隊合作。"
+      ],
+      "benefits": [
+        "參考月收入約新台幣40,000至60,000元（視加班而定）。加班費每小時新台幣270元；確切金額以勞動契約為準。",
+        "免費宿舍，設備齊全。水電費及伙食自付。",
+        "合約3年，可續約。"
+      ]
+    }
   },
-  "zh": {
-   "title": "臺灣各地電梯安裝、維修工程師（男4至5名）",
-   "industry": "電梯",
-   "location": "臺灣各地（依工地而定）",
-   "salary": "每月新台幣47,971元",
-   "gender": "男",
-   "age": "45歲以下",
-   "description": [
-    "負責各工程案場的電梯系統安裝、施工、維修及收尾（臺北、臺中、高雄）。"
-   ],
-   "requirements": [
-    "男性，45歲以下。",
-    "大學畢業（具2年經驗）或專科／中專畢業（具5年經驗）。",
-    "具電梯安裝經驗。會中文或英文者優先。",
-    "身體健康、勤奮、善於團隊合作。"
-   ],
-   "benefits": [
-    "平均月收入約新台幣40,000至60,000元。加班費每小時新台幣270元。",
-    "免費宿舍，設備齊全。水電費及伙食自付。",
-    "合約3年，可續約。"
-   ]
-  }
- },
- "ky-su-lap-dat-thang-may-dai-bac": {
-  "en": {
-   "title": "Elevator Installation Engineers – Taipei (5–7 male)",
-   "industry": "Elevators",
-   "location": "Taipei",
-   "salary": "NT$47,971/month",
-   "gender": "Male",
-   "age": "Under 40",
-   "description": [
-    "Install, build and assist in finishing elevator systems at construction projects."
-   ],
-   "requirements": [
-    "Male, under 40.",
-    "University graduate (2+ years of experience) or college/vocational graduate (5+ years of experience).",
-    "Knows Mandarin or has elevator installation experience.",
-    "Good health, hardworking, good teamwork."
-   ],
-   "benefits": [
-    "Average take-home pay about NT$50,000/month. Overtime is paid as a piece-rate by job.",
-    "Dormitory fee NT$2,500/month, utilities about NT$1,000/month. Meals at your own expense.",
-    "3-year contract."
-   ]
+  "ky-su-lap-dat-thang-may-dai-bac": {
+    "en": {
+      "title": "Elevator Installation Engineers – Taipei (5–7 male)",
+      "industry": "Elevators",
+      "location": "Taipei",
+      "salary": "NT$47,971/month",
+      "gender": "Male",
+      "age": "Under 40",
+      "description": [
+        "Install, build and assist in finishing elevator systems at construction projects."
+      ],
+      "requirements": [
+        "Male, under 40.",
+        "University graduate (2+ years of experience) or college/vocational graduate (5+ years of experience).",
+        "Knows Mandarin or has elevator installation experience.",
+        "Good health, hardworking, good teamwork."
+      ],
+      "benefits": [
+        "Reference take-home pay about NT$50,000/month (depends on overtime). Overtime is paid per job; exact figures follow the employment contract.",
+        "Dormitory fee NT$2,500/month, utilities about NT$1,000/month. Meals at your own expense.",
+        "3-year contract."
+      ]
+    },
+    "zh": {
+      "title": "臺北電梯安裝工程師（男5至7名）",
+      "industry": "電梯",
+      "location": "臺北",
+      "salary": "每月新台幣47,971元",
+      "gender": "男",
+      "age": "40歲以下",
+      "description": [
+        "負責各工程案場的電梯系統安裝、施工，並協助收尾。"
+      ],
+      "requirements": [
+        "男性，40歲以下。",
+        "大學畢業（2年以上經驗）或專科／中專畢業（5年以上經驗）。",
+        "會中文或具電梯安裝經驗。",
+        "身體健康、勤奮、善於團隊合作。"
+      ],
+      "benefits": [
+        "參考實領月薪約新台幣50,000元（視加班而定）。加班依工作內容以承包方式計酬；確切金額以勞動契約為準。",
+        "宿舍費每月新台幣2,500元，水電費每月約新台幣1,000元。伙食自理。",
+        "合約3年。"
+      ]
+    }
   },
-  "zh": {
-   "title": "臺北電梯安裝工程師（男5至7名）",
-   "industry": "電梯",
-   "location": "臺北",
-   "salary": "每月新台幣47,971元",
-   "gender": "男",
-   "age": "40歲以下",
-   "description": [
-    "負責各工程案場的電梯系統安裝、施工，並協助收尾。"
-   ],
-   "requirements": [
-    "男性，40歲以下。",
-    "大學畢業（2年以上經驗）或專科／中專畢業（5年以上經驗）。",
-    "會中文或具電梯安裝經驗。",
-    "身體健康、勤奮、善於團隊合作。"
-   ],
-   "benefits": [
-    "平均實領月薪約新台幣50,000元。加班依工作內容以承包方式計酬。",
-    "宿舍費每月新台幣2,500元，水電費每月約新台幣1,000元。伙食自理。",
-    "合約3年。"
-   ]
-  }
- },
- "ky-su-xay-dung-dan-dung-coppha-op-gach": {
-  "en": {
-   "title": "Civil Construction, Formwork & Tiling Engineers – Taiwan (10 male)",
-   "industry": "Construction",
-   "location": "All of Taiwan (by project site)",
-   "salary": "NT$48,000/month",
-   "gender": "Male",
-   "age": "",
-   "description": [
-    "Carry out construction work, formwork and tiling. People with site management experience are preferred."
-   ],
-   "requirements": [
-    "Male, with construction experience.",
-    "Knowing formwork and tiling and holding a car driver's license are advantages.",
-    "Working hours 08:00–17:00."
-   ],
-   "benefits": [
-    "Average overtime about 20 hours/month. Opportunity to take on contract work.",
-    "NT$2,500/month deducted for room and board. Lunch provided; dinner provided for evening overtime.",
-    "3-year contract."
-   ]
+  "ky-su-xay-dung-dan-dung-coppha-op-gach": {
+    "en": {
+      "title": "Civil Construction, Formwork & Tiling Engineers – Taiwan (10 male)",
+      "industry": "Construction",
+      "location": "All of Taiwan (by project site)",
+      "salary": "NT$48,000/month",
+      "gender": "Male",
+      "age": "",
+      "description": [
+        "Carry out construction work, formwork and tiling. People with site management experience are preferred."
+      ],
+      "requirements": [
+        "Male, with construction experience.",
+        "Knowing formwork and tiling and holding a car driver's license are advantages.",
+        "Working hours 08:00–17:00."
+      ],
+      "benefits": [
+        "Average overtime about 20 hours/month. Opportunity to take on contract work.",
+        "NT$2,500/month deducted for room and board. Lunch provided; dinner provided for evening overtime.",
+        "3-year contract."
+      ]
+    },
+    "zh": {
+      "title": "臺灣各地營造、模板、貼磚工程師（男10名）",
+      "industry": "營建",
+      "location": "臺灣各地（依工地而定）",
+      "salary": "每月新台幣48,000元",
+      "gender": "男",
+      "age": "",
+      "description": [
+        "負責工程施工、模板及貼磚作業。具工地管理經驗者優先。"
+      ],
+      "requirements": [
+        "男性，具營建工程經驗。",
+        "會做模板、貼磚，並持有汽車駕照者佔優勢。",
+        "工作時間08:00至17:00。"
+      ],
+      "benefits": [
+        "平均每月加班約20小時。有機會承包工程。",
+        "每月扣除食宿費新台幣2,500元。提供午餐；晚上加班提供晚餐。",
+        "合約3年。"
+      ]
+    }
   },
-  "zh": {
-   "title": "臺灣各地營造、模板、貼磚工程師（男10名）",
-   "industry": "營建",
-   "location": "臺灣各地（依工地而定）",
-   "salary": "每月新台幣48,000元",
-   "gender": "男",
-   "age": "",
-   "description": [
-    "負責工程施工、模板及貼磚作業。具工地管理經驗者優先。"
-   ],
-   "requirements": [
-    "男性，具營建工程經驗。",
-    "會做模板、貼磚，並持有汽車駕照者佔優勢。",
-    "工作時間08:00至17:00。"
-   ],
-   "benefits": [
-    "平均每月加班約20小時。有機會承包工程。",
-    "每月扣除食宿費新台幣2,500元。提供午餐；晚上加班提供晚餐。",
-    "合約3年。"
-   ]
-  }
- },
- "ky-su-cong-trinh-cong-cong-cau-duong-cao-hung-binh-dong": {
-  "en": {
-   "title": "Road & Landscape Construction – Kaohsiung, Pingtung (4 male)",
-   "industry": "Construction",
-   "location": "Kaohsiung – Pingtung",
-   "salary": "NT$2,400 per work day (about NT$48,000 for 20 work days)",
-   "gender": "Male",
-   "age": "",
-   "description": [
-    "Cleanup, flagging and construction on building projects: roads, bridges and roadways, water conservancy and landscaping."
-   ],
-   "requirements": [
-    "Holds the qualifications needed to process an engineer visa.",
-    "Knowing Mandarin is an advantage. Day shift."
-   ],
-   "benefits": [
-    "Paid every 2 weeks (on the 5th and 20th of each month). Overtime follows Taiwan's labor law.",
-    "Dormitory arranged at your own expense. Lunch and drinking water provided on work days.",
-    "3-year contract."
-   ]
+  "ky-su-cong-trinh-cong-cong-cau-duong-cao-hung-binh-dong": {
+    "en": {
+      "title": "Road & Landscape Construction – Kaohsiung, Pingtung (4 male)",
+      "industry": "Construction",
+      "location": "Kaohsiung – Pingtung",
+      "salary": "NT$2,400 per work day (about NT$48,000 for 20 work days)",
+      "gender": "Male",
+      "age": "",
+      "description": [
+        "Cleanup, flagging and construction on building projects: roads, bridges and roadways, water conservancy and landscaping."
+      ],
+      "requirements": [
+        "Holds the qualifications needed to process an engineer visa.",
+        "Knowing Mandarin is an advantage. Day shift."
+      ],
+      "benefits": [
+        "Paid every 2 weeks (on the 5th and 20th of each month). Overtime follows Taiwan's labor law.",
+        "Dormitory arranged at your own expense. Lunch and drinking water provided on work days.",
+        "3-year contract."
+      ]
+    },
+    "zh": {
+      "title": "高雄、屏東道路、水利、景觀工程師（男4名）",
+      "industry": "營建",
+      "location": "高雄、屏東",
+      "salary": "每個工作日新台幣2,400元（約20個工作日新台幣48,000元）",
+      "gender": "男",
+      "age": "",
+      "description": [
+        "負責營建工程的清理、警戒及施工：道路、橋樑道路、水利及景觀。"
+      ],
+      "requirements": [
+        "具備辦理工程師簽證所需的學歷資格。",
+        "會中文者佔優勢。日班。"
+      ],
+      "benefits": [
+        "每2週發薪一次（每月5日及20日）。加班依臺灣勞動法規辦理。",
+        "宿舍自理。上工日提供午餐及飲用水。",
+        "合約3年。"
+      ]
+    }
   },
-  "zh": {
-   "title": "高雄、屏東道路、水利、景觀工程師（男4名）",
-   "industry": "營建",
-   "location": "高雄、屏東",
-   "salary": "每個工作日新台幣2,400元（約20個工作日新台幣48,000元）",
-   "gender": "男",
-   "age": "",
-   "description": [
-    "負責營建工程的清理、警戒及施工：道路、橋樑道路、水利及景觀。"
-   ],
-   "requirements": [
-    "具備辦理工程師簽證所需的學歷資格。",
-    "會中文者佔優勢。日班。"
-   ],
-   "benefits": [
-    "每2週發薪一次（每月5日及20日）。加班依臺灣勞動法規辦理。",
-    "宿舍自理。上工日提供午餐及飲用水。",
-    "合約3年。"
-   ]
-  }
- },
- "ky-su-xu-ly-nuoc-ngam-dien-nuoc-dai-bac-tan-bac": {
-  "en": {
-   "title": "Groundwater & Plumbing Engineers – Taipei, New Taipei (5 male)",
-   "industry": "Mechanical & Electrical, Plumbing & Electrical",
-   "location": "Taipei – New Taipei",
-   "salary": "NT$2,200 per work day",
-   "gender": "Male",
-   "age": "",
-   "description": [
-    "Carry out groundwater treatment, plumbing and electrical work, and related tasks."
-   ],
-   "requirements": [
-    "Some Mandarin.",
-    "Plumbing and electrical experience preferred."
-   ],
-   "benefits": [
-    "At least 25 work days/month guaranteed, overtime NT$266 per hour. Labor insurance and health insurance provided.",
-    "Free housing with no room and board deduction; one person per room. Meals at your own expense, and the company gives a NT$3,000/month meal allowance.",
-    "Holders of a driver's license who agree to drive receive an extra NT$2,000/month allowance.",
-    "3-year contract. Pay increases gradually with experience and ability."
-   ]
+  "ky-su-xu-ly-nuoc-ngam-dien-nuoc-dai-bac-tan-bac": {
+    "en": {
+      "title": "Groundwater & Plumbing Engineers – Taipei, New Taipei (5 male)",
+      "industry": "Mechanical & Electrical, Plumbing & Electrical",
+      "location": "Taipei – New Taipei",
+      "salary": "NT$2,200 per work day",
+      "gender": "Male",
+      "age": "",
+      "description": [
+        "Carry out groundwater treatment, plumbing and electrical work, and related tasks."
+      ],
+      "requirements": [
+        "Some Mandarin.",
+        "Plumbing and electrical experience preferred."
+      ],
+      "benefits": [
+        "Expected at least 25 work days/month, overtime NT$266 per hour. Labor insurance and health insurance provided; details follow the employment contract.",
+        "Free housing with no room and board deduction; one person per room. Meals at your own expense, and the company gives a NT$3,000/month meal allowance.",
+        "Holders of a driver's license who agree to drive receive an extra NT$2,000/month allowance.",
+        "3-year contract. Pay increases gradually with experience and ability."
+      ]
+    },
+    "zh": {
+      "title": "臺北、新北地下水處理、水電工程師（男5名）",
+      "industry": "機電、水電",
+      "location": "臺北、新北",
+      "salary": "每個工作日新台幣2,200元",
+      "gender": "男",
+      "age": "",
+      "description": [
+        "負責地下水處理、水電作業及相關工項施工。"
+      ],
+      "requirements": [
+        "略懂中文。",
+        "具水電經驗者優先。"
+      ],
+      "benefits": [
+        "預計每月至少25個工作日，加班費每小時新台幣266元。提供勞保及健保；詳情以勞動契約為準。",
+        "免費住宿，不扣食宿費；每人一間房。伙食自理，公司每月補助伙食費新台幣3,000元。",
+        "持有駕照並同意開車者，每月另加津貼新台幣2,000元。",
+        "合約3年。薪資依經驗及能力逐步調升。"
+      ]
+    }
   },
-  "zh": {
-   "title": "臺北、新北地下水處理、水電工程師（男5名）",
-   "industry": "機電、水電",
-   "location": "臺北、新北",
-   "salary": "每個工作日新台幣2,200元",
-   "gender": "男",
-   "age": "",
-   "description": [
-    "負責地下水處理、水電作業及相關工項施工。"
-   ],
-   "requirements": [
-    "略懂中文。",
-    "具水電經驗者優先。"
-   ],
-   "benefits": [
-    "保證每月至少25個工作日，加班費每小時新台幣266元。提供勞保及健保。",
-    "免費住宿，不扣食宿費；每人一間房。伙食自理，公司每月補助伙食費新台幣3,000元。",
-    "持有駕照並同意開車者，每月另加津貼新台幣2,000元。",
-    "合約3年。薪資依經驗及能力逐步調升。"
-   ]
-  }
- },
- "ky-su-noi-that-cong-trinh-tan-bac-22-nguoi": {
-  "en": {
-   "title": "Interior Fit-out Trades – New Taipei (22 male)",
-   "industry": "Interior Fit-out",
-   "location": "New Taipei",
-   "salary": "NT$47,971/month",
-   "gender": "Male",
-   "age": "Ages 25–45",
-   "description": [
-    "5 welders: metal fabrication and assembly (experience required).",
-    "5 construction painters (no experience required).",
-    "5 drywall workers: partitions and drywall ceilings (no experience required).",
-    "2 carpenters: interior construction and installation (experience required).",
-    "5 masons/plasterers: wall plastering and tiling (experience required).",
-    "Work on projects across Taiwan."
-   ],
-   "requirements": [
-    "Male, ages 25–45, height 1.60 m or taller, vocational school graduate or above.",
-    "Relevant work experience (as required for each position)."
-   ],
-   "benefits": [
-    "Overtime depends on workload.",
-    "Dormitory fee of NT$2,500/month deducted. Lunch provided by the employer.",
-    "3-year contract, renewable."
-   ]
+  "ky-su-noi-that-cong-trinh-tan-bac-22-nguoi": {
+    "en": {
+      "title": "Interior Fit-out Trades – New Taipei (22 male)",
+      "industry": "Interior Fit-out",
+      "location": "New Taipei",
+      "salary": "NT$47,971/month",
+      "gender": "Male",
+      "age": "Ages 25–45",
+      "description": [
+        "5 welders: metal fabrication and assembly (experience required).",
+        "5 construction painters (no experience required).",
+        "5 drywall workers: partitions and drywall ceilings (no experience required).",
+        "2 carpenters: interior construction and installation (experience required).",
+        "5 masons/plasterers: wall plastering and tiling (experience required).",
+        "Work on projects across Taiwan."
+      ],
+      "requirements": [
+        "Male, ages 25–45, height 1.60 m or taller, vocational school graduate or above.",
+        "Relevant work experience (as required for each position)."
+      ],
+      "benefits": [
+        "Overtime depends on workload.",
+        "Dormitory fee of NT$2,500/month deducted. Lunch provided by the employer.",
+        "3-year contract, renewable."
+      ]
+    },
+    "zh": {
+      "title": "新北室內裝修工程師：焊接、油漆、石膏板（男22名）",
+      "industry": "室內裝修工程",
+      "location": "新北",
+      "salary": "每月新台幣47,971元",
+      "gender": "男",
+      "age": "25至45歲",
+      "description": [
+        "焊工5名：金屬加工、組裝（須有經驗）。",
+        "工程油漆工5名（無需經驗）。",
+        "石膏板工5名：隔間、石膏板天花板（無需經驗）。",
+        "木工2名：室內施工、安裝（須有經驗）。",
+        "泥作工5名：牆面粉刷、貼磚（須有經驗）。",
+        "工作地點為臺灣各地工程案場。"
+      ],
+      "requirements": [
+        "男性，25至45歲，身高160公分以上，中專以上學歷。",
+        "具相關工作經驗（依各職缺要求）。"
+      ],
+      "benefits": [
+        "加班依工作量而定。",
+        "每月扣除宿舍費新台幣2,500元。雇主提供午餐。",
+        "合約3年，可續約。"
+      ]
+    }
   },
-  "zh": {
-   "title": "新北室內裝修工程師：焊接、油漆、石膏板（男22名）",
-   "industry": "室內裝修工程",
-   "location": "新北",
-   "salary": "每月新台幣47,971元",
-   "gender": "男",
-   "age": "25至45歲",
-   "description": [
-    "焊工5名：金屬加工、組裝（須有經驗）。",
-    "工程油漆工5名（無需經驗）。",
-    "石膏板工5名：隔間、石膏板天花板（無需經驗）。",
-    "木工2名：室內施工、安裝（須有經驗）。",
-    "泥作工5名：牆面粉刷、貼磚（須有經驗）。",
-    "工作地點為臺灣各地工程案場。"
-   ],
-   "requirements": [
-    "男性，25至45歲，身高160公分以上，中專以上學歷。",
-    "具相關工作經驗（依各職缺要求）。"
-   ],
-   "benefits": [
-    "加班依工作量而定。",
-    "每月扣除宿舍費新台幣2,500元。雇主提供午餐。",
-    "合約3年，可續約。"
-   ]
-  }
- },
- "ky-su-xay-dung-be-tong-dai-bac": {
-  "en": {
-   "title": "Construction & Concrete Pouring Engineers – Taipei (4 male)",
-   "industry": "Construction",
-   "location": "Taipei",
-   "salary": "NT$47,971/month",
-   "gender": "Male",
-   "age": "Ages 22–45",
-   "description": [
-    "Transport, pump and pour concrete at project sites as assigned."
-   ],
-   "requirements": [
-    "Male, ages 22–45, vocational school graduate or above.",
-    "Construction major preferred; relevant experience is an advantage.",
-    "Good health, hardworking, suited to site work."
-   ],
-   "benefits": [
-    "22 work days/month, fixed day shift. Saturdays and Sundays count as overtime; average overtime about 40–46 hours/month.",
-    "Free dormitory. Lunch provided.",
-    "3-year contract."
-   ]
+  "ky-su-xay-dung-be-tong-dai-bac": {
+    "en": {
+      "title": "Construction & Concrete Pouring Engineers – Taipei (4 male)",
+      "industry": "Construction",
+      "location": "Taipei",
+      "salary": "NT$47,971/month",
+      "gender": "Male",
+      "age": "Ages 22–45",
+      "description": [
+        "Transport, pump and pour concrete at project sites as assigned."
+      ],
+      "requirements": [
+        "Male, ages 22–45, vocational school graduate or above.",
+        "Construction major preferred; relevant experience is an advantage.",
+        "Good health, hardworking, suited to site work."
+      ],
+      "benefits": [
+        "22 work days/month, fixed day shift. Saturdays and Sundays count as overtime; average overtime about 40–46 hours/month.",
+        "Free dormitory. Lunch provided.",
+        "3-year contract."
+      ]
+    },
+    "zh": {
+      "title": "臺北營造、澆置混凝土工程師（男4名）",
+      "industry": "營建",
+      "location": "臺北",
+      "salary": "每月新台幣47,971元",
+      "gender": "男",
+      "age": "22至45歲",
+      "description": [
+        "依指派在工程案場運送、泵送及澆置混凝土。"
+      ],
+      "requirements": [
+        "男性，22至45歲，中專以上學歷。",
+        "營建相關科系優先；具相關經驗者佔優勢。",
+        "身體健康、吃苦耐勞，適合在工地工作。"
+      ],
+      "benefits": [
+        "每月22個工作日，固定日班。週六、週日算加班；平均每月加班約40至46小時。",
+        "免費宿舍。提供午餐。",
+        "合約3年。"
+      ]
+    }
   },
-  "zh": {
-   "title": "臺北營造、澆置混凝土工程師（男4名）",
-   "industry": "營建",
-   "location": "臺北",
-   "salary": "每月新台幣47,971元",
-   "gender": "男",
-   "age": "22至45歲",
-   "description": [
-    "依指派在工程案場運送、泵送及澆置混凝土。"
-   ],
-   "requirements": [
-    "男性，22至45歲，中專以上學歷。",
-    "營建相關科系優先；具相關經驗者佔優勢。",
-    "身體健康、吃苦耐勞，適合在工地工作。"
-   ],
-   "benefits": [
-    "每月22個工作日，固定日班。週六、週日算加班；平均每月加班約40至46小時。",
-    "免費宿舍。提供午餐。",
-    "合約3年。"
-   ]
-  }
- },
- "ky-su-cnc-dot-dap-mieu-lat": {
-  "en": {
-   "title": "CNC & Stamping Die Engineers – Miaoli (2 male)",
-   "industry": "Factory – CNC",
-   "location": "Miaoli",
-   "salary": "NT$47,971/month",
-   "gender": "Male",
-   "age": "Ages 20–45",
-   "description": [
-    "Operate and maintain CNC machines, change dies on stamping machines, and perform other assigned tasks.",
-    "Products: precision stamped metal parts and molds."
-   ],
-   "requirements": [
-    "Male, ages 20–45, vocational school graduate or above.",
-    "Basic conversational Mandarin or English.",
-    "Able to operate and maintain CNC machines or change stamping dies."
-   ],
-   "benefits": [
-    "22 work days/month. Overtime about 40–80 hours/month; rate negotiated at interview.",
-    "Rotating shifts (morning shift at 8:00, mid shift at 13:00). Lunch provided.",
-    "Off-site housing: the agency helps find it, and workers pay for it themselves."
-   ]
+  "ky-su-cnc-dot-dap-mieu-lat": {
+    "en": {
+      "title": "CNC & Stamping Die Engineers – Miaoli (2 male)",
+      "industry": "Factory – CNC",
+      "location": "Miaoli",
+      "salary": "NT$47,971/month",
+      "gender": "Male",
+      "age": "Ages 20–45",
+      "description": [
+        "Operate and maintain CNC machines, change dies on stamping machines, and perform other assigned tasks.",
+        "Products: precision stamped metal parts and molds."
+      ],
+      "requirements": [
+        "Male, ages 20–45, vocational school graduate or above.",
+        "Basic conversational Mandarin or English.",
+        "Able to operate and maintain CNC machines or change stamping dies."
+      ],
+      "benefits": [
+        "22 work days/month. Overtime about 40–80 hours/month; rate negotiated at interview.",
+        "Rotating shifts (morning shift at 8:00, mid shift at 13:00). Lunch provided.",
+        "Off-site housing: the agency helps find it, and workers pay for it themselves."
+      ]
+    },
+    "zh": {
+      "title": "苗栗工廠CNC操作、沖壓換模工程師（男2名）",
+      "industry": "工廠、CNC",
+      "location": "苗栗",
+      "salary": "每月新台幣47,971元",
+      "gender": "男",
+      "age": "20至45歲",
+      "description": [
+        "操作及保養CNC工具機、更換沖床模具，並執行其他指派工作。",
+        "產品：精密金屬沖壓件、模具。"
+      ],
+      "requirements": [
+        "男性，20至45歲，中專以上學歷。",
+        "具基本中文或英文溝通能力。",
+        "會操作、保養CNC工具機或更換沖床模具。"
+      ],
+      "benefits": [
+        "每月22個工作日。加班每月約40至80小時，單價面試時議定。",
+        "輪班（早班8點、中班13點）。提供午餐。",
+        "宿舍在外住宿，由仲介協助尋找，員工自行負擔。"
+      ]
+    }
   },
-  "zh": {
-   "title": "苗栗工廠CNC操作、沖壓換模工程師（男2名）",
-   "industry": "工廠、CNC",
-   "location": "苗栗",
-   "salary": "每月新台幣47,971元",
-   "gender": "男",
-   "age": "20至45歲",
-   "description": [
-    "操作及保養CNC工具機、更換沖床模具，並執行其他指派工作。",
-    "產品：精密金屬沖壓件、模具。"
-   ],
-   "requirements": [
-    "男性，20至45歲，中專以上學歷。",
-    "具基本中文或英文溝通能力。",
-    "會操作、保養CNC工具機或更換沖床模具。"
-   ],
-   "benefits": [
-    "每月22個工作日。加班每月約40至80小時，單價面試時議定。",
-    "輪班（早班8點、中班13點）。提供午餐。",
-    "宿舍在外住宿，由仲介協助尋找，員工自行負擔。"
-   ]
+  "ky-su-cnc-autocad-dai-trung": {
+    "en": {
+      "title": "Factory CNC & AutoCAD Engineer – Taichung (1 male)",
+      "industry": "Factory – CNC",
+      "location": "Taichung",
+      "salary": "NT$47,971/month",
+      "gender": "Male",
+      "age": "Ages 25–35",
+      "description": [
+        "Find and arrange materials for the CNC engraving machine, use AutoCAD, operate the engraving machine, and perform related tasks in the workshop.",
+        "Products: aluminum doors, aluminum windows, acrylic panels."
+      ],
+      "requirements": [
+        "Ages 25–35, height 1.65 m or taller, vocational school graduate or above.",
+        "Able to read AutoCAD drawings. Basic conversational Mandarin or English.",
+        "Mild nearsightedness is acceptable."
+      ],
+      "benefits": [
+        "Fixed day shift, working in the workshop. Overtime depends on order volume.",
+        "Room and board at your own expense. 3-year contract."
+      ]
+    },
+    "zh": {
+      "title": "臺中工廠CNC、AutoCAD工程師（男1名）",
+      "industry": "工廠、CNC",
+      "location": "臺中",
+      "salary": "每月新台幣47,971元",
+      "gender": "男",
+      "age": "25至35歲",
+      "description": [
+        "為CNC雕刻機尋找並備妥材料、操作AutoCAD、操作雕刻機，以及廠內相關工作。",
+        "產品：鋁門、鋁窗、壓克力板。"
+      ],
+      "requirements": [
+        "25至35歲，身高165公分以上，中專以上學歷。",
+        "會看AutoCAD圖面。具基本中文或英文溝通能力。",
+        "可接受輕度近視。"
+      ],
+      "benefits": [
+        "固定日班，在廠內工作。加班依訂單量而定。",
+        "食宿自理。合約3年。"
+      ]
+    }
   }
- },
- "ky-su-cnc-autocad-dai-trung": {
-  "en": {
-   "title": "Factory CNC & AutoCAD Engineer – Taichung (1 male)",
-   "industry": "Factory – CNC",
-   "location": "Taichung",
-   "salary": "NT$47,971/month",
-   "gender": "Male",
-   "age": "Ages 25–35",
-   "description": [
-    "Find and arrange materials for the CNC engraving machine, use AutoCAD, operate the engraving machine, and perform related tasks in the workshop.",
-    "Products: aluminum doors, aluminum windows, acrylic panels."
-   ],
-   "requirements": [
-    "Ages 25–35, height 1.65 m or taller, vocational school graduate or above.",
-    "Able to read AutoCAD drawings. Basic conversational Mandarin or English.",
-    "Mild nearsightedness is acceptable."
-   ],
-   "benefits": [
-    "Fixed day shift, working in the workshop. Overtime depends on order volume.",
-    "Room and board at your own expense. 3-year contract."
-   ]
-  },
-  "zh": {
-   "title": "臺中工廠CNC、AutoCAD工程師（男1名）",
-   "industry": "工廠、CNC",
-   "location": "臺中",
-   "salary": "每月新台幣47,971元",
-   "gender": "男",
-   "age": "25至35歲",
-   "description": [
-    "為CNC雕刻機尋找並備妥材料、操作AutoCAD、操作雕刻機，以及廠內相關工作。",
-    "產品：鋁門、鋁窗、壓克力板。"
-   ],
-   "requirements": [
-    "25至35歲，身高165公分以上，中專以上學歷。",
-    "會看AutoCAD圖面。具基本中文或英文溝通能力。",
-    "可接受輕度近視。"
-   ],
-   "benefits": [
-    "固定日班，在廠內工作。加班依訂單量而定。",
-    "食宿自理。合約3年。"
-   ]
-  }
- }
 }
