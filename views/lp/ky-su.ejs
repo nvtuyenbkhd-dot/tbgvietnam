@@ -1,0 +1,114 @@
+<% const navLinks = [['don', 'Đơn tuyển'], ['quy-trinh', 'Quy trình'], ['dieu-kien', 'Điều kiện'], ['hoi-dap', 'Hỏi đáp']];
+   const footNote = 'Thông tin đơn tuyển mang tính tham khảo; mức thu nhập, thời gian làm việc và quyền lợi chính xác theo hợp đồng lao động và quy định của Đài Loan.';
+   const NGANH = ['Cơ điện – điện nước', 'Xây dựng', 'Cơ khí – gia công kim loại', 'Hàn – kết cấu thép', 'Thang máy', 'Nhà máy – CNC', 'Ngành khác / chưa rõ'];
+%><%- include('_head', { navLinks, footNote }) %>
+<section class="hero">
+  <div class="hero__bg"><img src="/img/activity/air37.jpg" alt="" width="750" height="1000" fetchpriority="high"></div>
+  <div class="wrap hero__in">
+    <div>
+      <span class="kicker"><b><%= jobs.length %> đơn tuyển</b> đang mở · Kỹ sư và lao động kỹ thuật</span>
+      <h1>Làm kỹ sư, thợ kỹ thuật tại <em>Đài Loan</em>: chọn đơn rõ ràng, thông tin minh bạch</h1>
+      <p class="hero__sub">Cơ điện, xây dựng, cơ khí, thang máy, CNC... Mỗi đơn nêu ngành, nơi làm việc và mức thu nhập tham khảo. Điều kiện chính xác được đối chiếu trước khi bạn quyết định.</p>
+      <ul class="ticks">
+        <li>Xem đơn thật, đọc điều kiện trước khi để lại thông tin</li>
+        <li>Tư vấn hồ sơ, phỏng vấn và thủ tục xuất cảnh</li>
+        <li>Đội ngũ có văn phòng tại Hà Nội, TP. Hồ Chí Minh và Đài Trung</li>
+      </ul>
+      <div class="hero__cta"><a class="btn btn--cta" href="#don">Xem đơn đang tuyển</a><% if (C.zalo) { %><a class="btn btn--ghost" href="https://zalo.me/<%= C.zalo %>" target="_blank" rel="noopener" data-track="Contact" data-channel="zalo">Nhắn Zalo tư vấn</a><% } %></div>
+    </div>
+    <%- include('_form', { id: 'hero', title: 'Đăng ký tư vấn miễn phí', sub: 'Để lại số điện thoại, tư vấn viên gọi lại để xem bạn phù hợp đơn nào.', selectLabel: 'Ngành bạn quan tâm', options: NGANH, asking: 'Kinh nghiệm hiện tại (không bắt buộc)', cta: 'Nhận tư vấn kỹ sư' }) %>
+  </div>
+</section>
+
+<section class="proof" aria-label="Về TB GROUP">
+  <div class="wrap proof__row">
+    <div class="proof__i"><strong><%= jobs.length %> đơn</strong><span>đang hiển thị trên website</span></div>
+    <div class="proof__i"><strong><%= industries.length %> nhóm ngành</strong><span>cơ điện, xây dựng, cơ khí, thang máy...</span></div>
+    <div class="proof__i"><strong>3 văn phòng</strong><span>Hà Nội, TP. Hồ Chí Minh, Đài Trung</span></div>
+    <div class="proof__i"><strong>Tư vấn miễn phí</strong><span>Gọi lại trong giờ làm việc</span></div>
+  </div>
+</section>
+
+<section class="sec" id="don">
+  <div class="wrap">
+    <div class="sec__head"><span class="eyebrow">Đơn đang tuyển</span><h2>Chọn ngành, xem đơn phù hợp</h2><p>Mức thu nhập hiển thị là con số tham khảo từ thông tin đơn; số chính xác theo hợp đồng lao động.</p></div>
+    <div class="chips" role="group" aria-label="Lọc theo ngành">
+      <button class="chip" type="button" data-chip="" aria-pressed="true">Tất cả (<%= jobs.length %>)</button>
+      <% industries.forEach(function (g) { %><button class="chip" type="button" data-chip="<%= g[0] %>" aria-pressed="false"><%= g[0] %> (<%= g[1] %>)</button><% }) %>
+    </div>
+    <div class="cards">
+      <% jobs.forEach(function (j) { %>
+      <a class="sc" data-industry="<%= j.industry || 'Khác' %>" href="<%= mainUrl %>/vi/ky-su-dai-loan/<%= j.slug %>" rel="noopener">
+        <div class="sc__b"><span class="sc__tag"><%= j.industry || 'Khác' %></span><h3><%= j.title_vi %></h3>
+          <p class="sc__m"><%- ic('map') %> <%= j.location %><% if (j.headcount) { %> · Tuyển <%= j.headcount %> người<% } %></p>
+          <% if (j.salary) { %><p class="sc__sal"><%= j.salary %></p><p class="sc__m">Mức tham khảo, theo hợp đồng lao động.</p><% } %>
+          <span class="sc__more">Xem chi tiết →</span></div>
+      </a>
+      <% }) %>
+    </div>
+    <p class="center"><button class="btn btn--line" type="button" data-more>Xem thêm đơn</button></p>
+    <p class="center"><a class="btn btn--cta" href="#dang-ky">Chưa thấy đơn phù hợp? Nhận tư vấn</a></p>
+  </div>
+</section>
+
+<section class="sec sec--alt" id="dieu-kien">
+  <div class="wrap">
+    <div class="sec__head"><span class="eyebrow">Điều kiện thường gặp</span><h2>Bạn cần chuẩn bị gì?</h2><p>Mỗi đơn có điều kiện riêng; dưới đây là các nhóm thường gặp trong các đơn hiện có.</p></div>
+    <div class="grid grid--3">
+      <div class="tile"><span class="tile__ic"><%- ic('wrench') %></span><h3>Tay nghề, kinh nghiệm</h3><p>Nhiều đơn ưu tiên người đã có kinh nghiệm thi công, cơ khí, điện nước hoặc hàn; một số đơn nhận người chưa có kinh nghiệm.</p></div>
+      <div class="tile"><span class="tile__ic"><%- ic('users') %></span><h3>Độ tuổi, sức khỏe</h3><p>Mỗi đơn nêu độ tuổi, giới tính và yêu cầu sức khỏe riêng. Bạn sẽ được kiểm tra theo quy định trước khi xuất cảnh.</p></div>
+      <div class="tile"><span class="tile__ic"><%- ic('file') %></span><h3>Giấy tờ</h3><p>Hộ chiếu, căn cước, bằng cấp hoặc chứng nhận nghề (nếu có) và hồ sơ y tế. Tư vấn viên sẽ gửi danh sách cụ thể cho từng đơn.</p></div>
+    </div>
+    <p class="source" style="margin-top:16px">Mức lương tối thiểu theo luật Đài Loan năm 2026 là 29.500 Đài tệ/tháng (nguồn: <a href="https://english.mol.gov.tw/6386/6394/6402/23308/" target="_blank" rel="noopener nofollow">Bộ Lao động Đài Loan</a>). Thu nhập thực tế phụ thuộc đơn, ngành, tăng ca và khoản khấu trừ theo hợp đồng.</p>
+  </div>
+</section>
+
+<section class="sec" id="quy-trinh">
+  <div class="wrap">
+    <div class="sec__head"><span class="eyebrow">Quy trình</span><h2>Từ đăng ký đến ngày bay</h2></div>
+    <ol class="steps steps--row">
+      <li><h3>Tư vấn và chọn đơn</h3><p>Trao đổi kinh nghiệm, nguyện vọng và chọn đơn phù hợp với bạn.</p></li>
+      <li><h3>Nộp hồ sơ</h3><p>Chuẩn bị giấy tờ theo danh sách của đơn và gửi cho công ty.</p></li>
+      <li><h3>Phỏng vấn</h3><p>Phỏng vấn với bên tuyển dụng theo lịch của đơn.</p></li>
+      <li><h3>Ký hợp đồng</h3><p>Đọc kỹ hợp đồng, lương, thời hạn và các khoản chi phí; hỏi lại điều chưa rõ trước khi ký.</p></li>
+      <li><h3>Thủ tục xuất cảnh</h3><p>Hoàn tất giấy tờ, thị thực và đào tạo định hướng trước chuyến bay.</p></li>
+      <li><h3>Bay và nhận việc</h3><p>Nhận hướng dẫn nhập cảnh, ổn định chỗ ở và bắt đầu công việc tại Đài Loan.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec sec--alt">
+  <div class="wrap">
+    <div class="sec__head"><span class="eyebrow">Hình ảnh thực tế</span><h2>Các bạn kỹ sư trước chuyến bay</h2><p>Ảnh chụp tại sân bay Nội Bài, đăng với sự đồng ý của người trong ảnh.</p></div>
+    <div class="gal">
+      <% [['air37', 'air_eng'], ['air35', 'air_eng'], ['air17', 'air_eng'], ['air24', 'air_eng']].forEach(function (g) { %>
+      <figure><img src="/img/activity/<%= g[0] %>.jpg" width="750" height="1000" loading="lazy" alt="Kỹ sư TB GROUP tại sân bay Nội Bài trước chuyến bay"><figcaption>Kỹ sư TB GROUP tại sân bay Nội Bài</figcaption></figure>
+      <% }) %>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="hoi-dap">
+  <div class="wrap">
+    <div class="sec__head"><span class="eyebrow">Hỏi đáp</span><h2>Câu hỏi thường gặp</h2></div>
+    <div class="faq">
+      <details><summary>Mức thu nhập có đúng như trên đơn không?</summary><div class="ans"><p>Con số trên đơn là mức tham khảo. Thu nhập thực tế phụ thuộc số ngày công, tăng ca, ngành và các khoản khấu trừ ghi trong hợp đồng lao động. Hãy yêu cầu bản hợp đồng và đọc kỹ trước khi ký.</p></div></details>
+      <details><summary>Tôi chưa có kinh nghiệm thì có đăng ký được không?</summary><div class="ans"><p>Tùy đơn. Một số đơn ưu tiên người có kinh nghiệm, một số đơn nhận người mới. Tư vấn viên sẽ xem hồ sơ và gợi ý đơn phù hợp.</p></div></details>
+      <details><summary>Chi phí tôi phải bỏ ra gồm những gì?</summary><div class="ans"><p>Các khoản chi phí khác nhau theo đơn. Bạn nên yêu cầu bảng kê chi phí bằng văn bản trước khi ký và hỏi rõ từng khoản. Chúng tôi sẽ giải thích từng mục khi tư vấn.</p></div></details>
+      <details><summary>Tôi có được ở lại Đài Loan sau khi hết hợp đồng không?</summary><div class="ans"><p>Phụ thuộc quy định của Đài Loan tại thời điểm đó và điều kiện của từng người. Bạn có thể đọc thêm trong bài viết về ở lại Đài Loan trên website chính và hỏi tư vấn viên để được cập nhật.</p></div></details>
+      <details><summary>Đăng ký tư vấn có mất phí không?</summary><div class="ans"><p>Không. Buổi tư vấn ban đầu để xem bạn phù hợp đơn nào là miễn phí.</p></div></details>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec--dark">
+  <div class="wrap final">
+    <div>
+      <h2>Để lại số điện thoại, chúng tôi gọi lại</h2>
+      <p>Tư vấn viên sẽ xem hồ sơ, giải thích đơn phù hợp và các khoản chi phí một cách rõ ràng.</p>
+      <ul class="ticks"><li>Không cần có sẵn hồ sơ khi tư vấn lần đầu</li><li>Giải đáp trực tiếp qua điện thoại hoặc Zalo</li></ul>
+    </div>
+    <%- include('_form', { id: 'cta', title: 'Nhận tư vấn kỹ sư', sub: '', selectLabel: 'Ngành bạn quan tâm', options: NGANH, asking: '', cta: 'Gửi đăng ký' }) %>
+  </div>
+</section>
+<%- include('_foot', { footNote }) %>

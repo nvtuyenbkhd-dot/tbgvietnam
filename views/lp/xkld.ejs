@@ -1,0 +1,107 @@
+<% const navLinks = [['quy-trinh', 'Quy trình'], ['dieu-kien', 'Điều kiện'], ['canh-giac', 'Cần biết'], ['hoi-dap', 'Hỏi đáp']];
+   const footNote = 'Nội dung nhằm giúp bạn hiểu quy trình; điều kiện, thời gian và chi phí cụ thể phụ thuộc từng đơn hàng và quy định hiện hành của Việt Nam và Đài Loan.';
+   const NGANH = ['Sản xuất, nhà máy', 'Xây dựng', 'Chăm sóc, hộ lý', 'Nông nghiệp, ngư nghiệp', 'Chưa rõ, cần tư vấn'];
+%><%- include('_head', { navLinks, footNote }) %>
+<section class="hero">
+  <div class="hero__bg"><img src="/img/activity/air9.jpg" alt="" width="750" height="1000" fetchpriority="high"></div>
+  <div class="wrap hero__in">
+    <div>
+      <span class="kicker"><b>Đi làm việc tại Đài Loan</b> · Hiểu quy trình trước khi quyết định</span>
+      <h1>Muốn đi làm việc tại <em>Đài Loan</em>? Hiểu đúng từng bước, hỏi rõ từng khoản</h1>
+      <p class="hero__sub">Đi lao động nước ngoài là quyết định lớn của cả gia đình. Chúng tôi giải thích quy trình, điều kiện và các câu cần hỏi để bạn quyết định tỉnh táo.</p>
+      <ul class="ticks">
+        <li>Giải thích quy trình từ đăng ký đến ngày bay</li>
+        <li>Nói rõ điều kiện, giấy tờ cần chuẩn bị</li>
+        <li>Hướng dẫn cách đọc hợp đồng và hỏi rõ chi phí</li>
+      </ul>
+      <div class="hero__cta"><a class="btn btn--cta" href="#quy-trinh">Xem quy trình</a><% if (C.zalo) { %><a class="btn btn--ghost" href="https://zalo.me/<%= C.zalo %>" target="_blank" rel="noopener" data-track="Contact" data-channel="zalo">Nhắn Zalo tư vấn</a><% } %></div>
+    </div>
+    <%- include('_form', { id: 'hero', title: 'Đăng ký tư vấn miễn phí', sub: 'Để lại số điện thoại, tư vấn viên gọi lại giải đáp quy trình và điều kiện.', selectLabel: 'Nhóm ngành bạn quan tâm', options: NGANH, asking: 'Bạn muốn hỏi điều gì? (không bắt buộc)', cta: 'Nhận tư vấn' }) %>
+  </div>
+</section>
+
+<section class="proof" aria-label="Về TB GROUP">
+  <div class="wrap proof__row">
+    <div class="proof__i"><strong>3 văn phòng</strong><span>Hà Nội, TP. Hồ Chí Minh, Đài Trung</span></div>
+    <div class="proof__i"><strong>Hỏi rõ trước khi ký</strong><span>Hướng dẫn đọc hợp đồng và các khoản chi phí</span></div>
+    <div class="proof__i"><strong>Ảnh thật</strong><span>Lao động đã bay cùng TB GROUP</span></div>
+    <div class="proof__i"><strong>Tư vấn miễn phí</strong><span>Gọi lại trong giờ làm việc</span></div>
+  </div>
+</section>
+
+<section class="sec" id="quy-trinh">
+  <div class="wrap">
+    <div class="sec__head"><span class="eyebrow">Quy trình</span><h2>6 bước từ đăng ký đến ngày bay</h2><p>Thứ tự và thời gian có thể thay đổi theo từng đơn hàng.</p></div>
+    <ol class="steps steps--row">
+      <li><h3>Tư vấn ban đầu</h3><p>Tìm hiểu nguyện vọng, sức khỏe, độ tuổi và gia đình để xem hướng đi phù hợp.</p></li>
+      <li><h3>Đăng ký và nộp hồ sơ</h3><p>Chuẩn bị giấy tờ cá nhân, hồ sơ nghề (nếu có) và khám sức khỏe theo yêu cầu.</p></li>
+      <li><h3>Tuyển chọn, phỏng vấn</h3><p>Tham gia sơ tuyển và phỏng vấn với bên sử dụng lao động theo lịch từng đơn.</p></li>
+      <li><h3>Ký hợp đồng</h3><p>Xem kỹ hợp đồng: thời hạn, lương, giờ làm, chỗ ở và các khoản chi phí. Hỏi lại điều chưa rõ trước khi ký.</p></li>
+      <li><h3>Đào tạo và thủ tục</h3><p>Học định hướng, hoàn tất giấy tờ, thị thực và các thủ tục xuất cảnh.</p></li>
+      <li><h3>Bay và nhập cuộc</h3><p>Nhận hướng dẫn nhập cảnh, ổn định chỗ ở và làm quen công việc tại Đài Loan.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec sec--alt" id="dieu-kien">
+  <div class="wrap">
+    <div class="sec__head"><span class="eyebrow">Điều kiện thường gặp</span><h2>Bạn cần chuẩn bị gì?</h2><p>Mỗi đơn hàng có yêu cầu riêng; đây là các nhóm điều kiện thường gặp.</p></div>
+    <div class="grid grid--4">
+      <div class="tile"><span class="tile__ic"><%- ic('users') %></span><h3>Độ tuổi, giới tính</h3><p>Do bên sử dụng lao động và quy định từng ngành nêu trong đơn.</p></div>
+      <div class="tile"><span class="tile__ic"><%- ic('shield') %></span><h3>Sức khỏe</h3><p>Khám sức khỏe theo mẫu yêu cầu; kết quả ảnh hưởng đến khả năng xuất cảnh.</p></div>
+      <div class="tile"><span class="tile__ic"><%- ic('file') %></span><h3>Giấy tờ</h3><p>Căn cước, hộ chiếu, giấy xác nhận nhân sự và các giấy tờ theo danh sách đơn.</p></div>
+      <div class="tile"><span class="tile__ic"><%- ic('wrench') %></span><h3>Kỹ năng, kinh nghiệm</h3><p>Một số ngành cần tay nghề; nhiều đơn nhận người mới và có đào tạo định hướng.</p></div>
+    </div>
+    <p class="source" style="margin-top:16px">Mức lương tối thiểu theo luật Đài Loan năm 2026 là 29.500 Đài tệ/tháng (nguồn: <a href="https://english.mol.gov.tw/6386/6394/6402/23308/" target="_blank" rel="noopener nofollow">Bộ Lao động Đài Loan</a>). Thu nhập thực tế phụ thuộc đơn, tăng ca và khoản khấu trừ ghi trong hợp đồng.</p>
+  </div>
+</section>
+
+<section class="sec" id="canh-giac">
+  <div class="wrap">
+    <div class="sec__head"><span class="eyebrow">Bảo vệ bản thân</span><h2>5 điều cần hỏi trước khi đặt cọc hoặc ký</h2></div>
+    <div class="grid grid--3">
+      <div class="tile"><span class="tile__ic"><%- ic('file') %></span><h3>Có hợp đồng bằng văn bản không?</h3><p>Yêu cầu bản hợp đồng, đọc kỹ lương, thời hạn, giờ làm, chỗ ở trước khi ký bất cứ giấy tờ nào.</p></div>
+      <div class="tile"><span class="tile__ic"><%- ic('wallet') %></span><h3>Các khoản chi phí là gì?</h3><p>Yêu cầu bảng kê từng khoản bằng văn bản và biên nhận khi nộp tiền. Cảnh giác với lời hứa "chắc chắn đi" hoặc "không rủi ro".</p></div>
+      <div class="tile"><span class="tile__ic"><%- ic('alert') %></span><h3>Thông tin có kiểm chứng được không?</h3><p>Tự đối chiếu thông tin đơn hàng, đơn vị tuyển dụng và quy định mới nhất qua cơ quan nhà nước có thẩm quyền.</p></div>
+      <div class="tile"><span class="tile__ic"><%- ic('shield') %></span><h3>Quyền lợi bảo hiểm</h3><p>Hỏi rõ bảo hiểm lao động, y tế và cách được hỗ trợ khi có sự cố trong thời gian làm việc.</p></div>
+      <div class="tile"><span class="tile__ic"><%- ic('clock') %></span><h3>Thời gian làm việc, tăng ca</h3><p>Hỏi rõ số giờ, ngày nghỉ, cách tính tăng ca và các khoản khấu trừ lương.</p></div>
+      <div class="tile"><span class="tile__ic"><%- ic('chat') %></span><h3>Ai hỗ trợ khi cần?</h3><p>Hỏi rõ đầu mối liên hệ tại Việt Nam và Đài Loan nếu bạn gặp khó khăn.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec--alt">
+  <div class="wrap">
+    <div class="sec__head"><span class="eyebrow">Hình ảnh thực tế</span><h2>Các bạn lao động trước chuyến bay</h2><p>Ảnh chụp tại sân bay Nội Bài, đăng với sự đồng ý của người trong ảnh.</p></div>
+    <div class="gal">
+      <% ['air9', 'air30', 'air12', 'air3'].forEach(function (g) { %>
+      <figure><img src="/img/activity/<%= g %>.jpg" width="750" height="1000" loading="lazy" alt="Lao động TB GROUP tại sân bay Nội Bài trước chuyến bay"><figcaption>Lao động TB GROUP tại sân bay Nội Bài</figcaption></figure>
+      <% }) %>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="hoi-dap">
+  <div class="wrap">
+    <div class="sec__head"><span class="eyebrow">Hỏi đáp</span><h2>Câu hỏi thường gặp</h2></div>
+    <div class="faq">
+      <details><summary>Tôi cần những giấy tờ gì để đăng ký?</summary><div class="ans"><p>Thường gồm căn cước hoặc hộ chiếu, giấy tờ nhân thân, giấy khám sức khỏe và hồ sơ nghề nếu có. Danh sách cụ thể phụ thuộc đơn hàng, tư vấn viên sẽ gửi cho bạn.</p></div></details>
+      <details><summary>Tôi có phải đặt cọc trước không?</summary><div class="ans"><p>Quy định về các khoản thu khác nhau theo đơn và theo quy định pháp luật. Hãy yêu cầu bảng kê bằng văn bản và biên nhận cho mọi khoản nộp, và chỉ nộp khi đã hiểu rõ khoản đó dùng để làm gì.</p></div></details>
+      <details><summary>Thời gian từ đăng ký đến ngày bay mất bao lâu?</summary><div class="ans"><p>Thời gian khác nhau theo đơn, theo lịch phỏng vấn và thủ tục hai nước. Tư vấn viên sẽ cho bạn khoảng thời gian dự kiến của đơn bạn quan tâm, và đây chỉ là ước tính.</p></div></details>
+      <details><summary>Lương và quyền lợi như thế nào?</summary><div class="ans"><p>Mức lương tối thiểu theo luật Đài Loan được công bố công khai; thu nhập thực tế còn phụ thuộc ngành, tăng ca và khấu trừ. Mọi điều khoản được ghi trong hợp đồng, nên hãy đọc kỹ trước khi ký.</p></div></details>
+      <details><summary>Tư vấn có mất phí không?</summary><div class="ans"><p>Buổi tư vấn ban đầu để hiểu quy trình và điều kiện là miễn phí.</p></div></details>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec--dark">
+  <div class="wrap final">
+    <div>
+      <h2>Hỏi rõ trước, quyết định sau</h2>
+      <p>Để lại số điện thoại, tư vấn viên sẽ gọi lại giải đáp quy trình, điều kiện và các khoản bạn cần hỏi kỹ.</p>
+      <ul class="ticks"><li>Không cần có sẵn hồ sơ khi tư vấn lần đầu</li><li>Có thể hỏi cùng người thân trong gia đình</li></ul>
+    </div>
+    <%- include('_form', { id: 'cta', title: 'Nhận tư vấn', sub: '', selectLabel: 'Nhóm ngành bạn quan tâm', options: NGANH, asking: '', cta: 'Gửi đăng ký' }) %>
+  </div>
+</section>
+<%- include('_foot', { footNote }) %>

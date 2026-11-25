@@ -117,3 +117,13 @@ Cần gói Hostinger hỗ trợ ứng dụng Node.js (Business/Cloud hoặc VPS)
 ## 9. Bảo mật đã có sẵn
 
 Mật khẩu băm bcrypt; cookie phiên `httpOnly` + `sameSite`; CSRF cho mọi thao tác quản trị; giới hạn tần suất đăng nhập và đăng ký; ô chống bot ẩn; chặn gửi biểu mẫu chéo site; Content-Security-Policy qua helmet; mọi nội dung nhập vào được escape; ảnh tải lên giới hạn loại và dung lượng; xuất CSV chống chèn công thức Excel; trang quản trị `noindex`.
+
+## 10. Landing page quảng cáo (Du học / Kỹ sư / Xuất khẩu lao động)
+
+Ba trang landing nằm trong cùng ứng dụng (`routes/landing.js`, giao diện `views/lp/`, `public/css/landing.css`, `public/js/landing*.js`).
+
+- Địa chỉ dự phòng, dùng được ngay: `/lp/du-hoc`, `/lp/ky-su`, `/lp/xuat-khau-lao-dong`.
+- Theo subdomain: `du-hoc.<tên miền>`, `ky-su.<tên miền>`, `xkld.<tên miền>` (cần thêm subdomain trỏ về cùng ứng dụng Node trong Hostinger).
+- Form gửi về `POST /dang-ky` của chính landing, lưu bảng `leads` với `program` đúng từng trang; URL đầy đủ (kèm utm) nằm ở cột `source`, hệ/ngành khách chọn ở `ref_title`. Đẩy tiếp Google Sheets/email như đăng ký thường.
+- Mã theo dõi và liên hệ riêng nhập ở `/admin/settings`: `pixel_meta`, `pixel_tiktok`, `ga4_id`, `gads_id`, `gads_label`, và `lp_<study|engineer|labor>_phone/zalo/messenger`. Để trống thì không nạp mã bên thứ ba nào.
+- Sự kiện: `Lead` khi gửi form thành công, `Contact` khi bấm gọi/Zalo/Messenger (`public/js/lp-track.js`).

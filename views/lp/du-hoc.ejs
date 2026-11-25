@@ -1,0 +1,156 @@
+<% const navLinks = [['he', 'Các hệ học'], ['truong', 'Trường'], ['quy-trinh', 'Quy trình'], ['hoi-dap', 'Hỏi đáp']];
+   const footNote = 'Thông tin tuyển sinh lấy từ trang chính thức của từng trường và Bộ Giáo dục Đài Loan; mốc hạn có thể thay đổi, vui lòng xác nhận lại với tư vấn viên.';
+   const HE = ['Hệ tự túc (cử nhân, thạc sĩ)', 'Hệ vừa học vừa làm', 'Chuyên ban quốc tế', 'Hệ 1+4', 'Hệ ngôn ngữ (học tiếng Hoa)', 'Chưa biết chọn hệ nào'];
+%><%- include('_head', { navLinks, footNote }) %>
+<section class="hero">
+  <div class="hero__bg"><img src="/img/about/office1.jpg" alt="" width="1000" height="750" fetchpriority="high"></div>
+  <div class="wrap hero__in">
+    <div>
+      <span class="kicker"><b>Du học Đài Loan</b> · Kỳ Xuân 2027 và Thu 2027</span>
+      <h1>Du học Đài Loan: <em>chọn đúng hệ</em>, đúng trường, đúng ngân sách</h1>
+      <p class="hero__sub">Tự túc, vừa học vừa làm, chuyên ban quốc tế, 1+4 hay học tiếng Hoa? Mỗi hệ có điều kiện, chi phí và rủi ro khác nhau. Chúng tôi giúp bạn đọc đúng thông tin từ trang tuyển sinh chính thức của trường.</p>
+      <ul class="ticks">
+        <li>So sánh rõ 5 hệ học, không "hứa" những gì trường không công bố</li>
+        <li>Tư vấn hồ sơ, chứng minh tài chính, chứng chỉ tiếng Hoa (TOCFL)</li>
+        <li>Văn phòng tại Hà Nội, TP. Hồ Chí Minh và Đài Loan</li>
+      </ul>
+      <div class="hero__cta"><a class="btn btn--cta" href="#he">Xem các hệ học</a><% if (C.zalo) { %><a class="btn btn--ghost" href="https://zalo.me/<%= C.zalo %>" target="_blank" rel="noopener" data-track="Contact" data-channel="zalo">Nhắn Zalo tư vấn</a><% } %></div>
+    </div>
+    <%- include('_form', { id: 'hero', title: 'Đăng ký tư vấn miễn phí', sub: 'Để lại số điện thoại, tư vấn viên gọi lại để lọc hệ và trường phù hợp.', selectLabel: 'Hệ bạn quan tâm', options: HE, asking: '', cta: 'Nhận tư vấn du học' }) %>
+  </div>
+</section>
+
+<section class="proof" aria-label="Về TB GROUP">
+  <div class="wrap proof__row">
+    <div class="proof__i"><strong>3 văn phòng</strong><span>Hà Nội, TP. Hồ Chí Minh, Đài Trung</span></div>
+    <div class="proof__i"><strong><%= schools.length %> trường</strong><span>đã có trang thông tin tuyển sinh riêng</span></div>
+    <div class="proof__i"><strong>Nguồn chính thức</strong><span>Số liệu lấy từ trang của trường, ghi rõ nguồn</span></div>
+    <div class="proof__i"><strong>Tư vấn miễn phí</strong><span>Gọi lại trong giờ làm việc</span></div>
+  </div>
+</section>
+
+<section class="sec" id="he">
+  <div class="wrap">
+    <div class="sec__head"><span class="eyebrow">5 hệ học thường gặp</span><h2>Bạn phù hợp với hệ nào?</h2><p>Chọn một hệ để xem điều kiện thường gặp. Mức cụ thể khác nhau theo từng trường.</p></div>
+    <div data-tabs data-sync="#hero-ref">
+      <div class="tabs" role="tablist" aria-label="Chọn hệ học">
+        <% [['t1', 'Tự túc', HE[0]], ['t2', 'Vừa học vừa làm', HE[1]], ['t3', 'Chuyên ban quốc tế', HE[2]], ['t4', '1+4', HE[3]], ['t5', 'Ngôn ngữ', HE[4]]].forEach(function (t, i) { %>
+        <button class="tab" role="tab" id="tab-<%= t[0] %>" aria-controls="p-<%= t[0] %>" aria-selected="<%= i === 0 %>" tabindex="<%= i === 0 ? 0 : -1 %>" data-value="<%= t[2] %>"><%= t[1] %></button>
+        <% }) %>
+      </div>
+
+      <div class="panel" role="tabpanel" id="p-t1" aria-labelledby="tab-t1">
+        <h3>Hệ tự túc: cử nhân, thạc sĩ, tiến sĩ</h3>
+        <div class="panel__cols">
+          <div><h4>Bản chất</h4><p>Bạn nộp hồ sơ trực tiếp cho trường theo quy định của Bộ Giáo dục (MOE), tự chi trả học phí và sinh hoạt, học chương trình lấy bằng chính quy.</p>
+            <h4>Phù hợp với</h4><ul><li>Đã tốt nghiệp THPT (cử nhân) hoặc đại học (thạc sĩ)</li><li>Gia đình chủ động được tài chính</li><li>Có hoặc đang học tiếng Hoa, hoặc chọn chương trình dạy bằng tiếng Anh</li></ul></div>
+          <div><h4>Điều kiện thường gặp</h4><ul><li>Chứng chỉ tiếng Hoa (thường TOCFL A2 trở lên) hoặc tiếng Anh nếu học chương trình tiếng Anh</li><li>Chứng minh tài chính: mức khác nhau theo trường (ví dụ 100.000 đến 150.000 Đài tệ hoặc tương đương USD)</li><li>Học bạ, bằng tốt nghiệp hợp pháp hoá, hộ chiếu, ảnh, lệ phí hồ sơ</li></ul>
+            <p class="note">Một số trường chỉ nhận cao học ở kỳ Xuân và không nhận cử nhân. Hãy kiểm tra từng trường trước khi nộp.</p></div>
+        </div>
+      </div>
+
+      <div class="panel" role="tabpanel" id="p-t2" aria-labelledby="tab-t2" hidden>
+        <h3>Hệ vừa học vừa làm (hợp tác trường – doanh nghiệp)</h3>
+        <div class="panel__cols">
+          <div><h4>Bản chất</h4><p>Chương trình hợp tác giữa trường và doanh nghiệp (產學合作專班), có thực tập hoặc làm việc theo thỏa thuận của chương trình. Không phải trường nào cũng mở cho sinh viên Việt Nam ở mọi kỳ.</p>
+            <h4>Phù hợp với</h4><ul><li>Muốn vừa học lấy bằng vừa có trải nghiệm làm việc</li><li>Chấp nhận học tiếng Hoa và lịch học, làm kín hơn</li></ul></div>
+          <div><h4>Cần hỏi kỹ trước khi đăng ký</h4><ul><li>Thời gian thực tập, nơi làm, thu nhập và các khoản trừ</li><li>Học phí, ký túc xá và ai là người chi trả từng khoản</li><li>Chương trình mở cho diện nào (sinh viên nước ngoài hay chỉ kiều sinh)</li></ul>
+            <p class="note">Theo quy định của Bộ Lao động Đài Loan, sinh viên nước ngoài muốn làm thêm phải xin giấy phép trước và bị giới hạn số giờ mỗi tuần ngoài kỳ nghỉ. "Vừa học vừa làm" không có nghĩa là làm toàn thời gian.</p></div>
+        </div>
+      </div>
+
+      <div class="panel" role="tabpanel" id="p-t3" aria-labelledby="tab-t3" hidden>
+        <h3>Chuyên ban quốc tế</h3>
+        <div class="panel__cols">
+          <div><h4>Bản chất</h4><p>Lớp hoặc chương trình mở riêng cho sinh viên quốc tế tại một số trường, thường có chỉ tiêu và điều kiện đầu vào riêng theo từng năm.</p></div>
+          <div><h4>Lưu ý</h4><ul><li>Mỗi trường công bố điều kiện riêng, nên cần đọc đúng thông báo của kỳ bạn nộp</li><li>Ngôn ngữ giảng dạy (Hoa hay Anh) quyết định chứng chỉ cần có</li></ul>
+            <p class="note">Tư vấn viên sẽ đối chiếu thông báo mới nhất của trường với hồ sơ của bạn.</p></div>
+        </div>
+      </div>
+
+      <div class="panel" role="tabpanel" id="p-t4" aria-labelledby="tab-t4" hidden>
+        <h3>Hệ 1+4 (Quốc tế chuyên tu)</h3>
+        <div class="panel__cols">
+          <div><h4>Bản chất</h4><p>Một năm học tiếng Hoa dự bị, sau đó bốn năm cử nhân. Người mới học tiếng Hoa vẫn có thể nộp ở nhiều trường.</p>
+            <h4>Phù hợp với</h4><ul><li>Vừa tốt nghiệp THPT, chưa có chứng chỉ tiếng Hoa</li><li>Muốn lộ trình rõ ràng từ tiếng đến bằng cử nhân</li></ul></div>
+          <div><h4>Ví dụ có nguồn</h4><ul><li>Một trường tại Đài Bắc yêu cầu đạt TOCFL A2 (nghe-đọc) trong năm đầu và B1 trước khi kết thúc năm nhất.</li><li>Chứng minh tài chính từ 100.000 Đài tệ ở trường này.</li></ul>
+            <p class="note">Một số bản của hệ này chỉ dành cho Hoa kiều. Hãy đọc đúng bản dành cho sinh viên nước ngoài (外國學生).</p></div>
+        </div>
+      </div>
+
+      <div class="panel" role="tabpanel" id="p-t5" aria-labelledby="tab-t5" hidden>
+        <h3>Hệ ngôn ngữ (học tiếng Hoa)</h3>
+        <div class="panel__cols">
+          <div><h4>Bản chất</h4><p>Khóa tiếng Hoa tại trung tâm ngôn ngữ của trường, không cấp bằng đại học. Thường được dùng để chuẩn bị TOCFL trước khi vào chương trình lấy bằng.</p></div>
+          <div><h4>Cần hỏi</h4><ul><li>Điều kiện nhập học, học phí và lịch khai giảng của từng trung tâm</li><li>Quy định cư trú, làm thêm áp dụng cho sinh viên học tiếng</li><li>Lộ trình sau khóa: tiếp tục học lên hay không</li></ul></div>
+        </div>
+      </div>
+    </div>
+    <p class="source" style="margin-top:14px">Nguồn tổng hợp: trang tuyển sinh chính thức của các trường và Bộ Giáo dục Đài Loan. Xem chi tiết các mốc hạn tại <a href="<%= mainUrl %>/vi/tin-tuc/tuyen-sinh-du-hoc-dai-loan-ky-xuan-2027" rel="noopener">bài tổng hợp kỳ Xuân 2027</a>.</p>
+  </div>
+</section>
+
+<section class="sec sec--alt" id="truong">
+  <div class="wrap">
+    <div class="sec__head"><span class="eyebrow">Trường tham khảo</span><h2>Trường đã có thông tin tuyển sinh</h2><p>Nhấn vào từng trường để xem mốc hạn, điều kiện và nguồn trích dẫn.</p></div>
+    <div class="cards">
+      <% schools.forEach(function (s) { %>
+      <a class="sc" href="<%= mainUrl %>/vi/du-hoc/<%= s.slug %>" rel="noopener">
+        <% if (s.image) { %><img class="sc__img" src="<%= s.image %>" alt="" loading="lazy" width="640" height="360"><% } %>
+        <div class="sc__b"><span class="sc__tag"><%= s.city %></span><h3><%= s.name_vi %></h3>
+          <% if (s.deadline) { %><p class="sc__m">Hạn nộp: <%= s.deadline %></p><% } %><span class="sc__more">Xem chi tiết →</span></div>
+      </a>
+      <% }) %>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="quy-trinh">
+  <div class="wrap">
+    <div class="sec__head"><span class="eyebrow">Quy trình</span><h2>Từ tư vấn đến ngày nhập học</h2></div>
+    <ol class="steps steps--row">
+      <li><h3>Tư vấn và chọn hệ</h3><p>Đánh giá học lực, ngân sách, mục tiêu để chọn hệ và danh sách trường phù hợp.</p></li>
+      <li><h3>Chuẩn bị hồ sơ</h3><p>Bằng cấp, học bạ, hộ chiếu, chứng chỉ tiếng và chứng minh tài chính theo yêu cầu từng trường.</p></li>
+      <li><h3>Nộp hồ sơ, nhận kết quả</h3><p>Nộp trực tuyến trong hạn của trường; theo dõi phỏng vấn nếu có và thư nhận học.</p></li>
+      <li><h3>Xin visa học tập</h3><p>Làm hồ sơ xin thị thực theo hướng dẫn của cơ quan đại diện Đài Loan.</p></li>
+      <li><h3>Chuẩn bị lên đường</h3><p>Hướng dẫn ký túc xá, bảo hiểm, chuyển tiền, đón sân bay và hòa nhập tại Đài Loan.</p></li>
+      <li><h3>Đồng hành sau nhập học</h3><p>Giải đáp quy định học tập, làm thêm và gia hạn cư trú trong thời gian học.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec sec--alt">
+  <div class="wrap">
+    <div class="sec__head"><span class="eyebrow">Vì sao chọn chúng tôi</span><h2>Tư vấn thẳng, nguồn rõ ràng</h2></div>
+    <div class="grid grid--3">
+      <div class="tile"><span class="tile__ic"><%- ic('shield') %></span><h3>Không hứa ngoài công bố</h3><p>Chúng tôi chỉ nêu điều kiện, mốc hạn và chi phí mà trường đã đăng. Chỗ nào chưa xác minh, chúng tôi nói rõ là chưa.</p></div>
+      <div class="tile"><span class="tile__ic"><%- ic('file') %></span><h3>Dẫn nguồn từng thông tin</h3><p>Mỗi trường có trang riêng kèm liên kết tới thông báo gốc để bạn tự đối chiếu.</p></div>
+      <div class="tile"><span class="tile__ic"><%- ic('map') %></span><h3>Có văn phòng tại Đài Loan</h3><p>Ngoài đội tư vấn ở Hà Nội và TP. Hồ Chí Minh, công ty có văn phòng tại Đài Trung để phối hợp khi cần.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="hoi-dap">
+  <div class="wrap">
+    <div class="sec__head"><span class="eyebrow">Hỏi đáp</span><h2>Câu hỏi thường gặp</h2></div>
+    <div class="faq">
+      <details><summary>Tôi chưa biết tiếng Hoa thì có đi du học được không?</summary><div class="ans"><p>Có hai hướng thường gặp: học hệ 1+4 hoặc khóa ngôn ngữ để làm quen tiếng Hoa trước, hoặc chọn chương trình dạy bằng tiếng Anh nếu trường có mở. Điều kiện cụ thể do từng trường quy định.</p></div></details>
+      <details><summary>Chi phí cần chuẩn bị gồm những gì?</summary><div class="ans"><p>Gồm học phí và tạp phí, lệ phí hồ sơ, tiền ở, bảo hiểm, vé máy bay và khoản chứng minh tài chính mà trường yêu cầu. Mức cụ thể khác nhau giữa các trường, tư vấn viên sẽ lập bảng ước tính theo trường bạn chọn.</p></div></details>
+      <details><summary>Sinh viên quốc tế có được đi làm thêm không?</summary><div class="ans"><p>Được phép trong khuôn khổ quy định: cần xin giấy phép trước khi làm và bị giới hạn số giờ mỗi tuần ngoài kỳ nghỉ. Làm khi chưa có phép có thể bị phạt. Vì vậy hãy xem làm thêm là phần hỗ trợ, không phải nguồn tài chính chính.</p></div></details>
+      <details><summary>Hạn nộp hồ sơ kỳ Xuân 2027 còn không?</summary><div class="ans"><p>Phần lớn trường đã đóng hồ sơ kỳ Xuân, một số ít vẫn còn nhận, và nhiều trường mở kỳ Thu 2027. Hãy để lại số điện thoại để được kiểm tra mốc hạn mới nhất của trường bạn quan tâm.</p></div></details>
+      <details><summary>Tư vấn có mất phí không?</summary><div class="ans"><p>Buổi tư vấn ban đầu để chọn hệ và trường là miễn phí. Mọi khoản phí dịch vụ (nếu có) sẽ được nêu rõ bằng văn bản trước khi bạn quyết định.</p></div></details>
+    </div>
+  </div>
+</section>
+
+<section class="sec sec--dark" id="dang-ky-cuoi">
+  <div class="wrap final">
+    <div>
+      <h2>Đừng bỏ lỡ mốc hạn của trường</h2>
+      <p>Mỗi trường có lịch riêng và chỉ tiêu có hạn. Để lại thông tin, chúng tôi sẽ kiểm tra mốc hạn mới nhất và gọi lại cho bạn.</p>
+      <ul class="ticks"><li>Gọi lại trong giờ làm việc</li><li>Không cần có sẵn hồ sơ khi tư vấn lần đầu</li></ul>
+    </div>
+    <%- include('_form', { id: 'cta', title: 'Nhận tư vấn du học', sub: '', selectLabel: 'Hệ bạn quan tâm', options: HE, asking: '', cta: 'Gửi đăng ký' }) %>
+  </div>
+</section>
+<%- include('_foot', { footNote }) %>

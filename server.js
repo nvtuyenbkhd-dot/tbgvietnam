@@ -30,7 +30,9 @@ app.use(
       useDefaults: true,
       directives: {
         'default-src': ["'self'"],
-        'script-src': ["'self'"],
+        // Máy chủ quảng cáo (Meta, TikTok, Google) chỉ được nạp bởi /js/lp-track.js khi đã nhập ID trong trang quản trị
+        'script-src': ["'self'", 'https://connect.facebook.net', 'https://analytics.tiktok.com', 'https://www.googletagmanager.com'],
+        'connect-src': ["'self'", 'https://www.facebook.com', 'https://connect.facebook.net', 'https://analytics.tiktok.com', 'https://analytics-ipv6.tiktokw.com', 'https://www.google-analytics.com', 'https://*.google-analytics.com', 'https://www.googletagmanager.com', 'https://www.google.com', 'https://googleads.g.doubleclick.net'],
         'style-src': ["'self'", "'unsafe-inline'", 'https://fonts.googleapis.com'],
         'font-src': ["'self'", 'https://fonts.gstatic.com'],
         'img-src': ["'self'", 'data:', 'https:'],
@@ -85,6 +87,11 @@ app.use((req, res, next) => {
   res.locals.siteUrl = (process.env.SITE_URL || `${req.protocol}://${req.get('host')}`).replace(/\/$/, '');
   next();
 });
+
+// Landing page quảng cáo: theo subdomain (du-hoc.*, ky-su.*, xkld.*) hoặc /lp/<khoá>
+const landing = require('./routes/landing');
+app.use(landing.hostMiddleware);
+app.use('/lp/:key', landing.pathMiddleware);
 
 app.use('/admin', require('./routes/admin')({ uploadDir }));
 

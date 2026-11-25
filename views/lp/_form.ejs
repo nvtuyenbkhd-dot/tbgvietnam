@@ -1,0 +1,32 @@
+<%
+  // Tham số: id, title, sub, selectLabel, options (mảng chuỗi), selectName (ref_title), cta, onDark
+  const fid = typeof id !== 'undefined' ? id : 'f';
+%>
+<div class="card form-card" id="<%= fid === 'hero' ? 'dang-ky' : fid + '-box' %>">
+  <h2 class="form-card__t"><%= title %></h2>
+  <% if (typeof sub !== 'undefined' && sub) { %><p class="form-card__s"><%= sub %></p><% } %>
+  <form method="post" action="<%= base %>/dang-ky" data-lp-form novalidate>
+    <input type="hidden" name="source" value="" data-source>
+    <div class="hp" aria-hidden="true"><label>Website <input type="text" name="company_site" tabindex="-1" autocomplete="off"></label></div>
+    <div class="fld"><label for="<%= fid %>-name">Họ và tên</label><input id="<%= fid %>-name" name="name" type="text" autocomplete="name" required maxlength="100" placeholder="Nguyễn Văn A"><p class="err" data-err-for="name"></p></div>
+    <div class="fld"><label for="<%= fid %>-phone">Số điện thoại / Zalo</label><input id="<%= fid %>-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required maxlength="30" placeholder="09xx xxx xxx"><p class="err" data-err-for="phone"></p></div>
+    <% if (typeof options !== 'undefined' && options.length) { %>
+    <div class="fld"><label for="<%= fid %>-ref"><%= selectLabel %></label>
+      <select id="<%= fid %>-ref" name="ref_title" data-ref-select><% options.forEach(function (o) { %><option value="<%= o %>"><%= o %></option><% }) %></select></div>
+    <% } %>
+    <% if (typeof asking !== 'undefined' && asking) { %>
+    <div class="fld"><label for="<%= fid %>-msg"><%= asking %></label><textarea id="<%= fid %>-msg" name="message" rows="2" maxlength="600"></textarea></div>
+    <% } %>
+    <button class="btn btn--cta btn--block" type="submit"><%= cta %></button>
+    <p class="form-status" role="status" aria-live="polite" data-status></p>
+    <p class="form-note">Bằng việc gửi, bạn đồng ý để TB GROUP liên hệ tư vấn qua điện thoại/Zalo. Chúng tôi không chia sẻ thông tin của bạn cho bên thứ ba ngoài mục đích tư vấn.</p>
+    <div class="form-ok" data-ok hidden tabindex="-1">
+      <h3>Đã nhận đăng ký!</h3>
+      <p>Tư vấn viên sẽ liên hệ bạn trong giờ làm việc. Cần gấp, hãy gọi hoặc nhắn Zalo:</p>
+      <p class="form-ok__act">
+        <% if (C.phone) { %><a class="btn btn--call" href="tel:<%= C.phone %>" data-track="Contact" data-channel="phone"><%= C.phoneShow %></a><% } %>
+        <% if (C.zalo) { %><a class="btn btn--line" href="https://zalo.me/<%= C.zalo %>" target="_blank" rel="noopener" data-track="Contact" data-channel="zalo">Nhắn Zalo</a><% } %>
+      </p>
+    </div>
+  </form>
+</div>

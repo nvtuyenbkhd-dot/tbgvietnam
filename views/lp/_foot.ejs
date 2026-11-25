@@ -1,0 +1,35 @@
+</main>
+<footer class="lp-foot">
+  <div class="wrap lp-foot__grid">
+    <div>
+      <a class="lp-brand lp-brand--light" href="<%= base || '/' %>"><img src="/img/logo-mark-white.png" width="43" height="46" alt=""><span><strong>TB GROUP</strong><small>Công ty cổ phần Tập đoàn TB Việt Nam</small></span></a>
+      <p class="lp-foot__note"><%- typeof footNote !== 'undefined' ? footNote : '' %></p>
+    </div>
+    <div>
+      <h2>Văn phòng</h2>
+      <ul>
+        <% [['Trụ sở Hà Nội', 'addr_hq'], ['TP. Hồ Chí Minh', 'addr_hcm'], ['Đài Loan', 'addr_tw']].forEach(function (o) { if (S[o[1]]) { %><li><strong><%= o[0] %></strong><br><%= S[o[1]] %></li><% } }) %>
+      </ul>
+    </div>
+    <div>
+      <h2>Liên hệ</h2>
+      <ul>
+        <% if (C.phone) { %><li><a href="tel:<%= C.phone %>" data-track="Contact" data-channel="phone"><%= C.phoneShow %></a></li><% } %>
+        <% if (S.email) { %><li><a href="mailto:<%= S.email %>"><%= S.email %></a></li><% } %>
+        <li><a href="<%= mainUrl %>/vi/" rel="noopener">Website chính: duhoctbg.com</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap lp-foot__bar">&copy; <%= new Date().getFullYear() %> Công ty cổ phần Tập đoàn TB Việt Nam (TB GROUP). Thông tin mang tính tham khảo, vui lòng xác nhận lại với tư vấn viên và nguồn chính thức trước khi quyết định.</div>
+</footer>
+
+<div class="lp-dock" role="group" aria-label="Liên hệ nhanh">
+  <% if (C.phone) { %><a class="lp-dock__a" href="tel:<%= C.phone %>" data-track="Contact" data-channel="phone">Gọi</a><% } %>
+  <% if (C.zalo) { %><a class="lp-dock__a" href="https://zalo.me/<%= C.zalo %>" target="_blank" rel="noopener" data-track="Contact" data-channel="zalo">Zalo</a><% } %>
+  <% if (C.messenger) { %><a class="lp-dock__a" href="<%= C.messenger %>" target="_blank" rel="noopener" data-track="Contact" data-channel="messenger">Messenger</a><% } %>
+  <a class="lp-dock__a lp-dock__reg" href="#dang-ky">Đăng ký</a>
+</div>
+<script src="/js/lp-track.js?v=1" defer></script>
+<script src="/js/landing.js?v=1" defer></script>
+</body>
+</html>
