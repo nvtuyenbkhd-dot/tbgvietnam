@@ -201,3 +201,5 @@ tr:last-child td { border-bottom: 0; }
   .lp-dock { gap: 6px; padding-inline: 8px; }
   .lp-dock__a { min-width: 0; font-size: .82rem; line-height: 1.15; }
 }
+.hero__group { margin: 12px 0 0; }
+.hero__group a { color: #fff; text-decoration: underline; text-underline-offset: 3px; }

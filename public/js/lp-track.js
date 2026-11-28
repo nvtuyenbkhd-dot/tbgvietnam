@@ -44,6 +44,12 @@
   window.lpTrack = function (event, extra) {
     extra = extra || {};
     try {
+      // Vào nhóm Facebook: sự kiện riêng, không tính là Lead/Contact và không gửi chuyển đổi Google Ads
+      if (event === 'JoinGroup') {
+        if (window.fbq) window.fbq('trackCustom', 'JoinGroup', { content_name: NAME, content_category: program });
+        if (window.gtag && d.ga4) window.gtag('event', 'join_group', { send_to: d.ga4, group_id: 'facebook', program: program });
+        return;
+      }
       if (window.fbq) window.fbq('track', event, { content_name: NAME, content_category: program });
       if (window.ttq) window.ttq.track(event === 'Lead' ? 'SubmitForm' : 'Contact', { content_name: NAME });
       if (window.gtag) {

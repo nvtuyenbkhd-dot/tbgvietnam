@@ -15,6 +15,7 @@
         <li>Đội ngũ có văn phòng tại Hà Nội, TP. Hồ Chí Minh và Đài Trung</li>
       </ul>
       <div class="hero__cta"><a class="btn btn--cta" href="#don">Xem đơn đang tuyển</a><% if (C.zalo) { %><a class="btn btn--ghost" href="https://zalo.me/<%= C.zalo %>" target="_blank" rel="noopener" data-track="Contact" data-channel="zalo">Nhắn Zalo tư vấn</a><% } %></div>
+      <% if (/^https:\/\//.test(S.social_fb_group || '')) { %><p class="hero__group"><a href="<%= S.social_fb_group %>" target="_blank" rel="noopener" data-track="JoinGroup">Tham gia nhóm Facebook</a></p><% } %>
     </div>
     <%- include('_form', { id: 'hero', title: 'Đăng ký tư vấn miễn phí', sub: 'Để lại số điện thoại, tư vấn viên gọi lại để xem bạn phù hợp đơn nào.', selectLabel: 'Ngành bạn quan tâm', options: NGANH, asking: 'Kinh nghiệm hiện tại (không bắt buộc)', cta: 'Nhận tư vấn kỹ sư' }) %>
   </div>

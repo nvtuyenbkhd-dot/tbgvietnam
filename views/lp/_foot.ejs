@@ -16,6 +16,7 @@
       <ul>
         <% if (C.phone) { %><li><a href="tel:<%= C.phone %>" data-track="Contact" data-channel="phone"><%= C.phoneShow %></a></li><% } %>
         <% if (S.email) { %><li><a href="mailto:<%= S.email %>"><%= S.email %></a></li><% } %>
+        <% if (page.program === 'engineer' && /^https:\/\//.test(S.social_fb_group || '')) { %><li><a href="<%= S.social_fb_group %>" target="_blank" rel="noopener" data-track="JoinGroup">Tham gia nhóm Facebook</a></li><% } %>
         <li><a href="<%= mainUrl %>/vi/" rel="noopener">Website chính: duhoctbg.com</a></li>
       </ul>
     </div>
@@ -29,7 +30,7 @@
   <% if (C.messenger) { %><a class="lp-dock__a" href="<%= C.messenger %>" target="_blank" rel="noopener" data-track="Contact" data-channel="messenger">Messenger</a><% } %>
   <a class="lp-dock__a lp-dock__reg" href="#dang-ky">Đăng ký</a>
 </div>
-<script src="/js/lp-track.js?v=1" defer></script>
+<script src="/js/lp-track.js?v=2" defer></script>
 <script src="/js/landing.js?v=1" defer></script>
 </body>
 </html>

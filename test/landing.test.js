@@ -63,6 +63,16 @@ test('ID theo dõi được nạp vào thuộc tính của trang', async () => {
   assert.ok((await (await get('/lp/du-hoc')).text()).includes('data-meta=""'), 'ID sai định dạng bị bỏ');
 });
 
+test('nút nhóm Facebook chỉ có trên landing Kỹ sư và đọc từ cài đặt', async () => {
+  const html = await (await get('/lp/ky-su')).text();
+  assert.ok(html.includes('href="https://www.facebook.com/groups/1824897195603806" target="_blank" rel="noopener" data-track="JoinGroup"'));
+  assert.ok(!(await (await get('/lp/du-hoc')).text()).includes('JoinGroup'));
+  setSetting('social_fb_group', 'https://www.facebook.com/groups/123');
+  assert.ok((await (await get('/lp/ky-su')).text()).includes('https://www.facebook.com/groups/123'));
+  setSetting('social_fb_group', 'javascript:alert(1)');
+  assert.ok(!(await (await get('/lp/ky-su')).text()).includes('JoinGroup'));
+});
+
 test('đăng ký từ landing lưu đúng chương trình', async () => {
   const body = new URLSearchParams({ name: 'Nguyễn Văn A', phone: '0912345678', ref_title: 'Hệ 1+4', source: 'https://x/lp/du-hoc?utm_source=fb' });
   const r = await fetch(`${base}/lp/du-hoc/dang-ky`, { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded', Accept: 'application/json' }, body });
